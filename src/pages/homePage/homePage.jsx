@@ -1,10 +1,10 @@
 import { Nav } from '../../components/Navbar.jsx'
+import './homePage.css'
 
 export const HomePage = () => {
     return(
-        <div>
+        <main className='content-homepage'>
             <Nav />
-            <h1>Home Page</h1>
-        </div>
+        </main>
     )
 }    
