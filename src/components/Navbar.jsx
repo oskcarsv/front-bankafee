@@ -3,16 +3,18 @@ import "../styles/nav.css";
 
 export const Nav = () => {
     return (
-        <nav>
+        <nav className="nav-">
             <ul>
                 <li>
-                    <Link to="/">About us</Link>
+                    <Link to="/aboutUs">About us</Link>
                 </li>
                 <li>
-                    <Link to="/about">Services</Link>
+                    <Link to="/services">Services</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Sign in</Link>
+                    <button>
+                        Sing in
+                    </button>
                 </li>
             </ul>
         </nav>

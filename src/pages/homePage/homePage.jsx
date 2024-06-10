@@ -2,9 +2,14 @@ import { Nav } from '../../components/Navbar.jsx'
 
 export const HomePage = () => {
     return(
-        <div>
+        <main className='content-homepage-desktop'>
             <Nav />
-            <h1>Home Page</h1>
-        </div>
+            <p className='text-uno'>
+
+            </p>
+            <div clas   z>
+
+            </div>
+        </main>
     )
 }    
