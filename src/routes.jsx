@@ -1,7 +1,7 @@
-import { HomePage } from "./pages/homePage/homePage.jsx";
+import { LandingPage } from "./pages/landingPage/landingPage.jsx";
 
 const routes = [
-    { path: "/", element: <HomePage />}
+    { path: "/", element: <LandingPage />}
 ];
 
 export default routes;
