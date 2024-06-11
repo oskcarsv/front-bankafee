@@ -1,0 +1,29 @@
+.section-content{
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5% 3% 5%;
+};
+
+.content{
+    display: flex;
+    flex-direction: row;
+    
+    color: #000000;
+}
+
+.text-1{
+    font-size: 80px;
+    margin-right: 45%;
+}
+
+.content-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.text-2{
+    font-size: 20px;
+    justify-content: safe;
+}

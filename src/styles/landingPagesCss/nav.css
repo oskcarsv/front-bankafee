@@ -1,0 +1,36 @@
+.nav-landing{
+    display: flex;
+    padding: 20px;
+    background-color: #F0F0F0;
+}
+
+.nav-landing-ul{
+    list-style: none;
+    display: flex;  
+    margin-left: auto;
+}
+
+.nav-landing-li{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-landing-link {
+    color: #000000; 
+    text-decoration: none;
+}
+
+.btn-sign-in{
+    background: #211C5C;
+    color: #eff9f9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.h1-nav{
+    font-size: 25px;
+    margin-left: 15px;  
+}
