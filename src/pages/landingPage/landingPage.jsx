@@ -3,6 +3,7 @@ import { Footer } from '../../components/Footer.jsx';
 import { SectionWelcome } from '../../components/landingPages/SectionWelcome.jsx';
 import { SectionTool } from '../../components/landingPages/SectionTool.jsx';
 import { SectionTransfer } from '../../components/landingPages/SectionTransfer.jsx';
+import { SectionProduct } from '../../components/landingPages/SectionProduct.jsx';
 
 import './landingPage.css'
 
@@ -14,6 +15,7 @@ export const LandingPage = () => {
             <SectionWelcome />
             <SectionTool />
             <SectionTransfer />
+            <SectionProduct />
             <Footer/>
         </main>
     )
