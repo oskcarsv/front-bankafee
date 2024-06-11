@@ -1,0 +1,32 @@
+.section-content {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.text-1 {
+    margin-right: 10%;
+    margin-top: auto;
+    font-size: 480%;
+}
+
+.img-1 {
+    width: 95%;
+}
+
+.content-2 {
+    display: flex;
+    color: #000000;
+}
+
+.text-2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 5% 5%;
+}

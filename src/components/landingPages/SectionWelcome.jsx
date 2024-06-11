@@ -1,8 +1,8 @@
 import group from '../../assets/iconLanding/Group.svg'
 
-import '../../styles/landingPagesCss/pr1.css'
+import '../../styles/landingPagesCss/sectionWelcome.css'
 
-export const Pr1 = () => {
+export const SectionWelcome = () => {
     return (
         <section className="section-content">
             <div className="content">
