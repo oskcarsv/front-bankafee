@@ -6,7 +6,7 @@ export const SectionService = () => {
     return (
         <section className='section-tool-service'>
             <div className='section-service'>
-                <p className='text-1-service'>Servicios que te hacen la vida más fácil</p>
+                <p className='text-1-service'>Servicios fáciles, seguros y adaptados a todas tus necesidades.</p>
                 <img src={service} alt="img-service" className='img-service-section' />
             </div>
         </section>
