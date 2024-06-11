@@ -2,6 +2,7 @@ import { Nav } from '../../components/Navbar.jsx';
 import { Footer } from '../../components/Footer.jsx';
 import { SectionWelcome } from '../../components/landingPages/SectionWelcome.jsx';
 import { SectionTool } from '../../components/landingPages/SectionTool.jsx';
+import { SectionTransfer } from '../../components/landingPages/SectionTransfer.jsx';
 
 import './landingPage.css'
 
@@ -12,6 +13,7 @@ export const LandingPage = () => {
             <Nav />
             <SectionWelcome />
             <SectionTool />
+            <SectionTransfer />
             <Footer/>
         </main>
     )
