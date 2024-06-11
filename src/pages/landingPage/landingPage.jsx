@@ -4,6 +4,7 @@ import { SectionWelcome } from '../../components/landingPages/SectionWelcome.jsx
 import { SectionTool } from '../../components/landingPages/SectionTool.jsx';
 import { SectionTransfer } from '../../components/landingPages/SectionTransfer.jsx';
 import { SectionProduct } from '../../components/landingPages/SectionProduct.jsx';
+import { SectionService } from '../../components/landingPages/SectionService.jsx';
 
 import './landingPage.css'
 
@@ -16,6 +17,7 @@ export const LandingPage = () => {
             <SectionTool />
             <SectionTransfer />
             <SectionProduct />
+            <SectionService />
             <Footer/>
         </main>
     )
