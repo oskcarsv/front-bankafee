@@ -3,6 +3,8 @@
 }
 
 .menu-mobile {
+    font-family: var(--general-font);
+    color: var(--text-color-light);
     position: fixed;
     top: 0;
     left: 0;
@@ -10,6 +12,32 @@
     height: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #211C5C 31%, #463BC2 100%);
     z-index: 1000;
-    padding: 0 20px;
 }
 
+.cancel-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-mobile-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-mobile-li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
