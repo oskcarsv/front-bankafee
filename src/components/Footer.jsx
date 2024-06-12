@@ -14,8 +14,6 @@ export const Footer = () => {
                 <a className='text-footer'>Email: bankafee@gmail.com</a>
                 <a className='text-footer'>Cel: +502 4851-9632</a>
             </div>
-            
-            &copy; 2021 BankAfee. All rights reserved.
         </footer>
     )
 };
