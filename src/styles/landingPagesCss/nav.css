@@ -5,6 +5,10 @@
     border-radius: 0% 0% 3cqh 3cqh;
 }
 
+.hamburger-icon{
+    display: none;
+}
+
 .nav-landing-ul{
     list-style: none;
     display: flex;  
@@ -43,4 +47,37 @@
     font-style: var(--logo-font-style);
     font-size: var(--logo-font-size);
     margin-left: 2%;  
+}
+
+@media screen and (max-width: 768px){
+    .nav-landing{
+        padding: 1% 2% 1% 2%;
+        align-items: center;
+    }
+
+    .img-logo{
+        width: 13%;
+        margin: 3%;
+    }
+
+    .hamburger-icon{
+        display: block;
+        margin-left: auto;
+        margin-right: 3%;
+    }
+
+    .nav-landing-ul{
+        display: none;
+    }
+
+    .nav-landing-li{
+        display: none;
+    }
+
+    .h1-nav{
+        font-family: var(--general-font);
+        margin-left: 0;
+        font-size: 110%;
+    }
+    
 }
