@@ -4,7 +4,7 @@ import '../../styles/landingPagesCss/sectionProduct.css'
 
 export const SectionProduct = () => {
     return (
-        <section className='section-tool-product'>
+        <section className='section-tool-product' id='productsTool'>
             <div className='section-product'>
                 <img src={product} alt="img-product" className='img-product-section' />
                 <p className='text-1-product'>

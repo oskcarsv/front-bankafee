@@ -3,7 +3,9 @@
 :root{
     /* Colors */
     --white-background: #F0F0F0;
-    --button-background: #211C5C;
+    --nav-background: #211C5C;
+    --tool-background: #332B8F;
+    --tool-item-background: #FFFFFF;
     --text-color: #000000;
     --text-color-light: #FFFFFF;
 
@@ -12,5 +14,5 @@
     --logo-font-weight: 700;
     --logo-font-style: normal;
     --logo-font-size: 150%;
-    --nav-font-weight: 400;
+    --nav-font-weight: 500;
 }
