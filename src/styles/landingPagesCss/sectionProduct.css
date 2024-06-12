@@ -15,6 +15,7 @@
 }
 
 .text-1-product{
+    font-family: var(--general-font);
     margin-left: 20%;
     margin-top: auto;
     font-size: 480%;

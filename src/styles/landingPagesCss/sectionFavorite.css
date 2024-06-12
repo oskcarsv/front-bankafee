@@ -11,6 +11,7 @@
 }
 
 .text-1-favorite{
+    font-family: var(--general-font);
     margin-left: 20%;
     margin-top: auto;
     font-size: 480%;

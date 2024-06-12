@@ -11,6 +11,7 @@
 }
 
 .text-1-service{
+    font-family: var(--general-font);
     margin-right: 10%;
     margin-top: auto;
     font-size: 480%;
