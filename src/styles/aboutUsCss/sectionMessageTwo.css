@@ -1,0 +1,20 @@
+.section-message-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.part-1-message{
+    width: 50%;
+    margin: 5% 5% 10% 26%;
+}
+
+.text-2{
+    display: flex;
+    text-align: start;
+    font-size: 20px;
+    margin: 0% 25% 5% 0%;
+    font-family: var(--general-font);
+}

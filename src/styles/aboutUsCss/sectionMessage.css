@@ -8,6 +8,7 @@
     margin: auto;
     padding: 8%;
     text-align: center;
+    font-family: var(--general-font);
     
 }
 
@@ -17,7 +18,7 @@
 }
 
 .part-1{
-    background: #ffffff;
+    background: var(--text-color-light);
     width: 50%;
     height: 100%;
     border-radius: 0% 20cqb 0% 0%;
@@ -27,6 +28,7 @@
     display: flex;
     text-align: end;
     font-size: 35px;
+    font-family: var(--general-font);
     margin: 25% 5% 5% 30%;
 }
 
@@ -35,10 +37,11 @@
     text-align: end;
     font-size: 20px;
     margin: 5% 5% 5% 30%;
+    font-family: var(--general-font);
 }
 
 .part-2{
-    background: #ffffff;
+    background: var(--text-color-light);
     width: 50%;
     height: 100%;
     border-radius: 20cqb 0% 0% 0%;

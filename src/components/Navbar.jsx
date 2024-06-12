@@ -3,6 +3,7 @@ import { Logo } from "./landingPages/Logo.jsx";
 import { BtnSignIn } from './landingPages/Btn-SignIn.jsx';
 
 import '../styles/landingPagesCss/nav.css';
+
 export const Nav = () => {
     return (
         <nav className="nav-landing">
