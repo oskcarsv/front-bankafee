@@ -1,7 +1,7 @@
 .nav-landing{
     display: flex;
     padding: 1% 3% 1% 3%;
-    background-color: #F0F0F0;
+    background-color: var(--white-background);
     border-radius: 0% 0% 3cqh 3cqh;
 }
 
@@ -18,13 +18,17 @@
 }
 
 .nav-landing-link {
-    color: #000000; 
+    color: var(--text-color); 
+    font-family: var(--general-font);
+    font-weight: var(--nav-font-weight);
     text-decoration: none;
 }
 
 .btn-sign-in{
-    background: #211C5C;
-    color: #eff9f9;
+    font-family: var(--general-font);
+    font-weight: var(--nav-font-weight);
+    background: var(--button-background);
+    color: var(--text-color-light);
     height: 100%;
     width: 150%;
     align-items: center;
@@ -34,6 +38,9 @@
 }
 
 .h1-nav{
-    font-size: 150%;
+    font-family: var(--logo-font);
+    font-weight: var(--logo-font-weight);
+    font-style: var(--logo-font-style);
+    font-size: var(--logo-font-size);
     margin-left: 2%;  
 }

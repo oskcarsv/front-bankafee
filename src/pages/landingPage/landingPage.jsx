@@ -8,7 +8,7 @@ import { SectionService } from '../../components/landingPages/SectionService.jsx
 import { SectionFavorite } from '../../components/landingPages/SectionFavorite.jsx';
 
 import './landingPage.css'
-
+import '../../styles/Variables.css'
 
 export const LandingPage = () => {
     return (
