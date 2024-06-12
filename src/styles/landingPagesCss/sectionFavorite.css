@@ -20,3 +20,25 @@
 .img-favorite-section{
     width: 150%;
 }
+
+@media screen and (max-width: 768px){
+    .section-tool-favorite {
+        padding: 10% 5% 10% 5%;
+    }
+
+    .section-favorite{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .text-1-favorite{
+        font-size: 100%;
+        margin: 0 3% 10% 3%;
+    }
+
+    .img-favorite-section{
+        width: 40%;
+        order: 2;
+    }    
+}
