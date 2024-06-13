@@ -1,5 +1,5 @@
 import logo from '../assets/iconLanding/logo.svg'
-
+import { Logo } from '../components/landingPages/Logo';
 import '../styles/landingPagesCss/footer.css';
 
 export const Footer = () => {
