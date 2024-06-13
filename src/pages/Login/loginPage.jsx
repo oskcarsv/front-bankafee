@@ -1,7 +1,7 @@
-export const loginPage = () => {
+import { Form } from "../../components/login/Form";
+
+export const LoginPage = () => {
     return (
-        <div>
-            <h1>Login Page</h1>
-        </div>
-    )
+        <Form />
+    );
 };

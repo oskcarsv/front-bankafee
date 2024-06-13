@@ -30,8 +30,8 @@
     background: var(--nav-background);
     color: var(--text-color-light);
     height: 100%;
+    text-decoration: none;
     width: 150%;
-    align-items: center;
     border: none;
     border-radius: 8cqh;
     cursor: pointer;
