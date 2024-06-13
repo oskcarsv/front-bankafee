@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;400;700&display=swap');
+
+:root{
+    /* Colors */
+    --white-background: #F0F0F0;
+    --nav-background: #211C5C;
+    --tool-background: #332B8F;
+    --tool-background-hover: #463BC2;
+    --tool-item-background: #FFFFFF;
+    --text-color: #000000;
+    --text-color-light: #FFFFFF;
+
+    /* Fonts */
+    --general-font: 'Oxygen', sans-serif;
+    --logo-font-weight: 700;
+    --logo-font-style: normal;
+    --logo-font-size: 150%;
+    --nav-font-weight: 500;
+}

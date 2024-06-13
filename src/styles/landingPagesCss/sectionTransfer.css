@@ -1,0 +1,22 @@
+.section-tool-transfer {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5% 10% 5%;
+}
+
+.section-transfer{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.text-1-transfer{
+    font-family: var(--general-font);
+    margin-right: 10%;
+    margin-top: auto;
+    font-size: 480%;
+}
+
+.img-transfer-section{
+    width: 80%;
+}

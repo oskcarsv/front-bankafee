@@ -1,0 +1,23 @@
+.section-tool-service {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 10% 5%;
+}
+
+.section-service{
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.text-1-service{
+    font-family: var(--general-font);
+    margin-right: 10%;
+    margin-top: auto;
+    font-size: 480%;
+}
+
+.img-service-section{
+    width: 80%;
+}
+

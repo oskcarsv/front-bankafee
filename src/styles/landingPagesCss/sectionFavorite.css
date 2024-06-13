@@ -1,0 +1,22 @@
+.section-tool-favorite {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 10% 5%;
+}
+
+.section-favorite{
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.text-1-favorite{
+    font-family: var(--general-font);
+    margin-left: 20%;
+    margin-top: auto;
+    font-size: 480%;
+}  
+
+.img-favorite-section{
+    width: 150%;
+}
