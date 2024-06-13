@@ -3,7 +3,7 @@
 }
 
 .text-message{
-    color: #ffffff;
+    color: var(--text-color-light);
     font-size: 500%;
     margin: auto;
     padding: 8%;
@@ -40,6 +40,7 @@
     font-family: var(--general-font);
 }
 
+
 .part-2{
     background: var(--text-color-light);
     width: 50%;
@@ -53,4 +54,10 @@
     margin: 25.7% 5% 5% 5%;
     width: 50%;
     height: 50%;
+}
+
+.img-service{
+    display: flex;
+    border-radius: 8cqh;
+    margin: 5% 5% 5% 0%;
 }
