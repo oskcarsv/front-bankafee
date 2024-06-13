@@ -4,7 +4,10 @@ import { BtnSignIn } from './landingPages/Btn-SignIn.jsx';
 import { HamburgerMenu }  from './Hamburger-Menu.jsx';
 
 import '../styles/landingPagesCss/nav.css';
+
 export const Nav = () => {
+    const currentPath = window.location.pathname;
+
     return (
         <nav className="nav-landing">
             <Logo />
@@ -12,10 +15,10 @@ export const Nav = () => {
             <HamburgerMenu />
             <ul className="nav-landing-ul">
                 <li className="nav-landing-li">
-                    <Link to="/aboutUs" className="nav-landing-link">About us</Link>
+                    <Link to="/aboutUs" className="nav-landing-link">{currentPath === "/aboutUs" ? (<Link to="/" className="nav-landing-link">Home</Link>) : "About us"}</Link>
                 </li>
                 <li className="nav-landing-li">
-                    <Link to="/services" className="nav-landing-link">Services</Link>
+                    <Link to="/service" className="nav-landing-link">{currentPath === "/service" ? (<Link to="/" className="nav-landing-link">Home</Link>) : "Services"}</Link>
                 </li>
                 <BtnSignIn />
             </ul>
