@@ -62,8 +62,8 @@
         padding: 0 5%;
     }
 
-    .text-2 {
-        font-size: 1px;
+    .content-2 .text-2 {
+        font-size: 14px;    
         text-align: center;
         margin: 5% 5%;
     }
