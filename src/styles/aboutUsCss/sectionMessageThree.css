@@ -1,25 +1,25 @@
-.section-message-3{
-    display: flex;
-    justify-items: center;
+.section-message-3 {
+  display: flex;
+  justify-items: center;
 }
 
-.part-1-message-3{
-    width: 50%;
-    height: 50%;
+.part-1-message-3 {
+  width: 50%;
+  height: 50%;
 }
 
-.text-3{
-    display: flex;
-    text-align: end;
-    font-size: 30px;
-    margin: 8% 5% 5% 40%;
-    font-family: var(--general-font);
+.text-3 {
+  display: flex;
+  text-align: end;
+  font-size: 30px;
+  margin: 8% 5% 5% 40%;
+  font-family: var(--general-font);
 }
 
-.img-3-about{
-    display: flex;
-    align-items: center;
-    margin: 0% 0% 10% 8%;
-    width: 150%;
-    height: 100%;
+.img-3-about {
+  display: flex;
+  align-items: center;
+  margin: 0% 0% 10% 8%;
+  width: 150%;
+  height: 100%;
 }
