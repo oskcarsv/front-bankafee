@@ -24,7 +24,7 @@ export const Form = () => {
                     <h1 className="h1-sign">Sing In</h1>
                     <input type="email" name="email" id="email" className="input-login" placeholder="email" />
                     <input type="password" name="password" id="password" className="input-login" placeholder='password' />
-                    <Link to="/">
+                    <Link to="/home">
                         <button type="submit" className="btn-login">Sign In</button>
                     </Link>
                 </form>
