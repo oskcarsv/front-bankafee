@@ -37,8 +37,12 @@ export const MenuMobile = ({ onClose }) => {
               <p className="menu-mobile-p">Home</p>
             </Link>
           ) : (
-            <Link to='/aboutUs' className="menu-mobile-li">
-              <img src={aboutUsIcon} alt="About Us Icon" className="about-us-icon" />
+            <Link to="/aboutUs" className="menu-mobile-li">
+              <img
+                src={aboutUsIcon}
+                alt="About Us Icon"
+                className="about-us-icon"
+              />
               <p className="menu-mobile-p">About us</p>
             </Link>
           )}
@@ -51,7 +55,7 @@ export const MenuMobile = ({ onClose }) => {
           />
           <p className="menu-mobile-p">Services</p>
         </li>
-      </ul >
-    </div >
+      </ul>
+    </div>
   );
 };
