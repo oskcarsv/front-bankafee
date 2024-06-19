@@ -1,0 +1,39 @@
+.card-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-account-info{
+    display: flex;
+    flex-direction: column;
+    margin: 1% ;
+    width: 29%;
+    border-radius: 5cqh;
+    background-color: var(--white-background);
+}
+
+.content-title{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-account-info-title{
+    font-size: 20px;
+}
+
+.icon-myAccount{
+    width: 11%;
+    cursor: pointer;
+}
+
+.card-account-info-number{
+    font-size: 20px;
+}
+
+.card-account-info-amount{
+    text-align: center;
+    font-size: 40px;
+}
