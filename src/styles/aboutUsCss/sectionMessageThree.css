@@ -1,6 +1,7 @@
 .section-message-3 {
   display: flex;
   justify-items: center;
+  align-items: center;
 }
 
 .part-1-message-3 {
@@ -16,10 +17,15 @@
   font-family: var(--general-font);
 }
 
+.part-2-message-3 {
+  margin-left: 5%;
+}
+
 .img-3-about {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0% 0% 10% 8%;
-  width: 150%;
+  width: 100%;
   height: 100%;
 }
