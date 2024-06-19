@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import cancelIcon from "../assets/iconLanding/Cancel-Icon.svg";
 import signInIcon from "../assets/iconLanding/SignIn-Icon.svg";
@@ -8,6 +8,9 @@ import homeIcon from "../assets/iconAbout/HomeIconMobile.svg";
 import "../styles/landingPagesCss/menu-mobile.css";
 
 export const MenuMobile = ({ onClose }) => {
+
+  const [isClosing, setIsClosing] = useState(false);
+  
   useEffect(() => {
     document.body.classList.add("no-scroll");
     return () => {
@@ -15,15 +18,23 @@ export const MenuMobile = ({ onClose }) => {
     };
   }, []);
 
+  const handleCancelClick = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsClosing(false);
+      onClose();
+    }, 500);
+  };
+
   const currentPath = window.location.pathname;
 
   return (
-    <div className="menu-mobile">
+    <div className={`menu-mobile ${isClosing ? 'slide-out' : ''}`}>
       <img
         src={cancelIcon}
         alt="Cancel Icon"
         className="cancel-icon"
-        onClick={onClose}
+        onClick={handleCancelClick}
       />
       <ul className="menu-mobile-ul">
         <li className="menu-mobile-li">
