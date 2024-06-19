@@ -10,7 +10,7 @@ import "../styles/landingPagesCss/menu-mobile.css";
 export const MenuMobile = ({ onClose }) => {
 
   const [isClosing, setIsClosing] = useState(false);
-  
+
   useEffect(() => {
     document.body.classList.add("no-scroll");
     return () => {
@@ -59,12 +59,22 @@ export const MenuMobile = ({ onClose }) => {
           )}
         </li>
         <li className="menu-mobile-li">
-          <img
-            src={servicesIcon}
-            alt="Services Icon"
-            className="services-icon"
-          />
-          <p className="menu-mobile-p">Services</p>
+          {currentPath === "/service" ? (
+            <Link to="/" className="menu-mobile-li">
+              <img src={homeIcon} alt="Home Icon" />
+              <p className="menu-mobile-p">Home</p>
+            </Link>
+          ) : (
+            <Link to="/service" className="menu-mobile-li">
+              <img
+                src={servicesIcon}
+                alt="Services Icon"
+                className="services-icon"
+              />
+              <p className="menu-mobile-p">Services</p>
+            </Link>
+          )
+          }
         </li>
       </ul>
     </div>
