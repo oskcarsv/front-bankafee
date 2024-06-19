@@ -26,9 +26,9 @@
   color: var(--text-color);
 }
 
-.text-2 {
+.content-2 .text-2 {
   font-family: var(--general-font);
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   margin: 5% 5%;
 }
@@ -62,17 +62,9 @@
     padding: 0 5%;
   }
 
-<<<<<<< HEAD
-    .content-2 .text-2 {
-        font-size: 14px;    
-        text-align: center;
-        margin: 5% 5%;
-    }
-}
-=======
-  .text-2 {
-    font-size: 60%;
-    margin: 10% 0 5% 0;
+  .content-2 .text-2 {
+    font-size: 90%;
+    text-align: center;
+    margin: 5% 5%;
   }
 }
->>>>>>> 5a6dc321430988210d40f1ee65f3821f6637d7b1
