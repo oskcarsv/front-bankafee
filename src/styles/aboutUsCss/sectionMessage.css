@@ -1,63 +1,61 @@
-.section-message{
-    background: linear-gradient(to top, #463BC2, #332C8F, #211C5C);
+.section-message {
+  background: linear-gradient(to top, #463bc2, #332c8f, #211c5c);
 }
 
-.text-message{
-    color: var(--text-color-light);
-    font-size: 500%;
-    margin: auto;
-    padding: 8%;
-    text-align: center;
-    font-family: var(--general-font);
-    
+.text-message {
+  color: var(--text-color-light);
+  font-size: 500%;
+  margin: auto;
+  padding: 8%;
+  text-align: center;
+  font-family: var(--general-font);
 }
 
-.section-decoration{
-    display: flex;
-    justify-items: center;
+.section-decoration {
+  display: flex;
+  justify-items: center;
 }
 
-.part-1{
-    background: var(--text-color-light);
-    width: 50%;
-    height: 100%;
-    border-radius: 0% 20cqb 0% 0%;
+.part-1 {
+  background: var(--text-color-light);
+  width: 50%;
+  height: 100%;
+  border-radius: 0% 20cqb 0% 0%;
 }
 
-.tittle-1-about{
-    display: flex;
-    text-align: end;
-    font-size: 35px;
-    font-family: var(--general-font);
-    margin: 25% 5% 5% 30%;
+.tittle-1-about {
+  display: flex;
+  text-align: end;
+  font-size: 35px;
+  font-family: var(--general-font);
+  margin: 25% 5% 5% 30%;
 }
 
-.text-1-about{
-    display: flex;
-    text-align: end;
-    font-size: 20px;
-    margin: 5% 5% 5% 30%;
-    font-family: var(--general-font);
+.text-1-about {
+  display: flex;
+  text-align: end;
+  font-size: 20px;
+  margin: 5% 5% 5% 30%;
+  font-family: var(--general-font);
 }
 
-
-.part-2{
-    background: var(--text-color-light);
-    width: 50%;
-    height: 100%;
-    border-radius: 20cqb 0% 0% 0%;
+.part-2 {
+  background: var(--text-color-light);
+  width: 50%;
+  height: auto;
+  border-radius: 20cqb 0% 0% 0%;
 }
 
-.img-1-about{
-    display: flex;
-    align-items: center;
-    margin: 25.7% 5% 5% 5%;
-    width: 50%;
-    height: 50%;
+.img-1-about {
+  display: flex;
+  align-items: center;
+  margin: 25.7% 5% 5% 5%;
+  width: 50%;
+  height: 50%;
 }
 
-.img-service{
-    display: flex;
-    border-radius: 8cqh;
-    margin: 5% 5% 5% 0%;
+.img-service {
+  display: flex;
+  border-radius: 8cqh;
+  margin: 5% 5% 5% 0%;
 }

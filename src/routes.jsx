@@ -8,7 +8,7 @@ const routes = [
     { path: "/", element: <LandingPage />},
     { path: "/aboutUs", element: <LandingPageAboutUs />},
     { path: "/service", element: <LandingPageService />},
-    { path: "/login", element: <LoginPage />},
+    { path: "/signIn", element: <LoginPage />},
     {  path: "/home", element: <HomePage />},
 ];
 

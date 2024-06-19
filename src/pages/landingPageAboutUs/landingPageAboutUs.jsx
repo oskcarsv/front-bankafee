@@ -4,16 +4,16 @@ import { SectionMessageTwo } from "../../components/aboutUs/SectionMessageTwo";
 import { SectionMessageThree } from "../../components/aboutUs/SectionMessageThree";
 import { Footer } from "../../components/Footer";
 
-import './landingPageAboutUs.css';
+import "./landingPageAboutUs.css";
 
 export const LandingPageAboutUs = () => {
-    return (
-        <main className="content-about">
-            <Nav/>
-            <SectionMessage/>
-            <SectionMessageTwo/>
-            <SectionMessageThree/>
-            <Footer/>
-        </main>
-    )
+  return (
+    <main className="content-about">
+      <Nav />
+      <SectionMessage />
+      <SectionMessageTwo />
+      <SectionMessageThree />
+      <Footer />
+    </main>
+  );
 };

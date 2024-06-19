@@ -1,69 +1,70 @@
 .section-content {
-    display: flex;
-    flex-direction: column;
-    padding: 3% 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
 }
 
 .content {
-    display: flex;
-    align-items: center;
-    color: var(--text-color);
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
 }
 
 .text-1 {
-    font-family: var(--general-font);
-    margin-right: 10%;
-    margin-top: auto;
-    font-size: 480%;
+  font-family: var(--general-font);
+  margin-right: 10%;
+  margin-top: auto;
+  font-size: 480%;
 }
 
 .img-1 {
-    width: 95%;
+  width: 95%;
 }
 
 .content-2 {
-    display: flex;
-    color: var(--text-color);
+  display: flex;
+  color: var(--text-color);
 }
 
-.text-2 {
-    font-family: var(--general-font);
-    font-size: 20px;
+.content-2 .text-2 {
+  font-family: var(--general-font);
+  font-size: 30px;
+  text-align: center;
+  margin: 5% 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .section-content {
+    padding: 10% 0 7% 0;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+  }
+
+  .text-1 {
+    font-size: 100%;
+    text-align: center;
+    margin: 0 5% 10% 5%;
+  }
+
+  .img-1 {
+    width: 40%;
+  }
+
+  .content-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+  }
+
+  .content-2 .text-2 {
+    font-size: 90%;
     text-align: center;
     margin: 5% 5%;
-}
-
-@media screen and (max-width: 768px){
-    .section-content {
-        padding: 10% 0 7% 0;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0 15%;
-    }
-
-    .text-1 {
-        font-size: 100%;
-        text-align: center;
-        margin: 0 5% 10% 5%;
-    }
-
-    .img-1 {
-        width: 40%;
-    }
-
-    .content-2 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0 5%;
-    }
-
-    .text-2 {
-        font-size: 60%;
-        margin: 10% 0 5% 0;
-    }
+  }
 }
