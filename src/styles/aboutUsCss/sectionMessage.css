@@ -42,7 +42,7 @@
 .part-2 {
   background: var(--text-color-light);
   width: 50%;
-  height: 100%;
+  height: auto;
   border-radius: 20cqb 0% 0% 0%;
 }
 
@@ -58,32 +58,4 @@
   display: flex;
   border-radius: 8cqh;
   margin: 5% 5% 5% 0%;
-}
-
-@media screen and (max-width: 768px) {
-  .text-message {
-    font-size: 300%;
-  }
-
-  .part-1 {
-    width: 100%;
-    border-radius: 0% 0% 0% 0%;
-  }
-
-  .part-2 {
-    width: 100%;
-    border-radius: 0% 0% 0% 0%;
-  }
-
-  .img-1-about {
-    width: 100%;
-    height: 100%;
-    margin: 25.7% 5% 5% 5%;
-  }
-
-  .img-service {
-    width: 100%;
-    height: 100%;
-    margin: 5% 5% 5% 0%;
-  }
 }
