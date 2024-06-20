@@ -1,0 +1,40 @@
+.content-history {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 95%;
+    border-radius: 5cqh;
+    background-color: var(--white-background);
+}
+
+.title-activity {
+    margin-left: 20px;
+}
+
+.title-activity-recent {
+    font-size: 30px;
+}
+
+.sub-title-activity {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-activity {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.separator {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.s{
+    border-color: var(--text-color);
+}
