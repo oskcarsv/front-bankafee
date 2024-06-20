@@ -59,3 +59,45 @@
   border-radius: 8cqh;
   margin: 5% 5% 5% 0%;
 }
+
+@media screen and (max-width: 768px) {
+
+  .section-message {
+    background: linear-gradient(to top, #fff, #fff, #2a1ea5, #29228d, #211c5c);
+
+  }
+
+  .text-message {
+    font-size: 130%;
+    padding: 20% 5% 20% 5%;
+  }
+
+  .part-1 {
+    width: 100%;
+    height: auto;
+    border-radius: 0% 8cqb 0% 0%;
+    background-color: var(--text-color-light);
+  }
+
+  .part-2 {
+    width: 100%;
+    height: auto;
+    border-radius: 8cqb 0% 0% 0%;
+    background-color: var(--text-color-light);
+  }
+
+  .tittle-1-about {
+    font-size: 80%;
+    margin: 25% 5% 5% 5%;
+  }
+
+  .text-1-about {
+    font-size: 70%;
+    margin: 5% 5% 5% 5%;
+  }
+
+  .img-1-about {
+    margin: 35.7% 10% 10% 10%;
+    width: 80%;
+  }
+}

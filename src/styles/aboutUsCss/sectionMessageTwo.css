@@ -23,3 +23,31 @@
   margin: 5% 5% 5% 5%;
   font-family: var(--general-font);
 }
+
+@media screen and (max-width: 768px) {
+  .part-1-message {
+    width: 100%;
+    margin: 0% 0% 5% 0%;
+  }
+
+  .part-2-message {
+    width: 100%;
+    margin: 5% 5% 10% 0%;
+  }
+
+  .img-2-about {
+    display: flex;
+    align-items: center;
+    margin: 12.7% 5% 5% 5%;
+    width: 86%;
+    height: 50%;
+  }
+
+  .text-2 {
+    display: flex;
+    text-align: start;
+    font-size: 90%;
+    margin: 5% 5% 5% 5%;
+    font-family: var(--general-font);
+  }
+}
