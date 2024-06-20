@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .sidebar-menu {
@@ -53,6 +52,11 @@
     margin-top: 10%;
     height: 15%;
     width: 38%;
+}
+
+.btn-home-sidebar{
+    text-decoration: none;
+    margin-right: 100%;
 }
 
 .sidebar-menu-button {

@@ -1,6 +1,7 @@
 .message-home {
     flex-direction: column;
     margin-right: 2%;
+    margin-left: 2%;
 }
 
 .message-title-home {
