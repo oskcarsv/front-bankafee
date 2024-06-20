@@ -9,6 +9,8 @@
   --tool-item-background: #ffffff;
   --text-color: #000000;
   --text-color-light: #ffffff;
+  --color-grey: 2px solid#E0E0E0;
+  --color-red: #A20000;
 
   /* Fonts */
   --general-font: "Oxygen", sans-serif;
