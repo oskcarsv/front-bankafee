@@ -119,10 +119,10 @@
     background-color: var(--tool-item-background);
 }
 
-.btn-content-caccount{
+.btn-content-caccount {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .btn-caccount {
@@ -139,7 +139,7 @@
     cursor: pointer;
 }
 
-.btn-caccount-cancel{
+.btn-caccount-cancel {
     width: 20vh;
     height: 7vh;
     border: none;
@@ -151,4 +151,10 @@
     background-color: var(--color-red);
     color: var(--text-color-light);
     cursor: pointer;
+}
+
+.link-btn-caccount {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
