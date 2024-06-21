@@ -103,4 +103,74 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
 
+    .content-login{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .content-login-logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        margin: 10% 0 10% 0;
+    }
+
+    .img-login{
+        margin: 0 ;
+        width: 35%;
+        height: auto;
+        margin: 0 8% 0 15%;
+    }
+
+    .content-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .h1-login{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .h2-login{
+        font-size: 15px;
+        margin: 0;
+        font-weight: 100;
+    }
+
+    .content-form{
+        margin: 0;
+        width: 100%;
+    }
+
+    .form-login{
+        margin: 0;
+    }
+
+    .img-sign{
+        width: 65%;
+    }
+
+    .h1-sign{
+        /* font-size: 20px; */
+        margin: 0;
+    }
+
+    .input-login{
+        width: 30%;
+    }
+}
