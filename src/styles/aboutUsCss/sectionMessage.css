@@ -62,11 +62,6 @@
 
 @media screen and (max-width: 768px) {
 
-  .section-message {
-    background: linear-gradient(to top, #fff, #fff, #2a1ea5, #29228d, #211c5c);
-
-  }
-
   .text-message {
     font-size: 130%;
     padding: 20% 5% 20% 5%;
