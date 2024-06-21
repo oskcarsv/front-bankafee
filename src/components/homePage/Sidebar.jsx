@@ -14,7 +14,7 @@ export const Sidebar = () => {
         <div className="sidebar">
             <img src={logo} alt="img" className='img-sidebar' />
             <img src={perfil} alt="img" className='img-perfil-sidebar' />
-            <h1 className='name-profile'>Angel Mendez <img src={editUser} alt="icon" className='icon-edit-user' /></h1>
+            <h1 className='name-profile'>Angel Mendez <Link to="/editUser"><img src={editUser} alt="icon" className='icon-edit-user' /></Link></h1>
             <h2 className='email-profile'>amendez@gmail.com</h2>
             <ul className="sidebar-menu">
                 <li className="sidebar-menu-item">
@@ -28,8 +28,8 @@ export const Sidebar = () => {
                     </Link>
                 </li>
                 <li className="sidebar-menu-item-">
-                    <Link>
-                        <button className="sidebar-menu-button-logout"><img src={logout} alt="img" className='img-sidebar-logout' /></button>
+                    <Link to="/">
+                    <button className="sidebar-menu-button-logout"><img src={logout} alt="img" className='img-sidebar-logout' /></button>
                     </Link>
                 </li>
             </ul>

@@ -3,7 +3,7 @@ import editMyAccount from '../../assets/iconHomePage/editMyAccount.svg';
 
 import '../../styles/homePageCss/cardAccount.css';
 
-export const CardAccount = () => {
+export const ListCardAccount = () => {
     return (
         <div className="card-account">
             <div className="card-account-info">

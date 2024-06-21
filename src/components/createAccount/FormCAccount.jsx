@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import cAccountByUser from "../../assets/iconCAccountByUser/cAccountByUser.svg";
 
 import '../../styles/createAccountByUser/cAccountByUser.css'
@@ -30,8 +32,8 @@ export const FormCAccount = () => {
                     </form>
                 </div>
                 <div className="btn-content-caccount">
-                    <button className="btn-caccount-cancel">Cancel</button>
-                    <button className="btn-caccount">Create</button>
+                    <Link to="/home" className="link-btn-caccount"><button className="btn-caccount-cancel">Cancel</button></Link>
+                    <Link to="/home" className="link-btn-caccount"><button className="btn-caccount">Create</button></Link>
                 </div>
             </div>
         </div>

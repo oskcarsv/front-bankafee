@@ -1,8 +1,8 @@
 import { Sidebar } from "../../components/homePage/Sidebar";
 import { MessageHome } from "../../components/homePage/MessageHome";
-import { CardAccount } from "../../components/homePage/CardAccount";
-import { ListHome } from "../../components/homePage/ListHome";
-import { RecentActivity } from "../../components/homePage/RecentActivity";
+import { ListCardAccount } from "../../components/homePage/ListCardAccount";
+import { ActionsHome } from "../../components/homePage/ActionsHome";
+import { ListRecentActivity } from "../../components/homePage/ListRecentActivity";
 
 import '../../pages/homePage/homePage.css';
 
@@ -14,9 +14,9 @@ export const HomePage = () => {
             </div>
             <div className="content-home">
                 <MessageHome />
-                <CardAccount />
-                <ListHome />
-                <RecentActivity />
+                <ListCardAccount />
+                <ActionsHome />
+                <ListRecentActivity />
             </div>
         </>
     );

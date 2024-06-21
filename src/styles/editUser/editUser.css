@@ -1,15 +1,15 @@
-.content-form-cacount-user {
+.content-form-edit-user {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 25%;
 }
 
-.info-form-caccount-user {
+.info-form-edit-user {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,16 +17,12 @@
     width: 70vh;
 }
 
-.img-caccount-user {
-    width: 100%;
-}
-
-.title-create-account {
+.title-edit-user {
     font-size: 200%;
     color: var(--text-color);
 }
 
-.content-input-caccount {
+.content-input-edit-user {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -34,13 +30,13 @@
     margin-bottom: 5%;
 }
 
-.form-caccount-user {
+.form-editUser {
     width: 100vh;
     align-items: center;
     justify-content: center;
 }
 
-.input-text-create-account {
+.input-together-edit {
     width: 100%;
     height: 100%;
     border-radius: 15px;
@@ -50,10 +46,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.input-text {
+.input-text-edit-user {
     width: auto;
     height: 100%;
     border-radius: 15px;
@@ -68,7 +63,7 @@
     background: var(--tool-item-background);
 }
 
-.content-input-dpi {
+.input-alone-edit-user {
     width: 100%;
     height: 100%;
     border-radius: 1cqh;
@@ -80,7 +75,7 @@
     align-items: center;
 }
 
-.input-text-dpi {
+.input-text-alone-edit-user {
     width: auto;
     height: 100%;
     border-radius: 15px;
@@ -93,39 +88,12 @@
     background-color: var(--tool-item-background);
 }
 
-.content-input-combobox {
-    width: 100%;
-    border-radius: 15px;
-    padding: 2% 0% 2% 0%;
-    border: none;
-    font-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box-select {
-    width: 76%;
-    border-radius: 15px;
-    padding: 2% 0% 2% 2%;
-    font-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-    border: var(--color-grey);
-    font-family: var(--general-font);
-    color: var(--text-color);
-    background-color: var(--tool-item-background);
-}
-
-.btn-content-caccount {
+.btn-content-edit-user {
     display: flex;
     justify-content: space-between;
-
 }
 
-.btn-caccount {
+.btn-edit-update-user {
     width: 20vh;
     height: 7vh;
     border: none;
@@ -139,7 +107,7 @@
     cursor: pointer;
 }
 
-.btn-caccount-cancel {
+.btn-edit-cancel-user {
     width: 20vh;
     height: 7vh;
     border: none;
@@ -153,7 +121,7 @@
     cursor: pointer;
 }
 
-.link-btn-caccount {
+.link-btn-edit-user {
     text-decoration: none;
     display: flex;
     justify-content: space-between;

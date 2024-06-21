@@ -15,9 +15,7 @@
     align-items: center;
     position: relative;
     height: 100%;
-    width: 80%;
-    margin: 0% 0% 0% 0%;
-    border-radius: 0% 5% 5% 0%;
+    width: 70%;
     background: var(--nav-background);
     font-family: var(--general-font);
     color: var(--text-color-light);
@@ -81,7 +79,8 @@
     height: 40px;
     border-radius: 8px;
     padding: 0% 40% 0% 10%;
-    border-color: var(--text-color);
+    outline: none;
+    border: var(--color-grey);
     font-family: var(--general-font);
     color: var(--text-color);
     background-color: var(--tool-item-background);
