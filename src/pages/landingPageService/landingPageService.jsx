@@ -1,6 +1,6 @@
 import { Nav } from "../../components/Navbar";
-import { SectionMessage } from "../../components/aboutUs/SectionMessage";
 import { Header } from "../../components/Header";
+import { ServiceContent } from "../../components/service/ServiceContent";
 import { Footer } from "../../components/Footer";
 
 export const LandingPageService = () => {
@@ -8,6 +8,7 @@ export const LandingPageService = () => {
     <main>
       <Nav />
       <Header />
+      <ServiceContent />
       <Footer />
     </main>
   );

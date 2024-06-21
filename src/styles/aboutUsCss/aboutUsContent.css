@@ -1,3 +1,7 @@
+.content-about{
+    font-family: var(--general-font);
+}
+
 .about-us-1 {
     display: flex;
     align-items: center;
