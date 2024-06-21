@@ -1,6 +1,7 @@
 import '../../styles/aboutUsCss/aboutUsContent.css'
 import chica1 from '../../assets/iconAbout/chica1.svg'
 import chica2 from '../../assets/iconAbout/chica2.svg'
+import chico3 from '../../assets/iconAbout/chico3.svg'
 
 export const AboutUsContent = () => {
     return (
@@ -26,14 +27,17 @@ export const AboutUsContent = () => {
                     </p>
                 </div>
             </section>
-            <section className='about-us-2'>
+            <section className='about-us-1'>
                 <div className='about-us-text-left'>
                     <h1 className="about-us-title">
                         Tu libertad es nuestra bandera
                     </h1>
                     <p className="about-us-content-left">
-                        Nuestro propósito es brindar soluciones financieras y de bienestar que transformen la vida de las personas y comunidades, de una forma simple, humana y transparente.
+                        Nos inspiramos en nuestros usuarios para crear un futuro brillante, donde el crecimiento de unos, es el crecimiento de todos.
                     </p>
+                </div>
+                <div className="about-us-img-right">
+                    <img src={chico3} alt="Chico3-img" />
                 </div>
             </section>
         </main>
