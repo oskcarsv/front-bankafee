@@ -8,7 +8,6 @@ import homeIcon from "../assets/iconAbout/HomeIconMobile.svg";
 import "../styles/landingPagesCss/menu-mobile.css";
 
 export const MenuMobile = ({ onClose }) => {
-
   const [isClosing, setIsClosing] = useState(false);
 
   useEffect(() => {
@@ -41,41 +40,63 @@ export const MenuMobile = ({ onClose }) => {
           <img src={signInIcon} alt="Sign In Icon" className="sign-in-icon" />
           <p className="menu-mobile-p">Sign In</p>
         </li>
-        <li>
-          {currentPath === "/aboutUs" ? (
-            <Link to="/" className="menu-mobile-li">
-              <img src={homeIcon} alt="Home Icon" />
-              <p className="menu-mobile-p">Home</p>
-            </Link>
-          ) : (
-            <Link to="/aboutUs" className="menu-mobile-li">
-              <img
-                src={aboutUsIcon}
-                alt="About Us Icon"
-                className="about-us-icon"
-              />
-              <p className="menu-mobile-p">About us</p>
-            </Link>
-          )}
-        </li>
-        <li className="menu-mobile-li">
-          {currentPath === "/service" ? (
-            <Link to="/" className="menu-mobile-li">
-              <img src={homeIcon} alt="Home Icon" />
-              <p className="menu-mobile-p">Home</p>
-            </Link>
-          ) : (
-            <Link to="/service" className="menu-mobile-li">
-              <img
-                src={servicesIcon}
-                alt="Services Icon"
-                className="services-icon"
-              />
-              <p className="menu-mobile-p">Services</p>
-            </Link>
-          )
-          }
-        </li>
+        {currentPath === "/service" ? (
+          <>
+            <li>
+              <Link to="/" className="menu-mobile-li">
+                <img src={homeIcon} alt="Home Icon" />
+                <p className="menu-mobile-p">Home</p>
+              </Link>
+            </li>
+            <li className="menu-mobile-li">
+              <Link to="/aboutUs" className="menu-mobile-li">
+                <img
+                  src={aboutUsIcon}
+                  alt="About Us Icon"
+                  className="about-us-icon"
+                />
+                <p className="menu-mobile-p">About us</p>
+              </Link>
+            </li>
+          </>
+        ) : (
+          <>
+            <li>
+              {currentPath === "/aboutUs" ? (
+                <Link to="/" className="menu-mobile-li">
+                  <img src={homeIcon} alt="Home Icon" />
+                  <p className="menu-mobile-p">Home</p>
+                </Link>
+              ) : (
+                <Link to="/aboutUs" className="menu-mobile-li">
+                  <img
+                    src={aboutUsIcon}
+                    alt="About Us Icon"
+                    className="about-us-icon"
+                  />
+                  <p className="menu-mobile-p">About us</p>
+                </Link>
+              )}
+            </li>
+            <li className="menu-mobile-li">
+              {currentPath === "/service" ? (
+                <Link to="/" className="menu-mobile-li">
+                  <img src={homeIcon} alt="Home Icon" />
+                  <p className="menu-mobile-p">Home</p>
+                </Link>
+              ) : (
+                <Link to="/service" className="menu-mobile-li">
+                  <img
+                    src={servicesIcon}
+                    alt="Services Icon"
+                    className="services-icon"
+                  />
+                  <p className="menu-mobile-p">Services</p>
+                </Link>
+              )}
+            </li>
+          </>
+        )}
       </ul>
     </div>
   );
