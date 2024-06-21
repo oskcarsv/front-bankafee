@@ -5,15 +5,17 @@ import { LoginPage } from "./pages/Login/loginPage.jsx";
 import { HomePage } from "./pages/homePage/homePage.jsx";
 import { CAccountByUser } from "./pages/createAccount/cAccountByUser.jsx";
 import { EditUser } from "./pages/editUser/editUser.jsx";
+import { TransferUser } from "./pages/transferUser/transferUser.jsx";
 
 const routes = [
-    { path: "/", element: <LandingPage />},
-    { path: "/aboutUs", element: <LandingPageAboutUs />},
-    { path: "/service", element: <LandingPageService />},
-    { path: "/signIn", element: <LoginPage />},
-    { path: "/home", element: <HomePage />},
-    { path: "/cAccountByUser", element: <CAccountByUser />},
-    { path: "/editUser", element: <EditUser />}
+    { path: "/", element: <LandingPage /> },
+    { path: "/aboutUs", element: <LandingPageAboutUs /> },
+    { path: "/service", element: <LandingPageService /> },
+    { path: "/signIn", element: <LoginPage /> },
+    { path: "/home", element: <HomePage /> },
+    { path: "/cAccountByUser", element: <CAccountByUser /> },
+    { path: "/editUser", element: <EditUser /> },
+    { path: "/transferUser", element: <TransferUser /> },
 ];
 
 export default routes;
