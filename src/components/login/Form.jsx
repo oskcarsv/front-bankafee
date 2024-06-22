@@ -21,12 +21,16 @@ export const Form = () => {
             <div className="content-form">
                 <form className="form-login">
                     <img src={signIn} alt="img" className='img-sign' />
-                    <h1 className="h1-sign">Sing In</h1>
+                    <div className='h1-sign'>
+                        <h1>Sing In</h1>
+                    </div>
                     <input type="email" name="email" id="email" className="input-login" placeholder="email" />
                     <input type="password" name="password" id="password" className="input-login" placeholder='password' />
-                    <Link to="/home">
-                        <button type="submit" className="btn-login">Sign In</button>
-                    </Link>
+                    <div className='btn-container'>
+                        <Link to="/home">
+                            <button type="submit" className="btn-login">Sign In</button>
+                        </Link>
+                    </div>
                 </form>
             </div>
         </main>

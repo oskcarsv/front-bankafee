@@ -1,6 +1,5 @@
 .main-content{
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -15,7 +14,7 @@
     align-items: center;
     position: relative;
     height: 100%;
-    width: 70%;
+    width: 52%;
     background: var(--nav-background);
     font-family: var(--general-font);
     color: var(--text-color-light);
@@ -53,32 +52,36 @@
 .content-form{
     display: flex;
     flex-direction: column;
-    margin: 0% 20% 7% 15%;
+    justify-content: center;
+    width: 48%;
+    height: 100%;
 }
 
 .form-login{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 10% -25% 10% 0%;
-    gap: 15px;
+    gap: 20px;
+    width: auto;
 }
 
 .h1-sign{
+    width: 53%;
+}
+
+.h1-sign h1{
     font-size: 30px;
-    text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    margin: 0% 100% 15%;
+    margin: 4% 0 0 0;
     font-family: var(--general-font);
-
 }
 
 .input-login{
-    width: 100%;
+    width: 50%;
     height: 40px;
     border-radius: 8px;
-    padding: 0% 40% 0% 10%;
+    padding: 0 0 0 3%;
     outline: none;
     border: var(--color-grey);
     font-family: var(--general-font);
@@ -87,20 +90,28 @@
 }
 
 .img-sign{
-    width: 200%;
+    width: 60%;
 }
 
 .btn-login{
-    width: 150%;
-    height: 40px;
+    width: 100%; 
+    height: auto;
     border: none;
     border-radius: 15px;
-    margin-left: 150%;
     text-decoration: none;
     font-family: var(--general-font);
     background-color: var(--tool-background);
     color: var(--text-color-light);
+    font-size: 17px;
     cursor: pointer;
+    padding: 12.5px 30px;
+
+}
+
+.btn-container{
+    display: flex;
+    width: 53%;
+    justify-content: right;
 }
 
 @media screen and (max-width: 768px){
@@ -166,7 +177,6 @@
     }
 
     .h1-sign{
-        /* font-size: 20px; */
         margin: 0;
     }
 
