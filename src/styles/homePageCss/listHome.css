@@ -1,19 +1,15 @@
 .list-home {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    margin-left: 20px;
-    width: 96%;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    padding: 0% 10% 0% 10%;
     border-radius: 10cqh;
+    height: 65px;
     background-color: var(--white-background);
 }
 
 .icon-list-home {
-    width: 25%;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    margin-left: 100px;
-    margin-right: 100px;
+
     cursor: pointer;
 }

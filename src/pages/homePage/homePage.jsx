@@ -15,8 +15,10 @@ export const HomePage = () => {
             <div className="content-home">
                 <MessageHome />
                 <ListCardAccount />
-                <ActionsHome />
-                <ListRecentActivity />
+                <div className="content-action-history">
+                    <ActionsHome />
+                    <ListRecentActivity />
+                </div>
             </div>
         </>
     );

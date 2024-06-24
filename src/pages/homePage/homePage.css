@@ -5,3 +5,11 @@
 .content-home {  
     margin-left: 250px;
 }
+
+.content-action-history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+}

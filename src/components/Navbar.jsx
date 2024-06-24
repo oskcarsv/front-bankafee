@@ -14,6 +14,11 @@ export const Nav = () => {
       <h1 className="h1-nav">BankAfee</h1>
       <HamburgerMenu />
       <ul className="nav-landing-ul">
+      <li className="nav-landing-li">
+          <Link to="/requestAccount" className="nav-landing-link">
+            Request Account
+          </Link>
+        </li>
         <li className="nav-landing-li">
           <Link to="/aboutUs" className="nav-landing-link">
             {currentPath === "/aboutUs" ? (
