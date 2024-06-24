@@ -8,6 +8,7 @@ import { CAccountByUser } from "./pages/createAccount/cAccountByUser.jsx";
 import { EditUser } from "./pages/editUser/editUser.jsx";
 import { TransferUser } from "./pages/transferUser/transferUser.jsx";
 import { HistoryUser } from "./pages/historyUser/historyUser.jsx";
+import { DepositPage } from "./pages/deposit/depositPage.jsx";
 
 const routes = [
     { path: "/", element: <LandingPage /> },
@@ -19,7 +20,8 @@ const routes = [
     { path: "/cAccountByUser", element: <CAccountByUser /> },
     { path: "/editUser", element: <EditUser /> },
     { path: "/transferUser", element: <TransferUser /> },
-    { path: "/history", element: <HistoryUser />}
+    { path: "/history", element: <HistoryUser />},
+    { path: "/deposit", element: <DepositPage />}
 ];
 
 export default routes;
