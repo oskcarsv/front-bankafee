@@ -12,14 +12,14 @@ export const HomePage = () => {
             <div className="sidebar-home">
                 <Sidebar />
             </div>
-            <div className="content-home">
+            {/* <div className="content-home">
                 <MessageHome />
                 <ListCardAccount />
                 <div className="content-action-history">
                     <ActionsHome />
                     <ListRecentActivity />
                 </div>
-            </div>
+            </div> */}
         </>
     );
 };

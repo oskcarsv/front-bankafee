@@ -7,6 +7,7 @@ import createAccount from '../../assets/iconSidebar/createAccount.svg';
 import history from '../../assets/iconSidebar/history.svg';
 import logout from '../../assets/iconSidebar/logout.svg';
 import home from '../../assets/iconSidebar/home.svg';
+import { HamburgerMenuUser } from '../Hamburger-Menu-User';
 
 import '../../styles/homePageCss/sidebar.css'
 
@@ -16,12 +17,14 @@ export const Sidebar = () => {
 
     return (
         <div className="sidebar">
-            <div className='content-img-logo'>
-                <img src={logo} alt="img" className='img-sidebar-bankafee' />
+            <section className='content-img-logo'>
                 <div className='text-bankafee'>
+                    <img src={logo} alt="img" className='img-sidebar-bankafee' />
                     <h1 className='text-logo'>Bankafee</h1>
                 </div>
-            </div>
+                <HamburgerMenuUser />
+            </section>
+
             <section className='profile-container-all'>
                 <div className='content-info-profile'>
                     <img src={perfil} alt="img" className='img-perfil-sidebar' />
@@ -55,7 +58,6 @@ export const Sidebar = () => {
                     <button className="sidebar-menu-button-logout"><img src={logout} alt="img" className='img-sidebar-logout' /></button>
                 </Link>
             </div>
-
         </div>
     );
 };
