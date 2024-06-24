@@ -2,38 +2,27 @@ import '../../styles/homePageCss/recentActivity.css';
 
 export const ListRecentActivity = () => {
     return (
-        <div className="content-history">
-            <div className="title-activity">
-                <h1 className='title-activity-recent'>Recent Activity</h1>
+        <section className="table-homePage">
+            <div className="title-table-homePage">
+                <h1 className="title-recent-activity">Recent Activity</h1>
             </div>
-            <div className='item-activity'>
-                <div className="sub-title-activity">
-                    <h3>Deposit of:</h3>
-                    <h3>No. Account</h3>
-                    <h3>Date and time</h3>
-                </div>
-                <div className="info-activity">
-                    <p>GTQ 100.00 to Angel</p>
-                    <p>5124 02151 2121</p>
-                    <p>2024/05/10 - 5:55 pm</p>
-                </div>
+            <div className="content-history-homePage">
+                <table className="table-title-homepage">
+                    <tr className="recent-activity-title">
+                        <th className="title-principal-info">Deposit of</th>
+                        <th className="title-principal-info">No. Account</th>
+                        <th className="title-principal-info">Date and Time</th>
+                    </tr>
+                </table>
+                <table className="table-recent-activity-homepage">
+                    <tr className="recent-activity-info">
+                        <td className="info-recent-activity">GTQ 100.00 to Angel</td>
+                        <td className="info-recent-activity">54121 21020 1211</td>
+                        <td className="info-recent-activity">2024/12/25 - 5:55 pm</td>
+                    </tr>
+                </table>
             </div>
-            <div className='separator'>
-                <hr className='s' />
-            </div>
-            <div className='item-activity'>
-                <div className="sub-title-activity">
-                    <h3>Deposit of:</h3>
-                    <h3>No. Account</h3>
-                    <h3>Date and time</h3>
-                </div>
-                <div className="info-activity">
-                    <p>GTQ 100.00 to Angel</p>
-                    <p>5124 02151 2121</p>
-                    <p>2024/05/10 - 5:55 pm</p>
-                </div>
-            </div>
-        </div>
-
+            <hr />
+        </section>
     );
 };

@@ -1,0 +1,49 @@
+.content-table{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 95%;
+    border-radius: 5cqh;
+    background-color: var(--white-background);
+}
+
+.title-table{
+    margin-left: 25px;
+}
+
+.title-history{
+    font-size: 30px;
+}
+
+.content-info-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-content {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.table-header{
+    align-items: center;
+    justify-content: center;
+}
+
+.table-info{
+    font-size: 130%;
+}
+
+.table-body{
+    align-items: center;
+    justify-content: center; 
+}
+
+.info-table-body{
+    font-size: 120%;
+    text-align: center;
+}
+
+

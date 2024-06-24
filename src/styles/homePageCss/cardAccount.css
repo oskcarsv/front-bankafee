@@ -21,7 +21,9 @@
 }
 
 .card-account-info-title{
-    font-size: 20px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 .icon-myAccount{
@@ -30,10 +32,11 @@
 }
 
 .card-account-info-number{
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: 15px;
 }
 
 .card-account-info-amount{
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }

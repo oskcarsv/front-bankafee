@@ -8,7 +8,7 @@ export const FormEditUser = () => {
             <div className="info-form-edit-user">
                 <div className="title-form-edit-user">
                     <h1 className="title-edit-user">Edit User</h1>
-                </div>
+                </div> 
                 <div className="content-input-edit-user">
                     <form className="form-editUser">
                         <div className="input-together-edit">
