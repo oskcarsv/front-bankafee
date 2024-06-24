@@ -6,6 +6,7 @@
   border-radius: 10cqh 10cqh 0cqh 0cqh;
   background-color: #211c5c;
   color: #ffffff;
+  box-sizing: border-box;
 }
 
 .section-footer-1 {
