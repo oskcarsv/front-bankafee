@@ -3,33 +3,39 @@
     display: flex;
     justify-content: end;
     flex-direction: column;
+    color: var(--text-color);
 }
 
-.s{
+.s {
     margin: 0;
+    border: none;
+    height: 2px;
+    background-color: var(--text-color);
 }
 
 .message-title-home {
     font-size: 35px;
+    margin: 2% 0;
 }
 
-@media screen and (max-width: 768px) {
-    .message-home{
-        margin-right: 0;
-        margin-left: 0;
-    }
+.message-text-home {
+    font-size: 20px;
+    margin-left: 3%
+}
 
+
+@media screen and (max-width: 768px) {
     .message-title-home {
         display: none;
     }
 
-    .s{
+    .s {
         display: none;
     }
 
     .message-text-home {
         font-size: 20px;
         font-weight: 700;
-        color: var(--text-color); 
+        color: var(--text-color);
     }
 }
