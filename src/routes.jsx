@@ -11,21 +11,23 @@ import { HistoryUser } from "./pages/historyUser/historyUser.jsx";
 import { DepositPage } from "./pages/deposit/depositPage.jsx";
 import { CreateUser } from "./pages/createUser/createUser.jsx";
 import { ProductHomePage } from "./pages/productHomePage/productHomePage.jsx";
+import { ProductCategory } from "./pages/productCategory/productCategory.jsx";
 
 const routes = [
     { path: "/", element: <LandingPage /> },
     { path: "/aboutUs", element: <LandingPageAboutUs /> },
     { path: "/service", element: <LandingPageService /> },
-    { path: "/requestAccount", element: <RequestAccount />},
+    { path: "/requestAccount", element: <RequestAccount /> },
     { path: "/signIn", element: <LoginPage /> },
     { path: "/home", element: <HomePage /> },
     { path: "/cAccountByUser", element: <CAccountByUser /> },
     { path: "/editUser", element: <EditUser /> },
     { path: "/transferUser", element: <TransferUser /> },
-    { path: "/history", element: <HistoryUser />},
-    { path: "/deposit", element: <DepositPage />},
-    { path: "/createUser", element: <CreateUser />},
-    { path: "/productHomePage", element: <ProductHomePage />},
+    { path: "/history", element: <HistoryUser /> },
+    { path: "/deposit", element: <DepositPage /> },
+    { path: "/createUser", element: <CreateUser /> },
+    { path: "/productHomePage", element: <ProductHomePage /> },
+    { path: "/productCategory", element: <ProductCategory />}
 ];
 
 export default routes;
