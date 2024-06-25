@@ -9,6 +9,7 @@ import { EditUser } from "./pages/editUser/editUser.jsx";
 import { TransferUser } from "./pages/transferUser/transferUser.jsx";
 import { HistoryUser } from "./pages/historyUser/historyUser.jsx";
 import { DepositPage } from "./pages/deposit/depositPage.jsx";
+import { CreateUser } from "./pages/createUser/createUser.jsx";
 
 const routes = [
     { path: "/", element: <LandingPage /> },
@@ -21,7 +22,8 @@ const routes = [
     { path: "/editUser", element: <EditUser /> },
     { path: "/transferUser", element: <TransferUser /> },
     { path: "/history", element: <HistoryUser />},
-    { path: "/deposit", element: <DepositPage />}
+    { path: "/deposit", element: <DepositPage />},
+    { path: "/createUser", element: <CreateUser />}
 ];
 
 export default routes;
