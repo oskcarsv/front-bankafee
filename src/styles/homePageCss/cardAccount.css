@@ -1,6 +1,5 @@
 .card-account {
-    display: flex;
-    justify-content: center !important;
+    margin-bottom: 1%;
 }
 
 .card-account-info {
@@ -79,5 +78,5 @@
 }
 
 .slick-list{
-    padding: 1% !important;
+    padding: 0 1% 1% 1% !important;
 }
