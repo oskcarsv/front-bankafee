@@ -46,7 +46,7 @@ export const ListCardAccount = () => {
     return (
         <>
             <section className="card-account">
-                <Slider {...settings}>
+                <Slider {...settings} className='slider-container'>
                     <div className="card-account-info">
                         <div className='content-title'>
                             <p className='card-account-info-title'>Cuenta ahorro - Mi cuenta</p>
