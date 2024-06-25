@@ -1,42 +1,44 @@
 import { Link } from "react-router-dom";
 
+import '../../styles/createUser/createUser.css'
+
 export const FormCreateUser = () => {
     return ( 
-        <section>
-            <div>
-                <div>
-                    <h1>Create User</h1>
+        <section className="section-form-create-user">
+            <div className="content-form-create-user">
+                <div className="content-title-create">
+                    <h1 className="title-create">Create User</h1>
                 </div> 
-                <div>
-                    <form>
-                        <div>
-                            <input type="text" placeholder="Name" />
-                            <input type="text" placeholder="User Name" />
+                <div className="content-info-form">
+                    <form className="form-create-user">
+                        <div className="input-together-create">
+                            <input type="text" placeholder="Name" className="input-text-create-user"/>
+                            <input type="text" placeholder="User Name" className="input-text-create-user"/>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Password" />
+                        <div className="input-alone-create">
+                            <input type="text" placeholder="Password" className="input-text-alone"/>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Address" />
+                        <div className="input-alone-create">
+                            <input type="text" placeholder="Address" className="input-text-alone"/>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Email" />
-                            <input type="text" placeholder="Cel" />
+                        <div className="input-together-create">
+                            <input type="text" placeholder="Email" className="input-text-create-user"/>
+                            <input type="text" placeholder="Cel" className="input-text-create-user"/>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Workplace" />
+                        <div className="input-alone-create">
+                            <input type="text" placeholder="Workplace" className="input-text-alone"/>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Monthly Income" />
+                        <div className="input-alone-create">
+                            <input type="text" placeholder="Monthly Income" className="input-text-alone"/>
                         </div>
-                        <div>
-                            <input type="text" placeholder="type account" />
+                        <div className="input-alone-create">
+                            <input type="text" placeholder="type account" className="input-text-alone"/>
                         </div>
                     </form>
                 </div>
-                <div>
-                    <Link to="/home"><button>Create</button></Link>
-                    <Link to="/home"><button>Cancel</button></Link>
+                <div className="content-btn-create-user">
+                    <Link to="/home" className="link-btn-create-user"><button className="btn-create-user">Create</button></Link>
+                    <Link to="/home" className="link-btn-create-user"><button className="btn-cancel-create-user">Cancel</button></Link>
                 </div>
             </div>
         </section>
