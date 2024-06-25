@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 import logo from '../../assets/iconLanding/logo.svg';
 import perfil from '../../assets/iconSidebar/perfil.svg';
@@ -14,15 +15,28 @@ import '../../styles/homePageCss/sidebar.css'
 export const Sidebar = () => {
 
     const currentPath = window.location.pathname;
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 480);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <div className="sidebar">
             <section className='content-img-logo'>
-                <div className='text-bankafee'>
+                <div className='header-homepage'>
                     <img src={logo} alt="img" className='img-sidebar-bankafee' />
+                    {isMobile && <h2 className='title-mobile'>Welcome to BankAfee</h2>}
                     <h1 className='text-logo'>Bankafee</h1>
+                    <HamburgerMenuUser />
                 </div>
-                <HamburgerMenuUser />
             </section>
 
             <section className='profile-container-all'>
