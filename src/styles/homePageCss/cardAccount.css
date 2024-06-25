@@ -1,42 +1,53 @@
-.card-account{
+.card-account {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.card-account-info{
+.row-icon{
+    display: none;
+}
+
+.card-account-info {
     display: flex;
     flex-direction: column;
-    margin: 1% ;
+    margin: 1%;
     width: 29%;
     border-radius: 5cqh;
     background-color: var(--white-background);
 }
 
-.content-title{
+.content-title {
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.card-account-info-title{
+.card-account-info-title {
     font-size: 18px;
     margin-left: 15px;
     margin-top: 20px;
 }
 
-.icon-myAccount{
+.icon-myAccount {
     width: 11%;
     cursor: pointer;
 }
 
-.card-account-info-number{
+.card-account-info-number {
     font-size: 15px;
     margin-left: 15px;
 }
 
-.card-account-info-amount{
+.card-account-info-amount {
     text-align: center;
     font-size: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-account-info {
+        width: 100%;
+    }
 }
