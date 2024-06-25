@@ -1,20 +1,19 @@
 .card-account {
     display: flex;
-    margin: 0;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    margin: 0 0 1% 0;
+    justify-content: space-around;
 }
 
-.row-icon{
+.row-icon {
     display: none;
 }
 
 .card-account-info {
     display: flex;
     flex-direction: column;
-    margin: 1%;
+    margin: 1% 0;
     width: 29%;
-    border-radius: 5cqh;
+    border-radius: 2cqh;
     background-color: var(--white-background);
 }
 
@@ -46,8 +45,42 @@
     font-size: 35px;
 }
 
-@media screen and (max-width: 768px) {
-    .card-account-info {
-        width: 100%;
-    }
+/* Slider */
+
+.card-account .slick-slider {
+    width: 100%;
+    margin: 0;
+}
+
+.card-account-info-title,
+.card-account-info-number {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: var(--nav-background) !important;
+    font-size: 25px !important;   
+    opacity: 1 !important; 
+}
+
+.card-account-info-amount {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+}
+
+.slick-prev,
+.slick-next {
+    color: #000;
+    font-size: 20px;
+}
+
+.slick-dots li button:before {
+    color: #000;
+}
+
+.slick-dots{
+    
 }

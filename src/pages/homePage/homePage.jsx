@@ -10,15 +10,15 @@ export const HomePage = () => {
     return (
         <>
             <main className="main-container-home">
-                <section className="sidebar-container">
+                <nav className="sidebar-container">
                     <Sidebar />
-                </section>
-                <section className="home-page-container">
+                </nav>
+                <article className="home-page-container">
                     <MessageHome />
                     <ListCardAccount />
                     <ActionsHome />
                     <ListRecentActivity />
-                </section>
+                </article>
             </main>
         </>
     );
