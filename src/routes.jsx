@@ -10,6 +10,7 @@ import { TransferUser } from "./pages/transferUser/transferUser.jsx";
 import { HistoryUser } from "./pages/historyUser/historyUser.jsx";
 import { DepositPage } from "./pages/deposit/depositPage.jsx";
 import { CreateUser } from "./pages/createUser/createUser.jsx";
+import { ProductHomePage } from "./pages/productHomePage/productHomePage.jsx";
 
 const routes = [
     { path: "/", element: <LandingPage /> },
@@ -23,7 +24,8 @@ const routes = [
     { path: "/transferUser", element: <TransferUser /> },
     { path: "/history", element: <HistoryUser />},
     { path: "/deposit", element: <DepositPage />},
-    { path: "/createUser", element: <CreateUser />}
+    { path: "/createUser", element: <CreateUser />},
+    { path: "/productHomePage", element: <ProductHomePage />},
 ];
 
 export default routes;
