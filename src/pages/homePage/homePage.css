@@ -1,8 +1,12 @@
-.sidebar-home {
+/* .sidebar-home {
     position: absolute;
+    width: 15%;
+    height: 100%;
 }
 
 .content-home {  
+    width: 85%;
+    height: 100%;
     margin-left: 250px;
 }
 
@@ -12,4 +16,34 @@
     justify-content: center;
     width: 90%;
     margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+    .sidebar-home{
+        width: 100%;
+        height: auto;
+    }
+} */
+
+.main-container-home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+}
+
+.sidebar-container{
+    width: 15%;
+    height: 100%;
+
+}
+
+.home-page-container{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
 }

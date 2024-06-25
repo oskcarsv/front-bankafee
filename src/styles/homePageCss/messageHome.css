@@ -1,7 +1,12 @@
 .message-home {
+    width: 100%;
+    display: flex;
+    justify-content: end;
     flex-direction: column;
-    margin-right: 2%;
-    margin-left: 2%;
+}
+
+.s{
+    margin: 0;
 }
 
 .message-title-home {
@@ -9,5 +14,22 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+    .message-home{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .message-title-home {
+        display: none;
+    }
+
+    .s{
+        display: none;
+    }
+
+    .message-text-home {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text-color); 
+    }
 }

@@ -23,19 +23,21 @@
 }
 
 .content-img-logo {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
 
 
 .img-sidebar-bankafee {
-    height: 50%;
-    width: 28%;
+    width: 30%;
     margin-right: 5%;
 }
 
 .header-homepage {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,6 +191,7 @@
 
 @media screen and (max-width: 768px) {
     .sidebar {
+        position: static;
         width: 100%;
         height: 17%;
         display: flex;
@@ -215,6 +218,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-top: 0;
     }
 
     .header-homepage{

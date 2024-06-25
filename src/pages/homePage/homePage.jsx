@@ -9,17 +9,17 @@ import '../../pages/homePage/homePage.css';
 export const HomePage = () => {
     return (
         <>
-            <div className="sidebar-home">
-                <Sidebar />
-            </div>
-            {/* <div className="content-home">
-                <MessageHome />
-                <ListCardAccount />
-                <div className="content-action-history">
+            <main className="main-container-home">
+                <section className="sidebar-container">
+                    <Sidebar />
+                </section>
+                <section className="home-page-container">
+                    <MessageHome />
+                    <ListCardAccount />
                     <ActionsHome />
                     <ListRecentActivity />
-                </div>
-            </div> */}
+                </section>
+            </main>
         </>
     );
 };
