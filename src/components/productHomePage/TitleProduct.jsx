@@ -14,14 +14,16 @@ export const TitleProductHome = () => {
                     <h1 className="title-product-home">Category Home Page</h1>
                 )}
                 </div>
-                <div>
-                    <Link to="/home" className='link-back'>
-                        {currentPath === "/productHomePage" ? (
-                            <p className='text-back'>Home</p>
-                        ) : (
-                            <Link to="/productHomePage" className='link-back'><p className='text-back'>back</p></Link>
-                        )}
-                    </Link>
+                <div className='content-btn'>
+                    <button className='btn-back'>
+                        <Link to="/home" className='link-back'>
+                            {currentPath === "/productHomePage" ? (
+                                <p className='text-back'>Home</p>
+                            ) : (
+                                <Link to="/productHomePage" className='link-back'><p className='text-back'>back</p></Link>
+                            )}
+                        </Link>
+                    </button>
                 </div>
             </div>
             <hr className='s' />
