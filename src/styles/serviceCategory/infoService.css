@@ -1,0 +1,128 @@
+.section-info-service {
+    width: 100%;
+    height: 100%;
+}
+
+.content-name-service {
+    margin-left: 3%;
+}
+
+.service-name-user {
+    font-size: 30px;
+    font-family: var(--general-font);
+    color: var(--text-color);
+}
+
+.content-service-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon-img-service {
+    width: 500px;
+    height: 500px;
+}
+
+.content-info-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
+    background-color: var(--white-background);
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 15px;
+}
+
+.content-discount-service {
+    margin: 0;
+    text-align: center;
+}
+
+.discount-service {
+    font-size: 30px;
+    font-family: var(--general-font);
+    color: var(--text-color);
+    margin: auto;
+}
+
+.title-description-service {
+    font-size: 20px;
+    font-family: var(--general-font);
+    color: var(--text-color);
+}
+
+.info {
+    font-size: 20px;
+    font-family: var(--general-font);
+    color: var(--text-color);
+    margin: auto;
+}
+
+.form-service-discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.content-input-service {
+    width: 100%;
+    height: 100%;
+    margin: 3% 0% 3% 0%;
+    border-radius: 15px;
+    border: none;
+    font-size: 100%;
+    display: flex;
+}
+
+.input-service {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 2% 0% 2% 2%;
+    font-size: 100%;
+    outline: none;
+    border: var(--color-grey);
+    font-family: var(--general-font);
+    color: var(--text-color);
+    background: var(--tool-item-background);
+}
+
+.content-input-service {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.btn-discount {
+    width: 15vh;
+    height: 7vh;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: var(--general-font);
+    background-color: var(--tool-background);
+    color: var(--text-color-light);
+    cursor: pointer;
+}
+
+.btn-discount:hover {
+    background-color: var(--tool-background-hover);
+}
+
+.btn-discount-back {
+    width: 9vh;
+    height: 6vh;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: var(--general-font);
+    background-color: var(--tool-background);
+    color: var(--text-color-light);
+    cursor: pointer;
+}

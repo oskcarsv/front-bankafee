@@ -16,19 +16,19 @@ export const CategoryProduct = () => {
                         <p className='title-category'>Category Electrodomestic</p>
                     </div>
                 </Link>
-                <Link className='link-category'>
+                <Link to="/productCategory" className='link-category'>
                     <div className='card-category'>
                         <img src={categoryFood} alt="img" className='img-category' />
                         <p className='title-category'>Category Food</p>
                     </div>
                 </Link>
-                <Link className='link-category'>
+                <Link to="/productCategory" className='link-category'>
                     <div className='card-category'>
                         <img src={categoryCars} alt="img" className='img-category' />
                         <p className='title-category'> Category Cars</p>
                     </div>
                 </Link>
-                <Link className='link-category'>
+                <Link to="/productCategory" className='link-category'>
                     <div className='card-category'>
                         <img src={categoryCars} alt="img" className='img-category' />
                         <p className='title-category'> Category Cars</p>
