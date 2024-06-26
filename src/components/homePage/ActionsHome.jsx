@@ -17,7 +17,7 @@ export const ActionsHome = () => {
                 <Link to="/productHomePage"><img src={productIcon} alt="icon" className="icon-list-home" /></Link>
             </div>
             <div className="icon-list-utilities-home">
-                <Link to="/"><img src={servicesIcon} alt="icon" className="icon-list-home" /></Link>
+                <Link to="/serviceHomePage"><img src={servicesIcon} alt="icon" className="icon-list-home" /></Link>
             </div>
             <div className="icon-list-utilities-home">
                 <Link to="/"><img src={favoritesIcon} alt="icon" className="icon-list-home" /></Link>
