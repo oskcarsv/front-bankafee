@@ -8,30 +8,30 @@ export const ProductCategoryAll = () => {
     return (
         <section className='section-product-category'>
             <div className='content-product-category'>
-                <Link className='link-category'>
+                <Link to="/purchaseForm" className='link-category'>
                     <div className='card-product'>
-                        <img src={computadora} alt="img" className='img-product'/>
+                        <img src={computadora} alt="img" className='img-product-category' />
                         <p className='text-info-product'>Laptop Huawei Core i5, 13", 16GB RAM, 512GB SSD</p>
                         <p className='text-info-product'>Q 16,999.00</p>
                     </div>
                 </Link>
-                <Link className='link-category'>
+                <Link to="/purchaseForm" className='link-category'>
                     <div className='card-product'>
-                        <img src={computadora} alt="img" className='img-product'/>
+                        <img src={computadora} alt="img" className='img-product-category' />
                         <p className='text-info-product'>Laptop Huawei Core i5, 13", 16GB RAM, 512GB SSD</p>
                         <p className='text-info-product'>Q 16,999.00</p>
                     </div>
                 </Link>
-                <Link className='link-category'>
+                <Link to="/purchaseForm" className='link-category'>
                     <div className='card-product'>
-                        <img src={computadora} alt="img" className='img-product'/>
+                        <img src={computadora} alt="img" className='img-product-category' />
                         <p className='text-info-product'>Laptop Huawei Core i5, 13", 16GB RAM, 512GB SSD</p>
                         <p className='text-info-product'>Q 16,999.00</p>
                     </div>
                 </Link>
-                <Link className='link-category'>
+                <Link to="/purchaseForm" className='link-category'>
                     <div className='card-product'>
-                        <img src={computadora} alt="img" className='img-product'/>
+                        <img src={computadora} alt="img" className='img-product-category' />
                         <p className='text-info-product'>Laptop Huawei Core i5, 13", 16GB RAM, 512GB SSD</p>
                         <p className='text-info-product'>Q 16,999.00</p>
                     </div>
