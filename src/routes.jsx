@@ -12,6 +12,7 @@ import { DepositPage } from "./pages/deposit/depositPage.jsx";
 import { CreateUser } from "./pages/createUser/createUser.jsx";
 import { ProductHomePage } from "./pages/productHomePage/productHomePage.jsx";
 import { ProductCategory } from "./pages/productCategory/productCategory.jsx";
+import { PurchaseForm } from "./pages/purchaseForm/purchaseForm.jsx";
 
 const routes = [
     { path: "/", element: <LandingPage /> },
@@ -27,7 +28,8 @@ const routes = [
     { path: "/deposit", element: <DepositPage /> },
     { path: "/createUser", element: <CreateUser /> },
     { path: "/productHomePage", element: <ProductHomePage /> },
-    { path: "/productCategory", element: <ProductCategory />}
+    { path: "/productCategory", element: <ProductCategory /> },
+    { path: "/purchaseForm", element: <PurchaseForm />}
 ];
 
 export default routes;
