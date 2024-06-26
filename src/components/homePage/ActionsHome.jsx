@@ -20,7 +20,7 @@ export const ActionsHome = () => {
                 <Link to="/serviceHomePage"><img src={servicesIcon} alt="icon" className="icon-list-home" /></Link>
             </div>
             <div className="icon-list-utilities-home">
-                <Link to="/"><img src={favoritesIcon} alt="icon" className="icon-list-home" /></Link>
+                <Link to="/favorites"><img src={favoritesIcon} alt="icon" className="icon-list-home" /></Link>
             </div>
         </div>
     );
