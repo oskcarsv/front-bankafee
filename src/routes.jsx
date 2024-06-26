@@ -16,6 +16,7 @@ import { PurchaseForm } from "./pages/purchaseForm/purchaseForm.jsx";
 import { ServiceHomePage } from "./pages/serviceHomePage/serviceHomePage.jsx";
 import { ServiceCategory } from "./pages/serviceCategory/serviceCategory.jsx";
 import { FavoritesPage } from "./pages/favoritesUser/favoritesPage.jsx";
+import { HistoryTransfer } from "./pages/historyTransfer/historyTransfer.jsx";
 
 const routes = [
     { path: "/", element: <LandingPage /> },
@@ -36,6 +37,7 @@ const routes = [
     { path: "/serviceHomePage", element: <ServiceHomePage /> },
     { path: "/serviceCategory", element: <ServiceCategory /> },
     { path: "/favorites", element: <FavoritesPage />},
+    { path: "/historyTransfer", element: <HistoryTransfer />}
 ];
 
 export default routes;
