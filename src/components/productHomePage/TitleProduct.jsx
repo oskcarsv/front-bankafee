@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 
+import homeMessage from '../../assets/iconSidebar/homeMessage.svg';
+import goBack from '../../assets/iconSidebar/goBack.svg';
+
 import '../../styles/productHomePage/titleProduct.css';
 
 export const TitleProductHome = () => {
@@ -18,9 +21,9 @@ export const TitleProductHome = () => {
                     <button className='btn-back'>
                         <Link to="/home" className='link-back'>
                             {currentPath === "/productHomePage" ? (
-                                <p className='text-back'>Home</p>
+                                <img src={homeMessage} alt="" />
                             ) : (
-                                <Link to="/productHomePage" className='link-back'><p className='text-back'>back</p></Link>
+                                <Link to="/productHomePage" className='link-back'><img src={goBack} alt="" /></Link>
                             )}
                         </Link>
                     </button>
