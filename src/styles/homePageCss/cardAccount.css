@@ -54,11 +54,12 @@
     margin: 10px 0;
 }
 
-.slick-prev:before, .slick-next:before{
+.slick-prev:before,
+.slick-next:before {
     color: var(--nav-background) !important;
-    font-size: 25px !important;   
+    font-size: 25px !important;
     opacity: 1 !important;
-    
+
 }
 
 .card-account-info-amount {
@@ -77,6 +78,32 @@
     color: #000;
 }
 
-.slick-list{
+.slick-list {
     padding: 0 1% 1% 1% !important;
+}
+
+@media (max-width: 768px) {
+    .card-account {
+        margin-bottom: 8%;
+    }
+
+    .card-account-info-title {
+        font-size: 100%;
+    }
+
+    .card-account-info-number {
+        font-size: 100%;
+    }
+
+    .card-account-info-amount {
+        font-size: 120%;
+    }
+
+    .icon-myAccount {
+        width: 13%;
+    }
+
+    .slick-list {
+        padding: 0 1% 1% 4% !important;
+    }
 }
