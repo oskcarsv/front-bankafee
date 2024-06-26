@@ -58,6 +58,52 @@
 }
 
 .info-recent-activity {
-    font-size: 120%;
+    font-size: 110%;
     text-align: center;
+    display: table-cell;
+    /* font-size: 14px; */
+    padding: 5px;
+    border-bottom: 2px solid #9c9b9b;
+}
+
+.icon-transfer-container {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .table-homePage {
+        width: 100%;
+        border-radius: 3cqh;
+        margin: 0 0 5% 0;
+    }
+
+    .table-recent-activity-homepage {
+        width: 90%;
+    }
+
+    .title-recent-activity {
+        font-size: 20px;
+    }
+
+    .recent-activity-title {
+        /* display: none; */
+        font-size: 70%;
+    }
+
+    .recent-activity-info {
+        font-size: 70%;
+        height: 50px;
+    }
+
+    .info-recent-activity {
+        font-size: 100%;
+    }
+
+    .noAccount{
+        display: none;
+    }
+    
+    .content-history-homePage{
+        margin-bottom: 8%;
+    }
 }

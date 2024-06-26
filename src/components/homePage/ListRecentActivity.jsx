@@ -1,3 +1,4 @@
+import TransferIcon from '../../assets/iconHomePage/TransferIcon.svg';
 import '../../styles/homePageCss/recentActivity.css';
 
 export const ListRecentActivity = () => {
@@ -11,34 +12,49 @@ export const ListRecentActivity = () => {
                     <thead className='recent-activity-title'>
                         <tr>
                             <th>Deposit of</th>
-                            <th>No. Account</th>
+                            <th className='noAccount'>No. Account</th>
                             <th>Date and Time</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className='recent-activity-info'>
+                            <td className='icon-transfer-container'>
+                                <img src={TransferIcon} alt='Transfer Icon' className='transfer-icon' />
+                            </td>
                             <td className='info-recent-activity'>GTQ 100.00 to Angel</td>
-                            <td className='info-recent-activity'>54121 21020 1211</td>
+                            <td className='info-recent-activity noAccount'>54121 21020 1211</td>
                             <td className='info-recent-activity'>2024/12/25 - 5:55 pm</td>
                         </tr>
                         <tr className='recent-activity-info'>
+                            <td className='icon-transfer-container'>
+                                <img src={TransferIcon} alt='Transfer Icon' className='transfer-icon' />
+                            </td>
                             <td className='info-recent-activity'>GTQ 100.00 to Angel</td>
-                            <td className='info-recent-activity'>54121 21020 1211</td>
+                            <td className='info-recent-activity noAccount'>54121 21020 1211</td>
                             <td className='info-recent-activity'>2024/12/25 - 5:55 pm</td>
                         </tr>
                         <tr className='recent-activity-info'>
+                            <td className='icon-transfer-container'>
+                                <img src={TransferIcon} alt='Transfer Icon' className='transfer-icon' />
+                            </td>
                             <td className='info-recent-activity'>GTQ 100.00 to Angel</td>
-                            <td className='info-recent-activity'>54121 21020 1211</td>
+                            <td className='info-recent-activity noAccount'>54121 21020 1211</td>
                             <td className='info-recent-activity'>2024/12/25 - 5:55 pm</td>
                         </tr>
                         <tr className='recent-activity-info'>
+                            <td className='icon-transfer-container'>
+                                <img src={TransferIcon} alt='Transfer Icon' className='transfer-icon' />
+                            </td>
                             <td className='info-recent-activity'>GTQ 100.00 to Angel</td>
-                            <td className='info-recent-activity'>54121 21020 1211</td>
+                            <td className='info-recent-activity noAccount'>54121 21020 1211</td>
                             <td className='info-recent-activity'>2024/12/25 - 5:55 pm</td>
                         </tr>
                         <tr className='recent-activity-info'>
+                            <td className='icon-transfer-container'>
+                                <img src={TransferIcon} alt='Transfer Icon' className='transfer-icon' />
+                            </td>
                             <td className='info-recent-activity'>GTQ 100.00 to Angel</td>
-                            <td className='info-recent-activity'>54121 21020 1211</td>
+                            <td className='info-recent-activity noAccount'>54121 21020 1211</td>
                             <td className='info-recent-activity'>2024/12/25 - 5:55 pm</td>
                         </tr>
                     </tbody>
