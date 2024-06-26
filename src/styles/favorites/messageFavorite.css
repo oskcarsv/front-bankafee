@@ -1,0 +1,19 @@
+.message-favorite{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.message-title-favorite{
+    font-size: 35px;
+    margin: 2% 0;
+}
+
+.s{
+    margin: 0;
+    border: none;
+    height: 2px;
+    background-color: var(--text-color);
+}
