@@ -14,3 +14,15 @@
 .icon-list-home {
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .list-home {
+        height: 50px;
+        padding: 0% 5% 0% 5%;
+        margin-bottom: 3.5%;
+    }
+
+    .icon-list-home{
+        width: 30px;    
+    }
+}
