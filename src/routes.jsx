@@ -13,6 +13,8 @@ import { CreateUser } from "./pages/createUser/createUser.jsx";
 import { ProductHomePage } from "./pages/productHomePage/productHomePage.jsx";
 import { ProductCategory } from "./pages/productCategory/productCategory.jsx";
 import { PurchaseForm } from "./pages/purchaseForm/purchaseForm.jsx";
+import { ServiceHomePage } from "./pages/serviceHomePage/serviceHomePage.jsx";
+import { ServiceCategory } from "./pages/serviceCategory/serviceCategory.jsx";
 
 const routes = [
     { path: "/", element: <LandingPage /> },
@@ -29,7 +31,9 @@ const routes = [
     { path: "/createUser", element: <CreateUser /> },
     { path: "/productHomePage", element: <ProductHomePage /> },
     { path: "/productCategory", element: <ProductCategory /> },
-    { path: "/purchaseForm", element: <PurchaseForm />}
+    { path: "/purchaseForm", element: <PurchaseForm /> },
+    { path: "/serviceHomePage", element: <ServiceHomePage /> },
+    { path: "/serviceCategory", element: <ServiceCategory /> },
 ];
 
 export default routes;
