@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 import logo from '../../assets/iconLanding/logo.svg';
 import perfil from '../../assets/iconSidebar/perfil.svg';
@@ -7,21 +8,37 @@ import createAccount from '../../assets/iconSidebar/createAccount.svg';
 import history from '../../assets/iconSidebar/history.svg';
 import logout from '../../assets/iconSidebar/logout.svg';
 import home from '../../assets/iconSidebar/home.svg';
+import { HamburgerMenuUser } from '../Hamburger-Menu-User';
 
 import '../../styles/homePageCss/sidebar.css'
 
 export const Sidebar = () => {
 
     const currentPath = window.location.pathname;
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 480);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <div className="sidebar">
-            <div className='content-img-logo'>
-                <img src={logo} alt="img" className='img-sidebar-bankafee' />
-                <div className='text-bankafee'>
+            <section className='content-img-logo'>
+                <div className='header-homepage'>
+                    <img src={logo} alt="img" className='img-sidebar-bankafee' />
+                    {isMobile && <h2 className='title-mobile'>Welcome to BankAfee</h2>}
                     <h1 className='text-logo'>Bankafee</h1>
+                    <HamburgerMenuUser />
                 </div>
-            </div>
+            </section>
+
             <section className='profile-container-all'>
                 <div className='content-info-profile'>
                     <img src={perfil} alt="img" className='img-perfil-sidebar' />
@@ -55,7 +72,6 @@ export const Sidebar = () => {
                     <button className="sidebar-menu-button-logout"><img src={logout} alt="img" className='img-sidebar-logout' /></button>
                 </Link>
             </div>
-
         </div>
     );
 };

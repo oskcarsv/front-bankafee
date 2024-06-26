@@ -36,9 +36,11 @@ export const MenuMobile = ({ onClose }) => {
         onClick={handleCancelClick}
       />
       <ul className="menu-mobile-ul">
-        <li className="menu-mobile-li">
-          <img src={signInIcon} alt="Sign In Icon" className="sign-in-icon" />
-          <p className="menu-mobile-p">Sign In</p>
+        <li>
+          <Link to="/signIn" className="menu-mobile-li">
+            <img src={signInIcon} alt="Sign In Icon" className="sign-in-icon" />
+            <p className="menu-mobile-p">Sign In</p>
+          </Link>
         </li>
         {currentPath === "/service" ? (
           <>
