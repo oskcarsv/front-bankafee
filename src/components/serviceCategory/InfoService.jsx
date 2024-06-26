@@ -33,7 +33,7 @@ export const InfoService = () => {
                             <button className='btn-discount'>see discount</button>
                         </div>
                         <div className='content-input-service'>
-                            <Link to="/productCategory"><button className='btn-discount-back'>Back</button></Link>
+                            <Link to="/serviceCategory"><button className='btn-discount-back'>Back</button></Link>
                         </div>
                     </form>
                 </div>
