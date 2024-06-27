@@ -2,24 +2,30 @@
     position: fixed;
     display: flex;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
     width: 45%;
+    height: 100%;
     background-color: var(--nav-background);
     color: var(--text-color-light);
-}
-
-.content-logo-slide{
-    margin-left: 20%;
-}
-
-.content-info-slide{
-    margin-left: 3%;
+    font-family: var(--general-font);
 }
 
 .img-logo-slide{
-    width: 130px;
+    width: 30%;
+}
+
+.info-title{
+    margin-left: 5%; 
+}
+
+.title-slide{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
 .title-slogan{
-    font-size: 140%;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 0 0 10% 0;
 }

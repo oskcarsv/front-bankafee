@@ -10,7 +10,7 @@ export const CAccountByUser = () => {
                 <FormCAccount />
             </section>
             <section className="slide-account-container">
-                {/* <Slide /> */}
+                <Slide />
             </section>
         </main>
     );
