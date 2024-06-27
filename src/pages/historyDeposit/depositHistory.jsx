@@ -1,5 +1,6 @@
 import { Sidebar } from "../../components/homePage/Sidebar";
 import { MessageAllHistory } from "../../components/historyTransfer/MessageAllHistory";
+import { HistoryDeposit } from "../../components/historyDeposit/HistoryDeposit";
 
 import '../../pages/historyDeposit/depositHistory.css';
 
@@ -13,6 +14,7 @@ export const DepositHistory = () => {
                 </nav>
                 <article className="container-info-history-deposit">
                     <MessageAllHistory />
+                    <HistoryDeposit />
                 </article>
             </main>
         </>

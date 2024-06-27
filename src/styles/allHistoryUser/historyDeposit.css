@@ -1,0 +1,53 @@
+.table-deposit-user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--white-background);
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.content-title-deposit-history {
+    margin-left: 30px;
+}
+
+.title-deposit-history {
+    font-size: 28px;
+}
+
+.content-deposit-table {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.table-deposit-list {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.titles-list-info-deposit {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-deposit-list {
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    font-size: 110%;
+}
+
+.deposit-info-list {
+    font-size: 110%;
+    text-align: center;
+    display: table-cell;
+    padding: 5px;
+    border-bottom: 2px solid #9c9b9b;
+}
