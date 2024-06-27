@@ -50,7 +50,10 @@ export const Sidebar = () => {
                 </div>
                 <div className="content-sidebar-menu-btn">
                     <Link to="/cAccountByUser" className='btn-home-sidebar'>
-                        <button className="sidebar-menu-button">Create <img src={createAccount} alt="icon" className='icon-create-account' /></button>
+                        <button className="sidebar-menu-button">
+                            Create
+                            <img src={createAccount} alt="icon" className='icon-create-account' />
+                        </button>
                     </Link>
                     <Link to="/history" className='btn-home-sidebar'>
                         {currentPath === "/history" ?

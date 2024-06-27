@@ -19,6 +19,7 @@ import { FavoritesPage } from "./pages/favoritesUser/favoritesPage.jsx";
 import { HistoryTransfer } from "./pages/historyTransfer/historyTransfer.jsx";
 import { DepositHistory } from "./pages/historyDeposit/depositHistory.jsx";
 import {HistoryCredit} from "./pages/historyCredit/historyCredit.jsx";
+import {HomePageAdmin} from "./pages/homePageAdmin/homePageAdmin.jsx";
 
 const routes = [
     { path: "/", element: <LandingPage /> },
@@ -41,7 +42,8 @@ const routes = [
     { path: "/favorites", element: <FavoritesPage /> },
     { path: "/historyTransfer", element: <HistoryTransfer /> },
     { path: "/historyDeposit", element: <DepositHistory /> },
-    { path: "/historyCredit", element: <HistoryCredit />}
+    { path: "/historyCredit", element: <HistoryCredit />},
+    { path: "/homeAdmin", element: <HomePageAdmin />}
 ];
 
 export default routes;
