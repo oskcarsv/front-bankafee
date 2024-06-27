@@ -1,6 +1,7 @@
 import { SidebarAdmin } from '../../components/SidebarAdmin';
 import { MessageAdmin } from '../../components/homePageAdmin/MessageAdmin';
 import { ActionsAdmin } from '../../components/homePageAdmin/ActionAdmin';
+import { ListApproval } from '../../components/homePageAdmin/ListApproval';
 
 import '../../pages/homePageAdmin/homePageAdmin.css';
 
@@ -14,8 +15,7 @@ export const HomePageAdmin = () => {
                 <article className="admin-home-page-container">
                     <MessageAdmin />
                     <ActionsAdmin />
-                    {/* <ActionsHomeAdmin /> */}
-                    {/* <ListRecentActivityAdmin /> */}
+                    <ListApproval />
                 </article>
             </main>
         </>
