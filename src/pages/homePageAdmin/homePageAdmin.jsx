@@ -1,5 +1,6 @@
 import { SidebarAdmin } from '../../components/SidebarAdmin';
 import { MessageAdmin } from '../../components/homePageAdmin/MessageAdmin';
+import { ActionsAdmin } from '../../components/homePageAdmin/ActionAdmin';
 
 import '../../pages/homePageAdmin/homePageAdmin.css';
 
@@ -12,7 +13,7 @@ export const HomePageAdmin = () => {
                 </nav>
                 <article className="admin-home-page-container">
                     <MessageAdmin />
-                    {/* <ListCardAccountAdmin /> */}
+                    <ActionsAdmin />
                     {/* <ActionsHomeAdmin /> */}
                     {/* <ListRecentActivityAdmin /> */}
                 </article>
