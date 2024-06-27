@@ -20,7 +20,7 @@ export const ListHistoryUser = () => {
                 </Link>
             </div>
             <div className='card-history-all'>
-                <Link to="/home" className='link-history-transfer'>
+                <Link to="/historyCredit" className='link-history-transfer'>
                     <img src={historyAll} alt="icon" className='icon-history-list' />
                     <p className='title-list-card-history'>Pending credit history</p>
                 </Link>
