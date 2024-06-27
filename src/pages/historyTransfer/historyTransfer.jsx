@@ -1,6 +1,6 @@
 import { Sidebar } from "../../components/homePage/Sidebar";
 import { MessageAllHistory } from "../../components/historyTransfer/MessageAllHistory";
-
+import { HistoryTransferList } from "../../components/historyTransfer/HistoryTransferList";
 import '../../pages/historyTransfer/historyTransfer.css';
 
 export const HistoryTransfer = () => {
@@ -12,6 +12,7 @@ export const HistoryTransfer = () => {
                 </nav>
                 <article className='container-info-history-transfer'>
                     <MessageAllHistory />
+                    <HistoryTransferList />
                 </article>
             </main>
         </>
