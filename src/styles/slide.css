@@ -29,3 +29,31 @@
     font-weight: lighter;
     margin: 0 0 10% 0;
 }
+
+@media screen and (max-width: 768px){
+    .content-slide{
+        width: 100%;
+        height: 17%;
+        justify-content: center;
+        
+    }
+
+    .img-logo-slide{
+        width: 20%;
+        margin-right: 3%;
+    }
+
+    .info-title{
+        height: auto;
+        margin: 0;
+    }
+
+    .title-slide{
+        font-size: 2rem;
+        margin-top: 2%;
+    }
+
+    .title-slogan{
+        font-size: 1rem;
+    }
+}
