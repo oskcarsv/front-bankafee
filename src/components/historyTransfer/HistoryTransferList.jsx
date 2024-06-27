@@ -5,7 +5,7 @@ export const HistoryTransferList = () => {
         <section className="table-transfer-user">
             <div className="content-title-transfer-history">
                 <h1 className="title-transfer-history">
-                    Recent Activity
+                    Recent Activity Transfer
                 </h1>
             </div>
             <div className="content-transfer-table">
