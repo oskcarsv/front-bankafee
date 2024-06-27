@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     height: 100vh;
-    margin-left: 10%;
     width: 45%;
     background-color: var(--nav-background);
     color: var(--text-color-light);
