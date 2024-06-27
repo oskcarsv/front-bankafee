@@ -1,4 +1,4 @@
-.message-favorite{
+.section-message-all-history {
     width: 100%;
     display: flex;
     justify-content: end;
@@ -7,17 +7,17 @@
     margin-top: 3%;
 }
 
-.titles-container-favorites{
+.titles-container-history {
     display: flex;
     justify-content: space-between;
 }
 
-.message-title-favorite{
+.title-history-transfer{
     font-size: 35px;
     margin: 2% 0;
 }
 
-.container-btn-back-favorites{
+.container-goBack-btn{
     display: flex;
     align-items: center;
 }
@@ -39,6 +39,7 @@
 .s{
     margin: 0;
     border: none;
-    height: 2px;
+    height: 3px;
+    border-radius: 5px;
     background-color: var(--text-color);
 }

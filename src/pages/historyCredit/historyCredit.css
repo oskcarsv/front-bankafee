@@ -1,16 +1,16 @@
-.main-container-history-by-user{
+.main-container-credit {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: auto;
 }
 
-.sidebar-history {
+.sidebar-container {
     width: 15%;
     height: auto;
 }
 
-.content-history-view {  
+.container-info-history-credit {
     width: 80%;
     height: 100%;
     display: flex;

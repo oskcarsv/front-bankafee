@@ -8,19 +8,19 @@ export const ListHistoryUser = () => {
     return (
         <div className='content-list-history'>
             <div className='card-history-all'>
-                <Link to="/home" className='link-history-transfer'>
+                <Link to="/historyTransfer" className='link-history-transfer'>
                     <img src={historyAll} alt="icon" className='icon-history-list' />
                     <p className='title-list-card-history'>Pending transfer history</p>
                 </Link>
             </div>
             <div className='card-history-all'>
-                <Link to="/home" className='link-history-transfer'>
+                <Link to="/historyDeposit" className='link-history-transfer'>
                     <img src={historyAll} alt="icon" className='icon-history-list' />
                     <p className='title-list-card-history'>Pending deposit history</p>
                 </Link>
             </div>
             <div className='card-history-all'>
-                <Link to="/home" className='link-history-transfer'>
+                <Link to="/historyCredit" className='link-history-transfer'>
                     <img src={historyAll} alt="icon" className='icon-history-list' />
                     <p className='title-list-card-history'>Pending credit history</p>
                 </Link>
