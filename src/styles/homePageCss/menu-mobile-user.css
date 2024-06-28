@@ -1,49 +1,67 @@
-.no-scroll {
-    overflow: hidden;
+.add-icon{
+    margin-bottom: 10%;
 }
 
-.menu-mobile-user {
+.history-icon{
+    margin-bottom: 20%;
+}
+
+.createAccount{
+    margin-bottom: 25%;
+}
+
+.profile-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: var(--general-font);
-    color: var(--text-color-light);
-    position: fixed;
-    top: 0;
-    left: 0;
+    margin-bottom: 15%;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(180deg, #211c5c 31%, #463bc2 100%);
-    z-index: 1000;
-    padding-left: 1px;
-    padding-bottom: 1px;
 }
 
-@keyframes slideIn {
-    0% {
-        transform: translateY(100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+.home-menu-mobile-li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: auto;
 }
 
-.menu-mobile-user {
-    animation: slideIn 0.5s ease-in-out;
+.home-menu-mobile-profile{
+    width: 50%;
 }
 
-@keyframes slideOut {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(100%);
-    }
+.home-name-profile{
+    margin-bottom: 0;
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: medium;
 }
 
-.menu-mobile-user.slide-out {
-    animation: slideOut 0.5s ease-in-out forwards;
+.home-email-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
+
+.home-email-profile{
+    margin: 0 0 0 10%;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.link-eddit-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+}
+
+.eddit-icon{
+    width: 20px;
+}
+
