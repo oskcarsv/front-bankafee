@@ -27,12 +27,12 @@ export const FormCAccount = () => {
                 </div>
             </form>
             <section className="container-btn-account">
-                <div className="btn-container">
+                <div className="btn-container-cAccount">
                     <Link to="/home" className="link-btn-caccount">
                         <button className="btn-account cancel">Cancel</button>
                     </Link>
                 </div>
-                <div className="btn-container">
+                <div className="btn-container-cAccount">
                     <Link to="/home" className="link-btn-caccount">
                         <button className="btn-account">Create</button>
                     </Link>

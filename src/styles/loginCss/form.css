@@ -81,12 +81,16 @@
     width: 50%;
     height: 40px;
     border-radius: 8px;
-    padding: 0 0 0 3%;
+    padding: 2%;
     outline: none;
     border: var(--color-grey);
     font-family: var(--general-font);
     color: var(--text-color);
     background-color: var(--tool-item-background);
+}
+
+.input-login::placeholder{
+    font-size: larger;
 }
 
 .img-sign{
@@ -165,7 +169,7 @@
     }
 
     .content-form{
-        margin-top: 20%;
+        margin-top: 10%;
         width: 100%;
     }
 

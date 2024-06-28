@@ -128,7 +128,7 @@
     align-items: center;
 }
 
-.btn-container {
+.btn-container-cAccount {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,4 +162,92 @@
 
 .cancel{
     background-color: var(--color-red);
+}
+
+@media screen and (max-width: 768px){
+    .info-form-caccount-user{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img-caccount{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-cAccount-user{
+        width: 60%;
+    }
+
+    .title-create-account{
+        font-size: 150%;
+        margin: 5% 0 15% 0;
+    }
+
+    .form-caccount-user{
+        width: 85%;
+    }
+
+    .input-text-create-account{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom: 3%;
+    }
+
+    .input-text{
+        border-radius: 10px;
+        padding: 3% 5%;
+    }
+
+    .content-input-dpi{
+        width: 98%;
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom: 3%;
+    }
+
+    .input-text-dpi{
+        border-radius: 10px;
+        padding: 3% 5%;
+    }
+
+    .box-select-container{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom: 3%;
+    }
+
+    .box-select{
+        border-radius: 10px;
+        padding: 3% 3% 3% 3%;
+    }
+
+    .input-text::placeholder{
+        font-size: 90%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .btn-container-cAccount{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-btn-account{
+        width: 60%;
+        height: 9%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-account{
+        font-size: 100%;
+        border-radius: 7px;
+    }
+
 }
