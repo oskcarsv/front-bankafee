@@ -1,201 +1,197 @@
-.main-content{
+.main-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--tool-item-background);
+  font-family: var(--general-font);
+}
+
+.content-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 52%;
+  background: var(--nav-background);
+  font-family: var(--general-font);
+  color: var(--text-color-light);
+}
+
+.content-login-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.img-login {
+  margin-left: 15%;
+  height: 150px;
+}
+
+.content-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.h1-login {
+  font-size: 50px;
+  margin-left: 5%;
+  margin-bottom: 0%;
+  font-family: var(--general-font);
+}
+
+.h2-login {
+  font-size: 20px;
+  margin: 0% 0% 5% 5%;
+  font-family: var(--general-font);
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48%;
+  height: 100%;
+}
+
+.form-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: auto;
+}
+
+.h1-sign {
+  width: 53%;
+}
+
+.h1-sign h1 {
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 4% 0 0 0;
+  font-family: var(--general-font);
+}
+
+.input-login {
+  width: 50%;
+  height: 40px;
+  border-radius: 8px;
+  padding: 2%;
+  outline: none;
+  border: var(--color-grey);
+  font-family: var(--general-font);
+  color: var(--text-color);
+  background-color: var(--tool-item-background);
+}
+
+.input-login::placeholder {
+  font-size: larger;
+}
+
+.img-sign {
+  width: 60%;
+}
+
+.btn-login {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  font-family: var(--general-font);
+  background-color: var(--tool-background);
+  color: var(--text-color-light);
+  font-size: 17px;
+  cursor: pointer;
+  padding: 12.5px 30px;
+}
+
+.btn-container {
+  display: flex;
+  width: 53%;
+  justify-content: right;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
     display: flex;
-    align-items: center;
-    height: 100%;
+    flex-direction: column;
     width: 100%;
-    background-color: var(--tool-item-background);
-    font-family: var(--general-font);
-
-}
-
-.content-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    width: 52%;
-    background: var(--nav-background);
-    font-family: var(--general-font);
-    color: var(--text-color-light);
-}
-
-
-.content-login-logo{
-    display: flex;
-    justify-content: center;
-}
-
-.img-login{
-    margin-left: 15%;
-    height: 150px;
-}
-
-.content-info{
-    display: flex;
-    flex-direction: column;
-}
-
-.h1-login{
-    font-size: 50px;
-    margin-left: 5% ;
-    margin-bottom: 0%;
-    font-family: var(--general-font);
-}
-
-.h2-login{
-    font-size: 20px;
-    margin: 0% 0% 5% 5% ;
-    font-family: var(--general-font);
-}
-
-.content-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 48%;
-    height: 100%;
-}
-
-.form-login{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    width: auto;
-}
-
-.h1-sign{
-    width: 53%;
-}
-
-.h1-sign h1{
-    font-size: 30px;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 4% 0 0 0;
-    font-family: var(--general-font);
-}
-
-.input-login{
-    width: 50%;
-    height: 40px;
-    border-radius: 8px;
-    padding: 2%;
-    outline: none;
-    border: var(--color-grey);
-    font-family: var(--general-font);
-    color: var(--text-color);
-    background-color: var(--tool-item-background);
-}
-
-.input-login::placeholder{
-    font-size: larger;
-}
-
-.img-sign{
-    width: 60%;
-}
-
-.btn-login{
-    width: 100%; 
     height: auto;
-    border: none;
-    border-radius: 15px;
-    text-decoration: none;
-    font-family: var(--general-font);
-    background-color: var(--tool-background);
-    color: var(--text-color-light);
-    font-size: 17px;
-    cursor: pointer;
-    padding: 12.5px 30px;
+  }
 
-}
-
-.btn-container{
+  .content-login {
     display: flex;
-    width: 53%;
-    justify-content: right;
-}
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
 
-@media screen and (max-width: 768px){
-    
-    .main-content{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-    
-    .content-login{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
+  .content-login-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 10% 0 10% 0;
+  }
 
-    .content-login-logo{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: auto;
-        margin: 10% 0 10% 0;
-    }
+  .img-login {
+    margin: 0;
+    width: 35%;
+    height: auto;
+    margin: 0 8% 0 15%;
+  }
 
-    .img-login{
-        margin: 0 ;
-        width: 35%;
-        height: auto;
-        margin: 0 8% 0 15%;
-    }
+  .content-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0%;
+  }
 
-    .content-info{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0%;
-    }
+  .h1-login {
+    font-size: 30px;
+    margin: 0;
+  }
 
-    .h1-login{
-        font-size: 30px;
-        margin: 0;
-    }
+  .h2-login {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 100;
+  }
 
-    .h2-login{
-        font-size: 15px;
-        margin: 0;
-        font-weight: 100;
-    }
+  .content-form {
+    margin-top: 10%;
+    width: 100%;
+  }
 
-    .content-form{
-        margin-top: 10%;
-        width: 100%;
-    }
+  .form-login {
+    margin: 0;
+  }
 
-    .form-login{
-        margin: 0;
-    }
+  .img-sign {
+    width: 65%;
+  }
 
-    .img-sign{
-        width: 65%;
-    }
+  .h1-sign {
+    text-align: center;
+  }
 
-    .h1-sign{
-        text-align: center;
-    }
+  .input-login {
+    width: 60%;
+  }
 
-    .input-login{
-        width: 60%;
-    }
+  .btn-container {
+    width: 60%;
+    justify-content: center;
+    margin-top: 5%;
+  }
 
-    .btn-container{
-        width: 60%;
-        justify-content: center;
-        margin-top: 5%;
-    }
-
-    .btn-container a{
-        width: 60%;
-    }
+  .btn-container a {
+    width: 60%;
+  }
 }

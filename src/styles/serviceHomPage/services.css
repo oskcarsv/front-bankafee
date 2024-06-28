@@ -1,37 +1,37 @@
 .section-service-page {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .content-service-page {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    margin-top: 50px;
-    text-align: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .title-service-user {
-    font-size: large;
-    color: var(--text-color);
-    font-family: var(--general-font);
-    text-decoration: none;
+  font-size: large;
+  color: var(--text-color);
+  font-family: var(--general-font);
+  text-decoration: none;
 }
 
 .img-service-user {
-    border-radius: 15px;
-    width: 50%;
-    height: auto;
+  border-radius: 15px;
+  width: 50%;
+  height: auto;
 }
 
 .link-service {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card-service {
-    margin-bottom: 30px;
-    width: auto;
-    height: auto;
+  margin-bottom: 30px;
+  width: auto;
+  height: auto;
 }

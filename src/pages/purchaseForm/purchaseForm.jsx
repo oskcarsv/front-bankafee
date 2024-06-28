@@ -1,11 +1,11 @@
-import { FormPurchase } from '../../components/formPurchase/FormPurchase';
+import { FormPurchase } from "../../components/formPurchase/FormPurchase";
 
 export const PurchaseForm = () => {
-    return (
-        <>
-            <div>
-                <FormPurchase />
-            </div>
-        </>
-    )
-}
+  return (
+    <>
+      <div>
+        <FormPurchase />
+      </div>
+    </>
+  );
+};
