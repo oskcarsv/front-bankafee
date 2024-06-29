@@ -6,11 +6,11 @@ import '../../pages/historyTransfer/historyTransfer.css';
 export const HistoryTransfer = () => {
     return (
         <>
-            <main className="main-container-transfer">
+            <main className="main-container-home">
                 <nav className='sidebar-container'>
                     <Sidebar />
                 </nav>
-                <article className='container-info-history-transfer'>
+                <article className='home-page-container'>
                     <MessageAllHistory />
                     <HistoryTransferList />
                 </article>
