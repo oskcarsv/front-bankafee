@@ -1,13 +1,13 @@
-import { InfoService } from '../../components/serviceCategory/InfoService';
+import { InfoService } from "../../components/serviceCategory/InfoService";
 
-import '../../pages/serviceCategory/serviceCategory.css';
+import "../../pages/serviceCategory/serviceCategory.css";
 
 export const ServiceCategory = () => {
-    return (
-        <>
-            <div>
-                <InfoService />
-            </div>
-        </>
-    );
-}
+  return (
+    <>
+      <div>
+        <InfoService />
+      </div>
+    </>
+  );
+};

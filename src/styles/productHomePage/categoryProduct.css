@@ -1,34 +1,34 @@
 .section-category-product {
-    width: 100%;
-    height: 100%;
-    display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .content-category {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    margin-top: 50px;
-    text-align: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .title-category {
-    font-size: large;
-    color: var(--text-color);
-    font-family: var(--general-font);
-    text-decoration: none;
+  font-size: large;
+  color: var(--text-color);
+  font-family: var(--general-font);
+  text-decoration: none;
 }
 
-.img-category{
-    border-radius: 15px;
+.img-category {
+  border-radius: 15px;
 }
 
-.link-category{
-    text-decoration: none;
+.link-category {
+  text-decoration: none;
 }
 
-.card-category{
-    margin-bottom: 30px;
+.card-category {
+  margin-bottom: 30px;
 }

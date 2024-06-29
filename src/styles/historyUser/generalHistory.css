@@ -1,53 +1,47 @@
 .content-table {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-radius: 5cqh;
-    background-color: var(--white-background);
-    margin-bottom: 3%;
-    margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 95%;
+  border-radius: 5cqh;
+  background-color: var(--white-background);
 }
 
 .title-table {
-    margin-left: 30px;
+  margin-left: 25px;
 }
 
 .title-history {
-    font-size: 28px;
+  font-size: 30px;
 }
 
 .content-info-table {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.table-generali {
-    border-collapse: collapse;
-    width: 80%;
+.table-content {
+  border-collapse: collapse;
+  width: 80%;
 }
 
-.thead-titles-generali {
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
+.table-header {
+  align-items: center;
+  justify-content: center;
+}
+
+.table-info {
+  font-size: 130%;
 }
 
 .table-body {
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    font-size: 110%;
+  align-items: center;
+  justify-content: center;
 }
 
 .info-table-body {
-    font-size: 110%;
-    text-align: center;
-    display: table-cell;
-    padding: 5px;
-    border-bottom: 2px solid #9c9b9b;
+  font-size: 120%;
+  text-align: center;
 }

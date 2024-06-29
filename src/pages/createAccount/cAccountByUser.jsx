@@ -1,17 +1,17 @@
 import { FormCAccount } from "../../components/createAccount/FormCAccount";
 import { Slide } from "../../components/Slide";
 
-import '../../pages/createAccount/cAccountByUser.css'
+import "../../pages/createAccount/pagecAccountByUser.css";
 
 export const CAccountByUser = () => {
-    return (
-        <main>
-            <div className="content-slide-form">
-                <FormCAccount />
-            </div>
-            <div className="content-slide-page">
-                <Slide />
-            </div>
-        </main>
-    );
-}
+  return (
+    <main className="cAccountBU-container">
+      <section className="form-account-container">
+        <FormCAccount />
+      </section>
+      <section className="slide-account-container">
+        <Slide />
+      </section>
+    </main>
+  );
+};

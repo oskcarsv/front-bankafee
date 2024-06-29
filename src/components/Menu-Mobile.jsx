@@ -28,7 +28,7 @@ export const MenuMobile = ({ onClose }) => {
   const currentPath = window.location.pathname;
 
   return (
-    <div className={`menu-mobile ${isClosing ? 'slide-out' : ''}`}>
+    <div className={`menu-mobile ${isClosing ? "slide-out" : ""}`}>
       <img
         src={cancelIcon}
         alt="Cancel Icon"
