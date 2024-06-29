@@ -8,11 +8,11 @@ import '../../pages/historyDeposit/depositHistory.css';
 export const DepositHistory = () => {
     return (
         <>
-            <main className="main-container-deposit">
+            <main className="main-container-home">
                 <nav className="sidebar-container">
                     <Sidebar />
                 </nav>
-                <article className="container-info-history-deposit">
+                <article className="home-page-container">
                     <MessageAllHistory />
                     <HistoryDeposit />
                 </article>
