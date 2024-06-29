@@ -14,6 +14,7 @@ export const TitleProductHome = () => {
           ) : (
             <h1 className="title-product-home">Category Home Page</h1>
           )}
+
         </div>
         <div className="content-btn">
           <button className="btn-back">

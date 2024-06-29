@@ -15,6 +15,11 @@ import { ProductCategory } from "./pages/productCategory/productCategory.jsx";
 import { PurchaseForm } from "./pages/purchaseForm/purchaseForm.jsx";
 import { ServiceHomePage } from "./pages/serviceHomePage/serviceHomePage.jsx";
 import { ServiceCategory } from "./pages/serviceCategory/serviceCategory.jsx";
+import { FavoritesPage } from "./pages/favoritesUser/favoritesPage.jsx";
+import { HistoryTransfer } from "./pages/historyTransfer/historyTransfer.jsx";
+import { DepositHistory } from "./pages/historyDeposit/depositHistory.jsx";
+import {HistoryCredit} from "./pages/historyCredit/historyCredit.jsx";
+import {HomePageAdmin} from "./pages/homePageAdmin/homePageAdmin.jsx";
 
 const routes = [
   { path: "/", element: <LandingPage /> },
@@ -34,6 +39,11 @@ const routes = [
   { path: "/purchaseForm", element: <PurchaseForm /> },
   { path: "/serviceHomePage", element: <ServiceHomePage /> },
   { path: "/serviceCategory", element: <ServiceCategory /> },
+  { path: "/favorites", element: <FavoritesPage /> },
+  { path: "/historyTransfer", element: <HistoryTransfer /> },
+  { path: "/historyDeposit", element: <DepositHistory /> },
+  { path: "/historyCredit", element: <HistoryCredit />},
+  { path: "/homeAdmin", element: <HomePageAdmin />}
 ];
 
 export default routes;

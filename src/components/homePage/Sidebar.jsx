@@ -38,7 +38,7 @@ export const Sidebar = () => {
         </div>
       </section>
 
-      <section className="profile-container-all">
+           <section className="profile-container-all">
         <div className="content-info-profile">
           <img src={perfil} alt="img" className="img-perfil-sidebar" />
           <div className="name-container">
