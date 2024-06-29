@@ -2,8 +2,6 @@ import { Sidebar } from "../../components/homePage/Sidebar";
 import { MessageAllHistory } from "../../components/historyTransfer/MessageAllHistory";
 import { HistoryCreditList } from "../../components/historyCredit/HistoryCreditList";
 
-import '../../pages/historyCredit/historyCredit.css';
-
 export const HistoryCredit = () => {
     return (
         <>

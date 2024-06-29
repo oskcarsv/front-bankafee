@@ -1,7 +1,6 @@
 import { Sidebar } from "../../components/homePage/Sidebar";
 import { MessageAllHistory } from "../../components/historyTransfer/MessageAllHistory";
 import { HistoryTransferList } from "../../components/historyTransfer/HistoryTransferList";
-import '../../pages/historyTransfer/historyTransfer.css';
 
 export const HistoryTransfer = () => {
     return (
