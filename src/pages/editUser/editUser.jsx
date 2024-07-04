@@ -5,13 +5,21 @@ import "../../pages/editUser/editUser.css";
 
 export const EditUser = () => {
   return (
-    <>
-      <div className="form-edit-user">
+    // <>
+    //   <div className="form-edit-user">
+    //     <FormEditUser />
+    //   </div>
+    //   <div className="content-slide-page">
+    //     <Slide />
+    //   </div>
+    // </>
+    <main className="cAccountBU-container">
+      <section className="form-account-container">
         <FormEditUser />
-      </div>
-      <div className="content-slide-page">
+      </section>
+      <section className="slide-account-container">
         <Slide />
-      </div>
-    </>
+      </section>
+    </main>
   );
 };
