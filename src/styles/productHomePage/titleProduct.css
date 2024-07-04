@@ -10,11 +10,16 @@
 
 .link-back {
   text-decoration: none;
+  width: auto;
+  height: auto;
+  padding: 10px;
 }
-
 .content-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
 }
 
 .btn-back {

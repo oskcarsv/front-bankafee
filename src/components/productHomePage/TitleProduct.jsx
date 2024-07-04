@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+import homeIcon from '../../assets/iconsProduct/homeIconProductPage.svg'
+import goBackIcon from '../../assets/iconsProduct/goBackIconProductPage.svg'
+
 import "../../styles/productHomePage/titleProduct.css";
 
 export const TitleProductHome = () => {
@@ -18,15 +21,15 @@ export const TitleProductHome = () => {
         </div>
         <div className="content-btn">
           <button className="btn-back">
-            <Link to="/home" className="link-back">
-              {currentPath === "/productHomePage" ? (
-                <p className="text-back">Home</p>
-              ) : (
-                <Link to="/productHomePage" className="link-back">
-                  <p className="text-back">back</p>
-                </Link>
-              )}
-            </Link>
+            {currentPath === "/productHomePage" ? (
+              <Link to="/home" className="link-back">
+                <img src={homeIcon} alt="home" className="home-icon" />
+              </Link>
+            ) : (
+              <Link to="/productHomePage" className="link-back backIcon">
+                <img src={goBackIcon} alt="go back" className="go-back-icon" />
+              </Link>
+            )}
           </button>
         </div>
       </div>
