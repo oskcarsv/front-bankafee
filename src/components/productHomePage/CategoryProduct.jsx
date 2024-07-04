@@ -38,6 +38,30 @@ export const CategoryProduct = () => {
             <p className="title-category"> Category Cars</p>
           </div>
         </Link>
+        <Link to="/productCategory" className="link-category">
+          <div className="card-category">
+            <img src={categoryCars} alt="img" className="img-category" />
+            <p className="title-category"> Category Cars</p>
+          </div>
+        </Link>
+        <Link to="/productCategory" className="link-category">
+          <div className="card-category">
+            <img src={categoryCars} alt="img" className="img-category" />
+            <p className="title-category"> Category Cars</p>
+          </div>
+        </Link>
+        <Link to="/productCategory" className="link-category">
+          <div className="card-category">
+            <img src={categoryCars} alt="img" className="img-category" />
+            <p className="title-category"> Category Cars</p>
+          </div>
+        </Link>
+        <Link to="/productCategory" className="link-category">
+          <div className="card-category">
+            <img src={categoryCars} alt="img" className="img-category" />
+            <p className="title-category"> Category Cars</p>
+          </div>
+        </Link>
       </div>
     </section>
   );

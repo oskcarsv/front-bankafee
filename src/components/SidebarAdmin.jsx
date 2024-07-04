@@ -25,11 +25,11 @@ export const SidebarAdmin = () => {
                         <button className='btn-action-admin'>
                             Delete Account
                         </button>
-                    </Link>
+                    </Link> 
                 </div>
             </section>
             <div className='content-logout-admin'>
-                <Link>
+                <Link to="/">
                     <button className='btn-logout-for-admin'>
                         <img src={logout} alt="img" />
                     </button>
