@@ -5,13 +5,13 @@ import "../../pages/requestAccount/requestAccount.css";
 
 export const RequestAccount = () => {
   return (
-    <>
-      <div className="form-request-account">
+    <main className="cAccountBU-container">
+      <section className="form-account-container">
         <FormRequestAccount />
-      </div>
-      <div className="content-slide-page">
+      </section>
+      <section className="slide-account-container">
         <Slide />
-      </div>
-    </>
+      </section>
+    </main>
   );
 };
