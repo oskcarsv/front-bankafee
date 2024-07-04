@@ -9,7 +9,7 @@ import '../../styles/homePageCss/listHome.css';
 
 export const ActionsHome = () => {
     return (
-        <div className="list-home">
+        <section className="list-home">
             <div className="icon-list-utilities-home">
                 <Link to="/transferUser"><img src={transferIcon} alt="icon" className="icon-list-home" /></Link>
             </div>
@@ -22,6 +22,6 @@ export const ActionsHome = () => {
             <div className="icon-list-utilities-home">
                 <Link to="/favorites"><img src={favoritesIcon} alt="icon" className="icon-list-home" /></Link>
             </div>
-        </div>
+        </section>
     );
 };
