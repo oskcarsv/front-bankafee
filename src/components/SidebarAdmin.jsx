@@ -16,16 +16,11 @@ export const SidebarAdmin = () => {
             </section>
             <section className='section-actions-admin'>
                 <div className='content-btn-admin'>
-                    <Link className='link-content-btn'>
+                    <Link to="/deposit"  className='link-content-btn'>
                         <button className='btn-action-admin'>
-                            New Account
+                            Deposit
                         </button>
                     </Link>
-                    <Link className='link-content-btn'>
-                        <button className='btn-action-admin'>
-                            Delete Account
-                        </button>
-                    </Link> 
                 </div>
             </section>
             <div className='content-logout-admin'>
