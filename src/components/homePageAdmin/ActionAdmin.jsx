@@ -10,7 +10,7 @@ export const ActionsAdmin = () => {
     return (
         <section className="section-list-action-admin">
             <div className="content-action">
-                <Link to="/listUser"><img src={listUser} alt="img" className="icon-action-admin" /></Link>
+                <Link to="/homeAdmin"><img src={listUser} alt="img" className="icon-action-admin" /></Link>
             </div>
             <div className="content-action">
                 <Link to="/homeAdmin"><img src={listAccount} alt="" /></Link>
