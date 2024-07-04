@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import computadora from '../../assets/iconsProduct/computadora.svg';
+import computadora from "../../assets/iconsProduct/computadora.svg";
 
-import '../../styles/productCategory/productCategory.css';
+import "../../styles/productCategory/productCategory.css";
 
 export const ProductCategoryAll = () => {
     return (

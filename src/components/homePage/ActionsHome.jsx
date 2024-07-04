@@ -5,7 +5,7 @@ import productIcon from "../../assets/iconListHome/productIcon.svg";
 import servicesIcon from "../../assets/iconListHome/servicesIcon.svg";
 import favoritesIcon from "../../assets/iconListHome/favoritesIcon.svg";
 
-import '../../styles/homePageCss/listHome.css';
+import "../../styles/homePageCss/listHome.css";
 
 export const ActionsHome = () => {
     return (

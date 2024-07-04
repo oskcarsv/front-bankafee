@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import historyAll from '../../assets/iconHistoryList/historyAll.svg';
+import historyAll from "../../assets/iconHistoryList/historyAll.svg";
 
-import '../../styles/historyUser/listHistoryUser.css';
+import "../../styles/historyUser/listHistoryUser.css";
 
 export const ListHistoryUser = () => {
     return (

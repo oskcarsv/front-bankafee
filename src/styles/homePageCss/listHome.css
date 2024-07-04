@@ -1,28 +1,28 @@
 .list-home {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 1%;
-    margin-top: 3%;
-    padding: 0% 10% 0% 10%;
-    border-radius: 10cqh;
-    width: auto;
-    height: 75px;
-    background-color: var(--white-background);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1%;
+  margin-top: 3%;
+  padding: 0% 10% 0% 10%;
+  border-radius: 10cqh;
+  width: auto;
+  height: 75px;
+  background-color: var(--white-background);
 }
 
 .icon-list-home {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .list-home {
-        height: 50px;
-        padding: 0% 5% 0% 5%;
-        margin-bottom: 3.5%;
-    }
+  .list-home {
+    height: 50px;
+    padding: 0% 5% 0% 5%;
+    margin-bottom: 3.5%;
+  }
 
-    .icon-list-home{
-        width: 30px;    
-    }
+  .icon-list-home {
+    width: 30px;
+  }
 }
