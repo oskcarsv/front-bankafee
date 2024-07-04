@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 import homeMessage from "../../assets/iconSidebar/homeMessage.svg";
 
-import "../../styles/listUserAdmin/listUserAdmin.css";
+import '../../styles/listAccountAdmin/messageAdminAccount.css';
 
-export const ListUserAdmin = () => {
+export const MessageAdminAccount = () => {
     return (
-        <section className="section-message-users">
-            <div className="container-titles-users">
+        <section className="section-message-account-admin">
+            <div className="container-general-message">
                 <div>
-                    <h1 className="title-message-users">Users</h1>
+                    <h1 className="title-message-account-admin">Accounts</h1>
                 </div>
-                <div className="container-btn-back-users">
+                <div className="container-btn-back-account">
                     <Link to="/homeAdmin">
                         <button className="btn-goBack-admin">
                             <img src={homeMessage} alt="img" className="img-goBack-admin" />
@@ -22,4 +22,4 @@ export const ListUserAdmin = () => {
             <hr className="s" />
         </section>
     );
-};
+}

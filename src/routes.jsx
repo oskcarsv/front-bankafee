@@ -21,6 +21,7 @@ import { DepositHistory } from "./pages/historyDeposit/depositHistory.jsx";
 import { HistoryCredit } from "./pages/historyCredit/historyCredit.jsx";
 import { HomePageAdmin } from "./pages/homePageAdmin/homePageAdmin.jsx";
 import { ListUser } from "./pages/listUser/listUser.jsx";
+import { ListAccount } from "./pages/listAccount/listAccount.jsx";
 
 const routes = [
   { path: "/", element: <LandingPage /> },
@@ -46,6 +47,7 @@ const routes = [
   { path: "/historyCredit", element: <HistoryCredit /> },
   { path: "/homeAdmin", element: <HomePageAdmin /> },
   { path: "/listUser", element: <ListUser /> },
+  { path: "/listAccount", element: <ListAccount />}
 ];
 
 export default routes;
