@@ -5,13 +5,13 @@ import "../../pages/createUser/createUser.css";
 
 export const CreateUser = () => {
   return (
-    <>
-      <div className="form-createUser-page">
+    <main className="cAccountBU-container">
+      <section className="form-account-container">
         <FormCreateUser />
-      </div>
-      <div className="content-slide-page">
+      </section>
+      <section className="slide-account-container">
         <Slide />
-      </div>
-    </>
+      </section>
+    </main>
   );
 };
