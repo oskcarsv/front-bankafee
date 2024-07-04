@@ -1,17 +1,17 @@
 .section-category-product {
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
 }
 
 .content-category {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  width: auto;
   height: 100%;
   margin-top: 50px;
   text-align: center;
   flex-wrap: wrap;
+  margin-left: 2%;
 }
 
 .title-category {
@@ -26,9 +26,7 @@
 }
 
 .link-category {
+  width: auto;
   text-decoration: none;
-}
-
-.card-category {
-  margin-bottom: 30px;
+  margin: 0 4% 3% 0; 
 }
