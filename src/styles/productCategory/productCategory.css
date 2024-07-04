@@ -6,11 +6,12 @@
 
 .content-product-category {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  width: auto;
   height: 100%;
   margin-top: 50px;
+  text-align: center;
   flex-wrap: wrap;
+  margin-left: 3%;
 }
 
 .card-product {

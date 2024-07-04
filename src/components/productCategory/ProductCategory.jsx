@@ -11,6 +11,7 @@ export const ProductCategoryAll = () => {
         <ContentProductCategory />
         <ContentProductCategory />
         <ContentProductCategory />
+        <ContentProductCategory />
       </div>
     </section>
   );
