@@ -6,7 +6,7 @@ import '../../styles/productCategory/productCategory.css';
 
 export const ProductCategoryAll = () => {
     return (
-        <section className='section-product-category'>
+        <main className='section-product-category'>
             <div className='content-product-category'>
                 <Link to="/purchaseForm" className='link-category'>
                     <div className='card-product'>
@@ -37,6 +37,6 @@ export const ProductCategoryAll = () => {
                     </div>
                 </Link>
             </div>
-        </section>
+        </main>
     );
 };

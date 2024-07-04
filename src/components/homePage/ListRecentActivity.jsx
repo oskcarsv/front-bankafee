@@ -1,4 +1,5 @@
 import TransferIcon from '../../assets/iconHomePage/TransferIcon.svg';
+
 import '../../styles/homePageCss/recentActivity.css';
 
 export const ListRecentActivity = () => {
