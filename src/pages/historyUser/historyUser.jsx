@@ -8,14 +8,16 @@ import "../../pages/historyUser/historyUser.css";
 export const HistoryUser = () => {
   return (
     <>
-      <div className="sidebar-history">
-        <Sidebar />
-      </div>
-      <div className="content-history-view">
-        <MessageHistory />
-        <ListHistoryUser />
-        <GeneralHistory />
-      </div>
+      <main className="main-container-user">
+        <nav className="sidebar-history">
+          <Sidebar />
+        </nav>
+        <article className="content-history-general">
+          <MessageHistory />
+          <ListHistoryUser />
+          <GeneralHistory />
+        </article>
+      </main>
     </>
   );
 };

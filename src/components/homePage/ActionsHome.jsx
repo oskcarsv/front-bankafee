@@ -26,7 +26,7 @@ export const ActionsHome = () => {
         </Link>
       </div>
       <div className="icon-list-utilities-home">
-        <Link to="/">
+        <Link to="/favorites">
           <img src={favoritesIcon} alt="icon" className="icon-list-home" />
         </Link>
       </div>
