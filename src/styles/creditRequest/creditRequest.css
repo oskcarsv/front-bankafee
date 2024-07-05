@@ -1,0 +1,52 @@
+.credit-request-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.input-container-creditRequest {
+    width: 99%;
+    height: 100%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    border: none;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount{ 
+    width: 20%;
+}
+
+.creditTime{
+    color: #727070;
+}
+
+.text-area-container{
+    width: 99%;
+    height: 100%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    border: none;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: none;
+
+}
+
+.reazon{
+    width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+}
+
+.credit-request{
+    width: 80%;
+    margin-right: 1%;
+}
