@@ -51,7 +51,7 @@ const routes = [
   { path: "/listUser", element: <ListUser /> },
   { path: "/listAccount", element: <ListAccount /> },
   { path: "/listCredit", element: <ListCredit /> },
-  { path: "/formEditByAdmin", element: <FormEditByAdmin /> }
+  { path: "/formEditByAdmin", element: <FormEditByAdmin /> },
 ];
 
 export default routes;
