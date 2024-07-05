@@ -23,6 +23,7 @@ import { HomePageAdmin } from "./pages/homePageAdmin/homePageAdmin.jsx";
 import { ListUser } from "./pages/listUser/listUser.jsx";
 import { ListAccount } from "./pages/listAccount/listAccount.jsx";
 import { ListCredit } from "./pages/listCredit/listCredit.jsx";
+import { FormEditByAdmin } from "./pages/formEditUserByAdmin/formEditByAdmin.jsx";
 
 const routes = [
   { path: "/", element: <LandingPage /> },
@@ -48,8 +49,9 @@ const routes = [
   { path: "/historyCredit", element: <HistoryCredit /> },
   { path: "/homeAdmin", element: <HomePageAdmin /> },
   { path: "/listUser", element: <ListUser /> },
-  { path: "/listAccount", element: <ListAccount />},
-  { path: "/listCredit", element: <ListCredit />},
+  { path: "/listAccount", element: <ListAccount /> },
+  { path: "/listCredit", element: <ListCredit /> },
+  { path: "/formEditByAdmin", element: <FormEditByAdmin /> }
 ];
 
 export default routes;

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import edit from '../../assets/iconAdmin/edit.svg';
 import deleteUser from '../../assets/iconHistoryList/deleteUser.svg';
 
@@ -26,7 +28,9 @@ export const ListForAllUser = () => {
                             <td className='info--table-users'>123456789120</td>
                             <td className='info--table-users'>Active</td>
                             <td className='info-user-approve'>
-                                <button className='btn-approve'><img src={edit} alt="" /></button>
+                                <Link to="/formEditByAdmin">
+                                    <button className='btn-approve'><img src={edit} alt="" /></button>
+                                </Link>
                             </td>
                             <td className='info-user-approve'>
                                 <button className='btn-approve'><img src={deleteUser} alt="" /></button>
@@ -38,7 +42,9 @@ export const ListForAllUser = () => {
                             <td className='info--table-users'>123456789120</td>
                             <td className='info--table-users'>Active</td>
                             <td className='info-user-approve'>
-                                <button className='btn-approve'><img src={edit} alt="" /></button>
+                                <Link to="/formEditByAdmin">
+                                    <button className='btn-approve'><img src={edit} alt="" /></button>
+                                </Link>
                             </td>
                             <td className='info-user-approve'>
                                 <button className='btn-approve'><img src={deleteUser} alt="" /></button>
@@ -50,7 +56,9 @@ export const ListForAllUser = () => {
                             <td className='info--table-users'>123456789120</td>
                             <td className='info--table-users'>Active</td>
                             <td className='info-user-approve'>
-                                <button className='btn-approve'><img src={edit} alt="" /></button>
+                                <Link to="/formEditByAdmin">
+                                    <button className='btn-approve'><img src={edit} alt="" /></button>
+                                </Link>
                             </td>
                             <td className='info-user-approve'>
                                 <button className='btn-approve'><img src={deleteUser} alt="" /></button>
@@ -62,7 +70,9 @@ export const ListForAllUser = () => {
                             <td className='info--table-users'>123456789120</td>
                             <td className='info--table-users'>Active</td>
                             <td className='info-user-approve'>
-                                <button className='btn-approve'><img src={edit} alt="" /></button>
+                                <Link to="/formEditByAdmin">
+                                    <button className='btn-approve'><img src={edit} alt="" /></button>
+                                </Link>
                             </td>
                             <td className='info-user-approve'>
                                 <button className='btn-approve'><img src={deleteUser} alt="" /></button>
@@ -74,7 +84,9 @@ export const ListForAllUser = () => {
                             <td className='info--table-users'>123456789120</td>
                             <td className='info--table-users'>Active</td>
                             <td className='info-user-approve'>
-                                <button className='btn-approve'><img src={edit} alt="" /></button>
+                                <Link to="/formEditByAdmin">
+                                    <button className='btn-approve'><img src={edit} alt="" /></button>
+                                </Link>
                             </td>
                             <td className='info-user-approve'>
                                 <button className='btn-approve'><img src={deleteUser} alt="" /></button>
