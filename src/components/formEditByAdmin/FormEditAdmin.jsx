@@ -10,7 +10,7 @@ export const FormEditAdmin = () => {
             </section>
             <form className="form-edit-by-admin">
                 <div className="content-together-input-admin">
-                    <input type="text" placeholder="Name" className="input-together-admin" />
+                    <input type="text" placeholder="Name User" className="input-together-admin" />
                     <input type="text" placeholder="Last Name" className="input-together-admin" />
                 </div>
                 <div className="content-alone-input-admin">
