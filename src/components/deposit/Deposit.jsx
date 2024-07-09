@@ -22,12 +22,12 @@ export const DepositForm = () => {
       </form>
       <section className="container-btn-deposit">
         <div className="btn-container-cAccount">
-          <Link to="/home" className="link-btn-caccount">
+          <Link to="/homeAdmin" className="link-btn-caccount">
             <button className="btn-account cancel deposit">Cancel</button>
           </Link>
         </div>
         <div className="btn-container-cAccount">
-          <Link to="/home" className="link-btn-caccount">
+          <Link to="/homeAdmin" className="link-btn-caccount">
             <button className="btn-account">Create</button>
           </Link>
         </div>

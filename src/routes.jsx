@@ -49,7 +49,7 @@ const routes = [
   { path: "/historyDeposit", element: <DepositHistory /> },
   { path: "/historyCredit", element: <HistoryCredit />},
   { path: "/homeAdmin", element: <HomePageAdmin />},
-  { path: "/creditRequest", element: <CreditRequest />}
+  { path: "/creditRequest", element: <CreditRequest />},
   { path: "/listUser", element: <ListUser /> },
   { path: "/listAccount", element: <ListAccount /> },
   { path: "/listCredit", element: <ListCredit /> },
