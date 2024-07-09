@@ -13,7 +13,7 @@ export const ListApproval = () => {
                 <table className='table-approve-user'>
                     <thead className='container-titles-info-approve'>
                         <tr>
-                            <th>User Name</th>
+                            <th>User</th>
                             <th>DPI</th>
                             <th>State</th>
                         </tr>

@@ -1,14 +1,13 @@
 .content-form-deposit {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-left: 50%;
-  margin-top: 30%;
+  width: 60%;
 }
 
 .title-h1-deposit {
   font-size: 35px;
   color: var(--text-color);
+  margin: 5%;
 }
 
 .content-form-deposit {
@@ -19,15 +18,19 @@
 
 .form-deposit {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-input-deposit {
-  width: 100%;
+  width: 80%;
   height: 100%;
   border-radius: 1cqh;
   margin: 15px 0% 0% 0%;
   border: none;
-  font-size: 100%;
+  font-size: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,4 +88,14 @@
   background-color: var(--color-red);
   color: var(--text-color-light);
   cursor: pointer;
+}
+
+.container-btn-deposit{
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
 }

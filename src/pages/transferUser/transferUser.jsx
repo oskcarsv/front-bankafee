@@ -6,12 +6,14 @@ import "../../pages/transferUser/transferUser.css";
 export const TransferUser = () => {
   return (
     <>
-      <div className="content-transfer-user">
-        <FormTransferUser />
-      </div>
-      <div className="content-slide-page">
-        <Slide />
-      </div>
+      <main className="cAccountBU-container">
+        <section className="form-account-container">
+          <FormTransferUser />
+        </section>
+        <section className="slide-account-container">
+          <Slide />
+        </section>
+      </main>
     </>
   );
 };
