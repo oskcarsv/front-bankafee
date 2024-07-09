@@ -1,0 +1,64 @@
+.section-all-account-admin {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5cqh;
+    background-color: var(--white-background);
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.content-title-account-admin {
+    margin-left: 30px;
+}
+
+.title-list-account-admin {
+    font-size: 28px;
+}
+
+.content-history-account-for-admin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.table-users-admin {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.thead-users-admin {
+    font-size: 23px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-users-list-admin {
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    font-size: 110%;
+}
+
+.info--table-users {
+    font-size: 110%;
+    text-align: center;
+    display: table-cell;
+    padding: 5px;
+    border-bottom: 2px solid #9c9b9b;
+}
+
+.btn-edit {
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+    padding-top: 5px;
+    text-decoration: none;
+    background-color: var(--tool-background);
+    cursor: pointer;
+}

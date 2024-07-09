@@ -10,13 +10,13 @@ export const ActionsAdmin = () => {
     return (
         <section className="section-list-action-admin">
             <div className="content-action">
-                <Link to="/homeAdmin"><img src={listUser} alt="img" className="icon-action-admin" /></Link>
+                <Link to="/listUser"><img src={listUser} alt="img" className="icon-action-admin" /></Link>
             </div>
             <div className="content-action">
-                <Link to="/homeAdmin"><img src={listAccount} alt="" /></Link>
+                <Link to="/listAccount"><img src={listAccount} alt="" /></Link>
             </div>
             <div className="content-action">
-                <Link to="/homeAdmin"><img src={aprobAccount} alt="" /></Link>
+                <Link to="/listCredit"><img src={aprobAccount} alt="" /></Link>
             </div>
         </section>
     );
