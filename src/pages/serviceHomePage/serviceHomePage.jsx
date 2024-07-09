@@ -7,13 +7,15 @@ import "../../pages/serviceHomePage/serviceHomePage.css";
 export const ServiceHomePage = () => {
   return (
     <>
-      <div className="sidebar-service">
-        <Sidebar />
-      </div>
-      <div className="content-service">
-        <TitleService />
-        <Services />
-      </div>
+      <main className="main-container-home">
+        <nav className="sidebar-container">
+          <Sidebar />
+        </nav>
+        <article className="home-page-container">
+          <TitleService />
+          <Services />
+        </article>
+      </main>
     </>
   );
 };

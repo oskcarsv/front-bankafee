@@ -6,14 +6,14 @@ import "../../pages/productCategory/productCategory.css";
 
 export const ProductCategory = () => {
   return (
-    <>
-      <div className="content-sidebar">
+    <main className="main-container-home">
+      <nav className="sidebar-container">
         <Sidebar />
-      </div>
-      <div className="content-category-products">
+      </nav>
+      <article className="home-page-container">
         <TitleProductHome />
         <ProductCategoryAll />
-      </div>
-    </>
+      </article>
+    </main>
   );
 };

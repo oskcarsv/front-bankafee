@@ -5,13 +5,21 @@ import "../../pages/deposit/depositPage.css";
 
 export const DepositPage = () => {
   return (
-    <>
-      <div className="form-deposit-user">
+    // <>
+    //   <div className="form-deposit-user">
+    //     <DepositForm />
+    //   </div>
+    //   <div className="content-slide-page">
+    //     <Slide />
+    //   </div>
+    // </>
+    <main className="cAccountBU-container">
+      <section className="form-account-container">
         <DepositForm />
-      </div>
-      <div className="content-slide-page">
+      </section>
+      <section className="slide-account-container">
         <Slide />
-      </div>
-    </>
+      </section>
+    </main>
   );
 };

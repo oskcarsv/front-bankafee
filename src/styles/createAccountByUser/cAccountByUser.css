@@ -14,6 +14,7 @@
 .title-create-account {
   font-size: 200%;
   color: var(--text-color);
+  font-family: var(--general-font);
 }
 
 .content-input-caccount {

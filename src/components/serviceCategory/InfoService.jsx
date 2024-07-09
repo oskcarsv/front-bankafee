@@ -34,13 +34,11 @@ export const InfoService = () => {
               />
             </div>
             <div className="content-input-service">
-              <button className="btn-discount">see discount</button>
+              <button className="btn-discount">See discount</button>
             </div>
-            <div className="content-input-service">
-              <Link to="/serviceCategory">
-                <button className="btn-discount-back">Back</button>
-              </Link>
-            </div>
+            <Link to="/serviceHomePage" className="link-btn-infoService">
+              <button className="btn-discount-back">Back</button>
+            </Link>
           </form>
         </div>
       </div>

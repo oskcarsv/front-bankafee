@@ -6,14 +6,14 @@ import "../../pages/productHomePage/productHomePage.css";
 
 export const ProductHomePage = () => {
   return (
-    <>
-      <div className="sidebar-product">
-        <Sidebar />
-      </div>
-      <div className="content-product">
-        <TitleProductHome />
-        <CategoryProduct />
-      </div>
-    </>
+      <main className="main-container-home">
+        <nav className="sidebar-container">
+          <Sidebar />
+        </nav>
+        <article className="home-page-container">
+          <TitleProductHome />
+          <CategoryProduct />
+        </article>
+      </main>
   );
 };

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "../../styles/serviceHomPage/titleService.css";
+import homeIcon from "../../assets/iconsProduct/homeIconProductPage.svg";
 
 export const TitleService = () => {
   return (
@@ -12,7 +13,7 @@ export const TitleService = () => {
         <div className="content-btn">
           <button className="btn-back">
             <Link to="/home" className="link-back">
-              <p className="text-back">Home</p>
+              <img src={homeIcon} alt="home icon" />
             </Link>
           </button>
         </div>
