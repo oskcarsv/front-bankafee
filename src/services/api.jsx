@@ -29,3 +29,14 @@ export const login = async (data) => {
     }
   }
 }
+
+export const getProduct = async () => {
+  try {
+    return await apiClient.get("/productHomePage");
+  } catch (e) {
+    return {
+      error: true,
+      e
+    }
+  }
+}
