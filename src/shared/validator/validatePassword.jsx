@@ -4,4 +4,4 @@ export const validatePassword = (password) => {
     return regex.test(password);
 }
 
-export const validatePasswordMessage = 'The password must have at least 6 characters.';
+export const validatePasswordMessage = 'La contraseña debe tener al menos 6 caracteres';
