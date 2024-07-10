@@ -10,12 +10,12 @@ apiClient.interceptors.request.use(
   (config) => {
     const getToken = localStorage.getItem("token");
     if (getToken) {
-      const token = JSON.parse(getToken); 
+      const token = JSON.parse(getToken);
       config.headers.Authorization = `${token}`;
     }
     return config;
   },
-  (e)=>{
+  (e) => {
     return Promise.reject(e);
   }
 );
@@ -32,20 +32,23 @@ export const login = async (data) => {
 }
 
 export const clientPetition = async (data) => {
-
-  try{
-
+  try {
     return await apiClient.post("/auth/clientPetition", data);
-
-  }catch(e){
-    
-    return{
-
+  } catch (e) {
+    return {
       error: true,
       e
-
     }
-
   }
-
 }
+
+export const getProduct = async () => {
+  try {
+    return await apiClient.get("/product", data);
+  } catch (e) {
+    return {
+      error: true,
+      e
+    }
+  }
+};
