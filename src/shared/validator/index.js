@@ -12,3 +12,4 @@ export * from './validatePhoneNumber';
 
 export * from './validateWorkPlace';
 
+export * from './validateMonthyIncome';

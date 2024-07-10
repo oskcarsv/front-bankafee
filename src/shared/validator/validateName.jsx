@@ -1,5 +1,5 @@
 export const validateName = (name) => {
-    const regex = /^.{45,}$/;
+    const regex = /^.{1,45}$/;
     return regex.test(name);
 }
 

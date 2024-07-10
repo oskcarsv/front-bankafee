@@ -1,6 +1,15 @@
 export const validateDPI = (DPI) => {
-    const regex = /^.{13}$/;
-    return regex.test(DPI);
+
+    const length = DPI.length;
+
+    if(length != 13){
+
+        return false;
+
+    }
+
+    return true;
+
 }
 
 export const validateDPIMessage = 'El DPI debe tener 13 caracteres.'

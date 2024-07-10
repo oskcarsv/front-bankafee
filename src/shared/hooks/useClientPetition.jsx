@@ -12,7 +12,7 @@ export const useClientPetition = () => {
 
     const navigate = useNavigate();
 
-    const clientPetition = async (name, username, DPI, address, email, phoneNumber, workPlace, monthlyIncome, aliasAccount, typeAccount) => {
+    const clientPetition = async (name, username, DPI, adress, email, phoneNumber, workPlace, monthlyIncome, aliasAccount, typeAccount) => {
 
         setIsLoading(true);
 
@@ -21,7 +21,7 @@ export const useClientPetition = () => {
             name, 
             username, 
             DPI, 
-            address, 
+            adress, 
             email, 
             phoneNumber, 
             workPlace, 
@@ -49,7 +49,17 @@ export const useClientPetition = () => {
             )
         }
 
-        navigate('/')
+        console.log(response.data.msg);
+
+        toast.success(
+            (t)=>(
+                <span>
+                    {response.data.msg} <br />
+                    <button onClick={()=>toast.dismiss(t.id)} style={{background:"transparent", border:"none", position: 'absolute', top: '0', right: '0', margin: '5px'}}>X</button>
+                </span>
+            ),{duration: Infinity});
+
+        navigate('/');
 
     }
 
