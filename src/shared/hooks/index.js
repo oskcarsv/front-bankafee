@@ -1,3 +1,3 @@
 export { useAuth } from "./useAuth";
 export { useClientPetition } from "./useClientPetition";
-export { useProduct } from "./useProduct";
+export { useCategoryProduct } from "./useCategoryProduct";

@@ -42,9 +42,9 @@ export const clientPetition = async (data) => {
   }
 }
 
-export const getProduct = async () => {
+export const getCategoryProduct = async () => {
   try {
-    return await apiClient.get("/product", data);
+    return await apiClient.get("/categoryProduct");
   } catch (e) {
     return {
       error: true,
