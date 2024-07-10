@@ -44,6 +44,8 @@ export const FormRequestAccount = () => {
 
   const { clientPetition, isLoading } = useClientPetition();
 
+  const [ selectTypeAccount, setSelectTypeAccount ] = useState();
+
   const [formState, setFormState] = useState({
 
     name: {
@@ -207,6 +209,16 @@ export const FormRequestAccount = () => {
 
   }
 
+  const handleSelect = (event) => {
+
+    event.preventDefault();
+
+    setSelectTypeAccount(event.target.value);
+
+    console.log(selectTypeAccount);
+    
+  }
+
   const handleClientPetition = (event) => {
 
     event.preventDefault();
@@ -231,7 +243,7 @@ export const FormRequestAccount = () => {
 
       formState.aliasAccount.value,
 
-      formState.typeAccount.value
+      selectTypeAccount
 
     );
 
@@ -379,14 +391,15 @@ export const FormRequestAccount = () => {
         <div className="input-request-alone">
           <select
             name="typeAccount"
-            value={formState.typeAccount.value}
             onChange={handleInputValueChange}
             onBlur={handleInputValidationOnBlur}
+            onClick={handleSelect}
             className="input-text-request-account"
           >
-            <option value="" disabled>Seleccione una opción</option>
-            <option value="Monetaria">Monetaria</option>
-            <option value="Ahorro">Ahorro</option>
+            <option value="">Seleccione una opción</option>
+            <option value={"CURRENT"}>Monetario</option>
+            <option value={"CREDIT"}>Credito</option>
+            <option value={"SAVINGS"}>Ahorro</option>
           </select>
           {formState.typeAccount.showError && (
             <span className="error-message">/* Mensaje de error aquí */</span>
