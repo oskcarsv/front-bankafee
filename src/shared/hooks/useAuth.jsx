@@ -20,8 +20,12 @@ export const useAuth = () => {
         const { user, token } = response.data;
         localStorage.setItem("token", JSON.stringify({token:token, DPI: user.DPI, no_Account: user.no_Account, role:user.role}));
         setIsLoading(false);
-        navigate('/home')
-
+        if(user.role ==="ADMIN_ROLE"){
+            navigate('/homeAdmin');
+        }else{
+            navigate('/home');
+        }
+        return toast.success(`${response.data.msg}`);
     }
     return { isLoading, login };
 }
