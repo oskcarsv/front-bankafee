@@ -29,3 +29,22 @@ export const login = async (data) => {
     }
   }
 }
+
+export const clientPetition = async (data) => {
+
+  try{
+
+    return await apiClient.post("/auth/clientPetition", data);
+
+  }catch(e){
+    
+    return{
+
+      error: true,
+      e
+
+    }
+
+  }
+
+}
