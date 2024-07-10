@@ -144,7 +144,7 @@ export const FormRequestAccount = () => {
 
     let isValid = false;
 
-    switch(field){
+    switch (field) {
 
       case "name":
 
@@ -207,10 +207,10 @@ export const FormRequestAccount = () => {
 
   }
 
-  const handleClientPetition = (event) =>{
+  const handleClientPetition = (event) => {
 
     event.preventDefault();
-    
+
     clientPetition(
 
       formState.name.value,
@@ -237,7 +237,7 @@ export const FormRequestAccount = () => {
 
   }
 
-  const isSubmitButtonDisabled = 
+  const isSubmitButtonDisabled =
 
     isLoading ||
 
@@ -278,16 +278,16 @@ export const FormRequestAccount = () => {
         </div>
         <div className="input-request-alone">
           <Input
-              field="username"
-              value={formState.username.value}
-              onChangeHandler={handleInputValueChange}
-              type="text"
-              placeholder="Username"
-              onBlurHandler={handleInputValidationOnBlur}
-              showErrorMessage={formState.username.showError}
-              validationMessage={validateUsernameMessage}
-              className="input-text-request-account"
-            />
+            field="username"
+            value={formState.username.value}
+            onChangeHandler={handleInputValueChange}
+            type="text"
+            placeholder="Username"
+            onBlurHandler={handleInputValidationOnBlur}
+            showErrorMessage={formState.username.showError}
+            validationMessage={validateUsernameMessage}
+            className="input-text-request-account"
+          />
         </div>
         <div className="input-request-alone">
           <Input
@@ -377,16 +377,20 @@ export const FormRequestAccount = () => {
           />
         </div>
         <div className="input-request-alone">
-          <Input
-            field="typeAccount"
+          <select
+            name="typeAccount"
             value={formState.typeAccount.value}
-            onChangeHandler={handleInputValueChange}
-            type="text"
-            placeholder="TypeAccount"
-            onBlurHandler={handleInputValidationOnBlur}
-            showErrorMessage={formState.typeAccount.showError}
+            onChange={handleInputValueChange}
+            onBlur={handleInputValidationOnBlur}
             className="input-text-request-account"
-          />
+          >
+            <option value="" disabled>Seleccione una opción</option>
+            <option value="Monetaria">Monetaria</option>
+            <option value="Ahorro">Ahorro</option>
+          </select>
+          {formState.typeAccount.showError && (
+            <span className="error-message">/* Mensaje de error aquí */</span>
+          )}
         </div>
       </form>
       <div className="content-btn-request">
