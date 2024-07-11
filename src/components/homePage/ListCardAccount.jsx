@@ -5,6 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+import {getOwnAccount as getOwnAccountRequest} from "../../services/";
+
+import {useEffect, useState} from "react";
+
+import {toast} from "react-hot-toast";
+
 const settings = {
   dots: true,
   infinite: true,
@@ -40,90 +46,86 @@ const settings = {
 };
 
 export const ListCardAccount = () => {
+
+  const [account, setAccount] = useState([]);
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const listAccounts = async () => {
+
+    setIsLoading(true);
+
+    try{
+
+      const response = await getOwnAccountRequest();
+
+      setAccount(response.data);
+
+      console.log(account);
+
+
+
+    }catch(error){
+
+      console.log(response.error);
+      console.log(response.e);
+      console.log(response.e?.response);
+      console.log(response.e?.response?.data);
+
+      return toast.error(account.error?.response?.data || "Can't List Accounts")
+
+
+    }finally{
+
+      setIsLoading(false);
+
+    }
+
+  }
+
+  useEffect(()=>{
+
+    listAccounts();
+
+  }, [])
+
   return (
     <>
       <section className="card-account">
         <Slider {...settings} className="slider-container">
-          <div className="card-account-info">
-            <div className="content-title">
-              <p className="card-account-info-title">
-                Cuenta ahorro - Mi cuenta
-              </p>
-              <img src={myAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <div className="content-title">
-              <p className="card-account-info-number">1234567890 </p>
-              <img src={editMyAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <h1 className="card-account-info-amount">GTQ 400.00</h1>
-          </div>
-          <div className="card-account-info">
-            <div className="content-title">
-              <p className="card-account-info-title">
-                Cuenta ahorro - Mi cuenta
-              </p>
-              <img src={myAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <div className="content-title">
-              <p className="card-account-info-number">1234567890 </p>
-              <img src={editMyAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <h1 className="card-account-info-amount">GTQ 500.00</h1>
-          </div>
-          <div className="card-account-info">
-            <div className="content-title">
-              <p className="card-account-info-title">
-                Cuenta ahorro - Mi cuenta
-              </p>
-              <img src={myAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <div className="content-title">
-              <p className="card-account-info-number">1234567890 </p>
-              <img src={editMyAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <h1 className="card-account-info-amount">GTQ 500.00</h1>
-          </div>
-          <div className="card-account-info">
-            <div className="content-title">
-              <p className="card-account-info-title">
-                Cuenta ahorro - Mi cuenta
-              </p>
-              <img src={myAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <div className="content-title">
-              <p className="card-account-info-number">1234567890 </p>
-              <img src={editMyAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <h1 className="card-account-info-amount">GTQ 500.00</h1>
-          </div>
-          <div className="card-account-info">
-            <div className="content-title">
-              <p className="card-account-info-title">
-                Cuenta ahorro - Mi cuenta
-              </p>
-              <img src={myAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <div className="content-title">
-              <p className="card-account-info-number">1234567890 </p>
-              <img src={editMyAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <h1 className="card-account-info-amount">GTQ 500.00</h1>
-          </div>
-          <div className="card-account-info">
-            <div className="content-title">
-              <p className="card-account-info-title">
-                Cuenta ahorro - Mi cuenta
-              </p>
-              <img src={myAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <div className="content-title">
-              <p className="card-account-info-number">1234567890 </p>
-              <img src={editMyAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <h1 className="card-account-info-amount">GTQ 500.00</h1>
-          </div>
+          {isLoading
+            ? (
+                <p>Cargando...</p>
+              )
+              :(
+                <div className="card-account-info">
+                {Array.isArray(account) ? (
+
+                    account.map((account) => (
+
+                      <div key={account._id}>
+                        <div className="content-title">
+                          <p className="card-account-info-title">
+                            {account.type} - {account.alias}
+                          </p>
+                          <img alt="icon" className="icon-myAccount" />
+                        </div>
+                        <div className="content-title">
+                          <p className="card-account-info-number">1234567890 </p>
+                          <img alt="icon" className="icon-myAccount" />
+                        </div>
+                        <h1 className="card-account-info-amount">GTQ 400.00</h1>
+                      </div>
+
+                    ))
+                  
+                  ):(
+                    <h5>NO FUNCIONA!!</h5>
+                  )}
+                </div>
+                )}
         </Slider>
       </section>
     </>
-  );
-};
+  )
+}

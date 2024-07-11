@@ -10,7 +10,7 @@ apiClient.interceptors.request.use(
   (config) => {
     const getToken = localStorage.getItem("token");
     if (getToken) {
-      const token = JSON.parse(getToken); 
+      const token = JSON.parse(getToken).token 
       config.headers.Authorization = `${token}`;
     }
     return config;
@@ -39,6 +39,25 @@ export const clientPetition = async (data) => {
 
   }catch(e){
     
+    return{
+
+      error: true,
+      e
+
+    }
+
+  }
+
+}
+
+export const getOwnAccount = async () => {
+
+  try{
+
+    return await apiClient.get("/account/user");
+
+  }catch(e){
+
     return{
 
       error: true,
