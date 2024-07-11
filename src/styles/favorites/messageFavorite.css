@@ -1,44 +1,44 @@
-.message-favorite{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    color: var(--text-color);
-    margin-top: 3%;
+.message-favorite {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  color: var(--text-color);
+  margin-top: 3%;
 }
 
-.titles-container-favorites{
-    display: flex;
-    justify-content: space-between;
+.titles-container-favorites {
+  display: flex;
+  justify-content: space-between;
 }
 
-.message-title-favorite{
-    font-size: 35px;
-    margin: 2% 0;
+.message-title-favorite {
+  font-size: 35px;
+  margin: 2% 0;
 }
 
-.container-btn-back-favorites{
-    display: flex;
-    align-items: center;
+.container-btn-back-favorites {
+  display: flex;
+  align-items: center;
 }
 
-.btn-goBack{
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    background-color: var(--tool-background);
-    cursor: pointer;
+.btn-goBack {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--tool-background);
+  cursor: pointer;
 }
 
-.img-goBack{
-    width: 25px;
-    height: 25px;
+.img-goBack {
+  width: 25px;
+  height: 25px;
 }
 
-.s{
-    margin: 0;
-    border: none;
-    height: 2px;
-    background-color: var(--text-color);
+.s {
+  margin: 0;
+  border: none;
+  height: 2px;
+  background-color: var(--text-color);
 }

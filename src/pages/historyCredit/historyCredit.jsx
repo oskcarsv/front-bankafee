@@ -3,17 +3,17 @@ import { MessageAllHistory } from "../../components/historyTransfer/MessageAllHi
 import { HistoryCreditList } from "../../components/historyCredit/HistoryCreditList";
 
 export const HistoryCredit = () => {
-    return (
-        <>
-            <main className="main-container-home">
-                <nav className="sidebar-container">
-                    <Sidebar />
-                </nav>
-                <article className="home-page-container">
-                    <MessageAllHistory />
-                    <HistoryCreditList />
-                </article>
-            </main>
-        </>
-    );
+  return (
+    <>
+      <main className="main-container-home">
+        <nav className="sidebar-container">
+          <Sidebar />
+        </nav>
+        <article className="home-page-container">
+          <MessageAllHistory />
+          <HistoryCreditList />
+        </article>
+      </main>
+    </>
+  );
 };

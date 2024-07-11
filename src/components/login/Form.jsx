@@ -11,15 +11,15 @@ export const Form = () => {
   const { login, isLoading } = useAuth();
   const [form, setForm] = useState({
     username: {
-      value: '',
+      value: "",
       isValid: false,
-      errorMessage: ''
+      errorMessage: "",
     },
     password: {
-      value: '',
+      value: "",
       isValid: false,
-      errorMessage: ''
-    }
+      errorMessage: "",
+    },
   });
 
   const handleInputValueChange = (value, field) => {
@@ -27,18 +27,18 @@ export const Form = () => {
       ...prevState,
       [field]: {
         ...prevState[field],
-        value
-      }
-    }))
-  }
+        value,
+      },
+    }));
+  };
 
   const handleInputValidationOnBlur = (value, field) => {
     let isValid = false;
     switch (field) {
-      case 'username':
-        isValid = value.length>0;
+      case "username":
+        isValid = value.length > 0;
         break;
-      case 'password':
+      case "password":
         isValid = value.length > 0;
         break;
       default:
@@ -49,17 +49,18 @@ export const Form = () => {
       [field]: {
         ...prevState[field],
         isValid,
-        showError: !isValid
-      }
-    }))
-  }
+        showError: !isValid,
+      },
+    }));
+  };
 
   const handleLogin = (event) => {
     event.preventDefault();
     login(form.username.value, form.password.value);
-  }
+  };
 
-  const buttonDisabled = isLoading || !form.username.isValid || !form.password.isValid;
+  const buttonDisabled =
+    isLoading || !form.username.isValid || !form.password.isValid;
 
   return (
     <main className="main-content">
@@ -79,29 +80,34 @@ export const Form = () => {
             <h1>Sing In</h1>
           </div>
           <Input
-            field={'username'}
-            type={'text'}
+            field="username"
+            type="text"
             value={form.username.value}
-            placeholderText={'Username'}
-            classNameInput={'input-login'}
+            placeholderText="Username"
+            classNameInput="input-login"
             onChangeHandler={handleInputValueChange}
             onBlurHandler={handleInputValidationOnBlur}
             showErrorMessage={form.username.showError}
-            validationMessage={'The username is required.'}
+            validationMessage="The username is required."
           />
           <Input
-            field={'password'}
-            type={'password'}
+            field="password"
+            type="password"
             value={form.password.value}
-            placeholderText={'Password'}
-            classNameInput={'input-login'}
+            placeholderText="Password"
+            classNameInput="input-login"
             onChangeHandler={handleInputValueChange}
             onBlurHandler={handleInputValidationOnBlur}
             showErrorMessage={form.password.showError}
-            validationMessage={'The password is required.'}
+            validationMessage="The password is required."
           />
           <div className="btn-container">
-            <button type="submit" className="btn-login" onClick={handleLogin} disabled={buttonDisabled}>
+            <button
+              type="submit"
+              className="btn-login"
+              onClick={handleLogin}
+              disabled={buttonDisabled}
+            >
               Sign In
             </button>
           </div>

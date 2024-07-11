@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-import homeIcon from '../../assets/iconsProduct/homeIconProductPage.svg'
-import goBackIcon from '../../assets/iconsProduct/goBackIconProductPage.svg'
+import homeIcon from "../../assets/iconsProduct/homeIconProductPage.svg";
+import goBackIcon from "../../assets/iconsProduct/goBackIconProductPage.svg";
 
 import "../../styles/productHomePage/titleProduct.css";
 
@@ -17,7 +17,6 @@ export const TitleProductHome = () => {
           ) : (
             <h1 className="title-product-home">Category Home Page</h1>
           )}
-
         </div>
         <div className="content-btn">
           <button className="btn-back">

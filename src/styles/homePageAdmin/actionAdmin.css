@@ -1,20 +1,20 @@
-.section-list-action-admin{
-    display: flex;
-    align-items: center;
-    margin-bottom: 3%;
-    margin-top: 1%;
-    padding: 0% 10% 0% 10%;
-    border-radius: 10cqh;
-    width: auto;
-    height: 75px;
-    background-color: var(--white-background);
+.section-list-action-admin {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-top: 1%;
+  padding: 0% 10% 0% 10%;
+  border-radius: 10cqh;
+  width: auto;
+  height: 75px;
+  background-color: var(--white-background);
 }
 
-.content-action{
-    padding: 3%;
-    margin-left: 0%;
+.content-action {
+  padding: 3%;
+  margin-left: 0%;
 }
 
-.icon-action-admin{
-    cursor: pointer;
+.icon-action-admin {
+  cursor: pointer;
 }
