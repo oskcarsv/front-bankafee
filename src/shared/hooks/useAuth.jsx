@@ -36,7 +36,9 @@ export const useAuth = () => {
 
   const logout = () => {
     localStorage.removeItem("token");
-    // navigate("/home");
+    localStorage.removeItem("name");
+    navigate("/");
   };
+
   return { isLoading, login, logout };
 };
