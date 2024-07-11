@@ -6,17 +6,18 @@ import { useClientPetition, useUser } from "../../shared/hooks/";
 import "../../styles/homePageAdmin/ListApproval.css";
 
 export const ListApproval = () => {
-    const {getClientPetitions,clientPetitions,isLoading} = useClientPetition();
-    const{postUser,loading } = useUser();
+  const { getClientPetitions, clientPetitions, isLoading } =
+    useClientPetition();
+  const { postUser, loading } = useUser();
 
   useEffect(() => {
     getClientPetitions();
   }, [loading]);
 
-    const handleApprove = (event) => {
-        event.preventDefault();
-        postUser({clientNo_Petition:event.target.id});
-    }
+  const handleApprove = (event) => {
+    event.preventDefault();
+    postUser({ clientNo_Petition: event.target.id });
+  };
 
   return (
     <section className="section-list-approve">

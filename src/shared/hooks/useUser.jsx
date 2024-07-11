@@ -10,9 +10,7 @@ export const useUser = () => {
   const postUser = async (clientNo_Petition) => {
     setLoading(true);
 
-        const response = await postUserRequest(
-            clientNo_Petition
-        );
+    const response = await postUserRequest(clientNo_Petition);
 
     if (response.error) {
       setLoading(false);
