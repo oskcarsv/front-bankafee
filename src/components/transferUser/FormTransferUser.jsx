@@ -7,12 +7,15 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Input } from "../Input";
 import toast from "react-hot-toast";
-import { validateDPI } from "../../shared/validator/validateDPI";
+import { validateDPI, validateDPIMessage } from "../../shared/validator/validateDPI";
 import { validateAccount, validateAccountMessage } from "../../shared/validator/validateAccount";
+import { validateDescriptionTransfer, validateDescriptionTransferMessage, validateMaxTransfer, validateMaxTransferMessage } from "../../shared/validator";
+import { useTransfer } from "../../shared/hooks/useTransfer";
 
 export const FormTransferUser = () => {
   const [selectAccount, setSelectAccount] = useState();
   const [accounts, setAccounts] = useState([]);
+  const { postTransfer } = useTransfer();
   const [form, setForm] = useState({
     noOwnerAccount: {
       value: "",
@@ -68,10 +71,13 @@ export const FormTransferUser = () => {
         break;
       case 'DPI_DestinationAccount':
         isValid = validateDPI(value);
+        
         break;
       case 'amount':
+        isValid = validateMaxTransfer(value);
         break;
       case 'description':
+        isValid = validateDescriptionTransfer(value);
         break;
       default:
         break;
@@ -90,9 +96,17 @@ export const FormTransferUser = () => {
     event.preventDefault();
     setSelectAccount(event.target.value);
     if (event.target.value === 'Select account') {
+      form.noOwnerAccount.isValid = false;
       toast.error('Select an account');
     }
   }
+
+  const handleTransfer = (event) => {
+    event.preventDefault();
+    postTransfer(form.noOwnerAccount.value=selectAccount, form.noDestinationAccount.value, parseInt(form.DPI_DestinationAccount.value), parseFloat( form.amount.value), form.description.value);
+  }
+
+  const buttonDisabled = !form.DPI_DestinationAccount.isValid || !form.noDestinationAccount.isValid || !form.amount.isValid;
 
   return (
     <main className="content-form-transfer-user">
@@ -102,10 +116,11 @@ export const FormTransferUser = () => {
       </section>
       <form className="form-transfer-user">
         <div className="box-transfer">
-          <select className="box-select-transfer" onClickCapture={handleSelect}>
+          <select className="box-select-transfer" onChange={handleSelect} name='noOwnerAccount'>
             {Array.isArray(accounts) && accounts.map((account, index) =>
-            (<option key={index} value={account} className="input-text-transfer-user"
-            >{account}</option>)
+            (
+              <option key={index} value={account !== "Select account"?(account.slice(11)):(account)} className="input-text-transfer-user"
+              >{account !== "Select account" ? (<>{account.slice(11)}</>) : (<>{account}</>)}</option>)
             )
             }
           </select>
@@ -134,6 +149,7 @@ export const FormTransferUser = () => {
             onChangeHandler={handleInputValueChange}
             onBlurHandler={handleInputValidationOnBlur}
             showErrorMessage={form.DPI_DestinationAccount.showError}
+            validationMessage={validateDPIMessage}
             classNameInput="input-text-transfer-user"
           />
         </div>
@@ -146,6 +162,7 @@ export const FormTransferUser = () => {
             onChangeHandler={handleInputValueChange}
             onBlurHandler={handleInputValidationOnBlur}
             showErrorMessage={form.amount.showError}
+            validationMessage={validateMaxTransferMessage}
             classNameInput="input-text-transfer-user"
           />
         </div>
@@ -158,18 +175,19 @@ export const FormTransferUser = () => {
             onChangeHandler={handleInputValueChange}
             onBlurHandler={handleInputValidationOnBlur}
             showErrorMessage={form.description.showError}
+            validationMessage={validateDescriptionTransferMessage}
             classNameInput="input-text-transfer-user"
           />
         </div>
       </form>
       <section className="container-btn-transfer">
         <div className="btn-content-transfer">
-          <Link to="/home" className="link-btn-transfer-user">
+          <div className="link-btn-transfer-user">
             <button className="btn-transfer cancel">Cancel</button>
-          </Link>
-          <Link to="/home" className="link-btn-transfer-user">
-            <button className="btn-transfer">Transfer</button>
-          </Link>
+          </div>
+          <div className="link-btn-transfer-user">
+            <button className="btn-transfer" onClick={handleTransfer} disabled={buttonDisabled}>Transfer</button>
+          </div>
         </div>
       </section>
     </main>

@@ -84,3 +84,14 @@ export const getServices = async () => {
     };
   }
 };
+
+export const postTransfer = async (data) => {
+  try {
+    return await apiClient.post("/transfer", data);
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+}
