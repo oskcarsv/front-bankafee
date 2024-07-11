@@ -10,7 +10,7 @@ import history from "../../assets/iconSidebar/history.svg";
 import logoutIcon from "../../assets/iconSidebar/logout.svg";
 import home from "../../assets/iconSidebar/home.svg";
 import { HamburgerMenuUser } from "../Hamburger-Menu-User";
-import {useUser} from '../../shared/hooks'
+import { useUser } from "../../shared/hooks";
 
 import "../../styles/homePageCss/sidebar.css";
 
@@ -21,13 +21,9 @@ export const Sidebar = () => {
 
   const { getOwnUser, user, loading } = useUser();
 
-  useEffect(
-    ()=>{
-
-      getOwnUser();
-
-    },[]
-  )
+  useEffect(() => {
+    getOwnUser();
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {

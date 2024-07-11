@@ -3,16 +3,11 @@ import { useUser } from "../../shared/hooks";
 import { useEffect } from "react";
 
 export const MessageHome = () => {
-
   const { getOwnUser, user, loading } = useUser();
 
-  useEffect(
-    ()=>{
-
-      getOwnUser();
-
-    },[]
-  )
+  useEffect(() => {
+    getOwnUser();
+  }, []);
 
   console.log(user);
 

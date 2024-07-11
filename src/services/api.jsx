@@ -118,21 +118,13 @@ export const postUser = async (data) => {
   }
 };
 
-export const ownUser = async () =>{
-
-  try{
-
-    return await apiClient.get("/user/")
-
-  }catch(e){
-
+export const ownUser = async () => {
+  try {
+    return await apiClient.get("/user/");
+  } catch (e) {
     return {
-
       error: true,
       e,
-
-    }
-
+    };
   }
-
-}
+};
