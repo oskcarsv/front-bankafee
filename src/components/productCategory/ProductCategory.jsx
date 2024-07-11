@@ -6,8 +6,8 @@ import { ContentProductCategory } from "./ContentProductCategory";
 import "../../styles/productCategory/productCategory.css";
 
 export const ProductCategoryAll = () => {
-
-  const { isLoading, getProductForCategory, categoryProduct } = useCategoryProduct();
+  const { isLoading, getProductForCategory, categoryProduct } =
+    useCategoryProduct();
   const { id } = useParams();
 
   useEffect(() => {
@@ -17,20 +17,27 @@ export const ProductCategoryAll = () => {
   return (
     <section className="section-product-category">
       <div className="content-product-category">
-        {isLoading ? (<div>Loading...</div>) :
-          (
-            <div>{Array.isArray(categoryProduct) && categoryProduct.length === 0 ?
-              <div>No hay productos con esta categoría</div> : null}
-              {Array.isArray(categoryProduct) ? (<div className="content-product-category">
-                {categoryProduct.map(
-                  (category) => (
-                    <ContentProductCategory key={category._id} category={category} description={category.description} price={category.price} />
-                  ))
-                }
-              </div>) : null
-              }</div>
-          )
-        }
+        {isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          <div>
+            {Array.isArray(categoryProduct) && categoryProduct.length === 0 ? (
+              <div>No hay productos con esta categoría</div>
+            ) : null}
+            {Array.isArray(categoryProduct) ? (
+              <div className="content-product-category">
+                {categoryProduct.map((category) => (
+                  <ContentProductCategory
+                    key={category._id}
+                    category={category}
+                    description={category.description}
+                    price={category.price}
+                  />
+                ))}
+              </div>
+            ) : null}
+          </div>
+        )}
       </div>
     </section>
   );
