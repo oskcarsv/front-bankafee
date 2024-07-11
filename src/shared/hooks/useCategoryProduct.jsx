@@ -18,14 +18,13 @@ export const useCategoryProduct = () => {
                 'An error occurred, please try again later.'
             );
         }
-        console.log(response.data);
         setCategory(response.data.categoryProducts);
         setIsLoading(false);
     };
 
     const getProductForCategory = async (id) => {
         setIsLoading(true);
-        const response = await categoryForProductRequest({ id });
+        const response = await categoryForProductRequest(id );
         if (response.error) {
             setIsLoading(false);
             return toast.error('Error al obtener las categorias');
@@ -37,7 +36,7 @@ export const useCategoryProduct = () => {
     return {
         isLoading,
         getCategoryProduct,
-        categoryProduct: category,
-        getProductForCategory
+        getProductForCategory,
+        categoryProduct: category
     }
 };

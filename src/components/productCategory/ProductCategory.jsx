@@ -12,16 +12,25 @@ export const ProductCategoryAll = () => {
 
   useEffect(() => {
     getProductForCategory(id);
-  }, []);
+  }, [id]);
 
   return (
     <section className="section-product-category">
       <div className="content-product-category">
-        {Array.isArray(categoryProduct) ?
-          (<div className="content-product-category">{categoryProduct.map((category) => (
-            <ContentProductCategory key={category._id} category={category} description={category.description} price={category.price}/>
-          ))}</div>) :
-          (<div>no es</div>)}
+        {isLoading ? (<div>Loading...</div>) :
+          (
+            <div>{Array.isArray(categoryProduct) && categoryProduct.length === 0 ?
+              <div>No hay productos con esta categoría</div> : null}
+              {Array.isArray(categoryProduct) ? (<div className="content-product-category">
+                {categoryProduct.map(
+                  (category) => (
+                    <ContentProductCategory key={category._id} category={category} description={category.description} price={category.price} />
+                  ))
+                }
+              </div>) : (<div>no es</div>)
+              }</div>
+          )
+        }
       </div>
     </section>
   );
