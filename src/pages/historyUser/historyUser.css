@@ -1,16 +1,16 @@
-.main-container-user{
+.main-container-user {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: auto;
 }
 
-.sidebar-history{
+.sidebar-history {
   width: 15%;
   height: auto;
 }
 
-.content-history-general{
+.content-history-general {
   width: 80%;
   height: 100%;
   display: flex;

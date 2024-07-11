@@ -1,19 +1,19 @@
 .main-list-admin-users {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
 }
 
 .sidebar-list-user {
-    width: 15%;
-    height: auto;
+  width: 15%;
+  height: auto;
 }
 
 .article-list-user-admin {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-right: 2.5%;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2.5%;
 }

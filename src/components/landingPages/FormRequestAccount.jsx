@@ -7,131 +7,92 @@ import "../../styles/requestAccount/formRequestAccount.css";
 import { useState } from "react";
 
 import {
-
   validateEmail,
-
   validateEmailMessage,
-
   validateName,
-
   validateNameMessage,
-
   validatePhoneNumber,
-
   validatePhoneNumberMessage,
-
   validateUsername,
-
   validateUsernameMessage,
-
   validateDPI,
-
   validateDPIMessage,
-
   validateWorkPlace,
-
   validateWorkPlaceMessage,
-
   validateMonthyIncome,
+  validateMonthyIncomeMessage,
+} from "../../shared/validator";
 
-  validateMonthyIncomeMessage
-
-} from '../../shared/validator'
-
-import { useClientPetition } from '../../shared/hooks/'
+import { useClientPetition } from "../../shared/hooks/";
 
 export const FormRequestAccount = () => {
-
   const { clientPetition, isLoading } = useClientPetition();
 
-  const [ selectTypeAccount, setSelectTypeAccount ] = useState();
+  const [selectTypeAccount, setSelectTypeAccount] = useState();
 
   const [formState, setFormState] = useState({
-
     name: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
 
     username: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
 
     DPI: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
 
     adress: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
 
     email: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
 
     phoneNumber: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
 
     workPlace: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
 
     monthlyIncome: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
 
     aliasAccount: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
 
     typeAccount: {
-
       value: "",
       isValid: false,
       showError: false,
-
     },
-
   });
 
   const handleInputValueChange = (value, field) => {
-
     setFormState((prevState) => ({
       ...prevState,
       [field]: {
@@ -139,63 +100,51 @@ export const FormRequestAccount = () => {
         value,
       },
     }));
-
-  }
+  };
 
   const handleInputValidationOnBlur = (value, field) => {
-
     let isValid = false;
 
     switch (field) {
-
       case "name":
-
         isValid = validateName(value);
 
         break;
 
       case "username":
-
         isValid = validateUsername(value);
 
         break;
 
       case "DPI":
-
         isValid = validateDPI(value);
 
         break;
 
       case "email":
-
         isValid = validateEmail(value);
 
         break;
 
       case "phoneNumber":
-
         isValid = validatePhoneNumber(value);
 
         break;
 
       case "workPlace":
-
         isValid = validateWorkPlace(value);
 
         break;
 
       case "monthlyIncome":
-
         isValid = validateMonthyIncome(value);
 
         break;
 
       default:
-
         isValid = true;
 
         break;
-
     }
 
     setFormState((prevState) => ({
@@ -206,25 +155,20 @@ export const FormRequestAccount = () => {
         showError: !isValid,
       },
     }));
-
-  }
+  };
 
   const handleSelect = (event) => {
-
     event.preventDefault();
 
     setSelectTypeAccount(event.target.value);
 
     console.log(selectTypeAccount);
-    
-  }
+  };
 
   const handleClientPetition = (event) => {
-
     event.preventDefault();
 
     clientPetition(
-
       formState.name.value,
 
       formState.username.value,
@@ -243,30 +187,19 @@ export const FormRequestAccount = () => {
 
       formState.aliasAccount.value,
 
-      selectTypeAccount
-
+      selectTypeAccount,
     );
-
-  }
+  };
 
   const isSubmitButtonDisabled =
-
     isLoading ||
-
     !formState.name.isValid ||
-
     !formState.username.isValid ||
-
     !formState.DPI.isValid ||
-
     !formState.adress.isValid ||
-
     !formState.email.isValid ||
-
     !formState.phoneNumber.isValid ||
-
     !formState.workPlace.isValid ||
-
     !formState.monthlyIncome.isValid;
 
   return (
@@ -397,9 +330,9 @@ export const FormRequestAccount = () => {
             className="input-text-request-account"
           >
             <option value="">Seleccione una opción</option>
-            <option value={"CURRENT"}>Monetario</option>
-            <option value={"CREDIT"}>Credito</option>
-            <option value={"SAVINGS"}>Ahorro</option>
+            <option value="CURRENT">Monetario</option>
+            <option value="CREDIT">Credito</option>
+            <option value="SAVINGS">Ahorro</option>
           </select>
           {formState.typeAccount.showError && (
             <span className="error-message">/* Mensaje de error aquí */</span>
@@ -411,7 +344,13 @@ export const FormRequestAccount = () => {
           <button className="btn-account-cancel">Cancel</button>
         </Link>
         <Link to="/" className="link-btn-request-account">
-          <button className="btn-request-account" type="submit" onClick={handleClientPetition}>Request</button>
+          <button
+            className="btn-request-account"
+            type="submit"
+            onClick={handleClientPetition}
+          >
+            Request
+          </button>
         </Link>
       </div>
     </main>

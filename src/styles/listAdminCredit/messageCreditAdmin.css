@@ -1,44 +1,44 @@
-.section-message-credit-admin{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    color: var(--text-color);
-    margin-top: 3%;
+.section-message-credit-admin {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  color: var(--text-color);
+  margin-top: 3%;
 }
 
-.container-general-message{
-    display: flex;
-    justify-content: space-between;
+.container-general-message {
+  display: flex;
+  justify-content: space-between;
 }
 
-.title-message-credit-admin{
-    font-size: 35px;
-    margin: 2% 0;
+.title-message-credit-admin {
+  font-size: 35px;
+  margin: 2% 0;
 }
 
-.container-btn-back-credit{
-    display: flex;
-    align-items: center;
+.container-btn-back-credit {
+  display: flex;
+  align-items: center;
 }
 
-.btn-goBack-admin{
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    background-color: var(--tool-background);
-    cursor: pointer;
+.btn-goBack-admin {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--tool-background);
+  cursor: pointer;
 }
 
-.img-goBack-admin{
-    width: 25px;
-    height: 25px;
+.img-goBack-admin {
+  width: 25px;
+  height: 25px;
 }
 
-.s{
-    margin: 0;
-    border: none;
-    height: 2px;
-    background-color: var(--text-color);
+.s {
+  margin: 0;
+  border: none;
+  height: 2px;
+  background-color: var(--text-color);
 }

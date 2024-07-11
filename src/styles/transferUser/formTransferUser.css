@@ -123,8 +123,6 @@
   background: var(--tool-item-background);
 }
 
-
-
 .container input {
   position: absolute;
   opacity: 0;
