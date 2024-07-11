@@ -8,7 +8,6 @@ import '../../styles/homePageAdmin/ListApproval.css';
 
 export const ListApproval = () => {
     const {getClientPetitions,clientPetitions,isLoading} = useClientPetition();
-    const [clientNo_Petition, setClientNo_Petition] = useState('');
     const{postUser,loading } = useUser();
 
     useEffect(() => {
@@ -17,8 +16,7 @@ export const ListApproval = () => {
 
     const handleApprove = (event) => {
         event.preventDefault();
-        setClientNo_Petition(event.target.id);
-        postUser( clientNo_Petition);
+        postUser({clientNo_Petition:event.target.id});
     }
 
     return (
