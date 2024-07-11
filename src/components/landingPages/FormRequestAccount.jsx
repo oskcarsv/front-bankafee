@@ -260,28 +260,32 @@ export const FormRequestAccount = () => {
           />
         </div>
         <div className="input-request-together">
-          <Input
-            field="email"
-            value={formState.email.value}
-            onChangeHandler={handleInputValueChange}
-            type="text"
-            placeholder="Email"
-            onBlurHandler={handleInputValidationOnBlur}
-            showErrorMessage={formState.email.showError}
-            validationMessage={validateEmailMessage}
-            className="input-text-request-account"
-          />
-          <Input
-            field="phoneNumber"
-            value={formState.phoneNumber.value}
-            onChangeHandler={handleInputValueChange}
-            type="text"
-            placeholder="Phone Number"
-            onBlurHandler={handleInputValidationOnBlur}
-            showErrorMessage={formState.phoneNumber.showError}
-            validationMessage={validatePhoneNumberMessage}
-            className="input-text-request-account"
-          />
+          {/* <div> */}
+            <Input
+              field="email"
+              value={formState.email.value}
+              onChangeHandler={handleInputValueChange}
+              type="text"
+              placeholder="Email"
+              onBlurHandler={handleInputValidationOnBlur}
+              showErrorMessage={formState.email.showError}
+              validationMessage={validateEmailMessage}
+              className="input-text-request-account double-input"
+            />
+          {/* </div> */}
+          {/* <div> */}
+            <Input
+              field="phoneNumber"
+              value={formState.phoneNumber.value}
+              onChangeHandler={handleInputValueChange}
+              type="text"
+              placeholder="Phone Number"
+              onBlurHandler={handleInputValidationOnBlur}
+              showErrorMessage={formState.phoneNumber.showError}
+              validationMessage={validatePhoneNumberMessage}
+              className="input-text-request-account double-input phone-number phone-number-span"
+            />
+          {/* </div> */}
         </div>
         <div className="input-request-alone">
           <Input
