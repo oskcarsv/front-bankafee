@@ -20,18 +20,24 @@ export const useCategoryProduct = () => {
     }
     setCategory(response.data.categoryProducts);
     setIsLoading(false);
+    console.log(response);
   };
+
 
   const getProductForCategory = async (id) => {
     setIsLoading(true);
     const response = await categoryForProductRequest(id);
+
     if (response.error) {
       setIsLoading(false);
       return toast.error("Error al obtener las categorias");
+
     }
     setCategory(response.data.products);
     setIsLoading(false);
   };
+
+
 
   return {
     isLoading,

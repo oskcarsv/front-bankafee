@@ -22,6 +22,7 @@ export const CategoryProduct = () => {
                 key={category._id}
                 idCategory={category._id}
                 name={category.name}
+                img={category.img}
               />
             ))}
           </div>

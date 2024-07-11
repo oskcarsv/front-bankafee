@@ -12,7 +12,7 @@ export const FormPurchase = () => {
       </div>
       <hr />
       <div className="content-product-info">
-        <div className="content-img-product">
+        <div className="content-buy-product">
           <img src={compraComputadora} alt="img" className="img-product" />
         </div>
         <div className="content-info-product">

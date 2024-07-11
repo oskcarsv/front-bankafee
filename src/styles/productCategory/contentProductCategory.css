@@ -1,0 +1,15 @@
+.content-img-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.img-product-buy{
+    width: 330px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}

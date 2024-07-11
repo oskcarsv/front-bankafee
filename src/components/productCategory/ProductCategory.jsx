@@ -32,6 +32,7 @@ export const ProductCategoryAll = () => {
                     category={category}
                     description={category.description}
                     price={category.price}
+                    img={category.img}
                   />
                 ))}
               </div>
