@@ -68,3 +68,22 @@ export const getOwnAccount = async () => {
   }
 
 }
+
+export const getOwnUser = async () => {
+
+  try{
+
+    return await apiClient.get("/user");
+
+  }catch(e){
+
+    return{
+
+      error: true,
+      e
+
+    }
+
+  }
+
+}
