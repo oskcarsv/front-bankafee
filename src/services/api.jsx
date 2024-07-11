@@ -9,14 +9,14 @@ apiClient.interceptors.request.use(
   (config) => {
     const getToken = localStorage.getItem("token");
     if (getToken) {
-      const token = JSON.parse(getToken);
+      const token = JSON.parse(getToken).token;
       config.headers.Authorization = `${token}`;
     }
     return config;
   },
   (e) => {
     return Promise.reject(e);
-  }
+  },
 );
 
 export const login = async (data) => {
@@ -25,10 +25,54 @@ export const login = async (data) => {
   } catch (e) {
     return {
       error: true,
-      e
-    }
+      e,
+    };
   }
-}
+};
+
+export const clientPetition = async (data) => {
+  try {
+    return await apiClient.post("/auth/clientPetition", data);
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};
+
+export const getCategoryProduct = async () => {
+  try {
+    return await apiClient.get("/categoryProduct");
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};
+
+export const getProductForCategory = async (id) => {
+  try {
+    return await apiClient.get(`/categoryProduct/${id}`);
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};
+
+export const getOwnAccount = async () => {
+  try {
+    return await apiClient.get("/account/user");
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};
 
 export const getServices = async () => {
   try {
