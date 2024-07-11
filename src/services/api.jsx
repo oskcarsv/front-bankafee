@@ -2,7 +2,7 @@ import axios from "axios";
 
 const apiClient = axios.create({
   // baseURL: "http://127.0.0.1:3004/bankafee/v1",
-  baseURL: " https://back-bankafee.vercel.app/bankafee/v1",
+  baseURL: " https://back-bankafee-phi.vercel.app/bankafee/v1",
   timeout: 5000,
 });
 
