@@ -7,7 +7,7 @@ import Slider from "react-slick";
 
 const settings = {
   dots: true,
-  infinite: true,
+  infinite: false,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -56,32 +56,6 @@ export const ListCardAccount = () => {
               <img src={editMyAccount} alt="icon" className="icon-myAccount" />
             </div>
             <h1 className="card-account-info-amount">GTQ 400.00</h1>
-          </div>
-          <div className="card-account-info">
-            <div className="content-title">
-              <p className="card-account-info-title">
-                Cuenta ahorro - Mi cuenta
-              </p>
-              <img src={myAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <div className="content-title">
-              <p className="card-account-info-number">1234567890 </p>
-              <img src={editMyAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <h1 className="card-account-info-amount">GTQ 500.00</h1>
-          </div>
-          <div className="card-account-info">
-            <div className="content-title">
-              <p className="card-account-info-title">
-                Cuenta ahorro - Mi cuenta
-              </p>
-              <img src={myAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <div className="content-title">
-              <p className="card-account-info-number">1234567890 </p>
-              <img src={editMyAccount} alt="icon" className="icon-myAccount" />
-            </div>
-            <h1 className="card-account-info-amount">GTQ 500.00</h1>
           </div>
           <div className="card-account-info">
             <div className="content-title">

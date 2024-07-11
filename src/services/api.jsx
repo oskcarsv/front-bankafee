@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: " https://back-bankafee.vercel.app/bankafee/v1",
+  baseURL: " https://back-bankafee-phi.vercel.app/bankafee/v1",
   timeout: 5000,
 });
 
@@ -9,12 +9,12 @@ apiClient.interceptors.request.use(
   (config) => {
     const getToken = localStorage.getItem("token");
     if (getToken) {
-      const token = JSON.parse(getToken); 
+      const token = JSON.parse(getToken);
       config.headers.Authorization = `${token}`;
     }
     return config;
   },
-  (e)=>{
+  (e) => {
     return Promise.reject(e);
   }
 );
@@ -29,3 +29,14 @@ export const login = async (data) => {
     }
   }
 }
+
+export const getServices = async () => {
+  try {
+    return await apiClient.get("/service/getServices");
+  } catch (e) {
+    return {
+      error: true,
+      e
+    }
+  }
+};
