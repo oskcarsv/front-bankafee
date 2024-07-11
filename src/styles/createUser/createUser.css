@@ -1,0 +1,124 @@
+.section-form-create-user {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-form-create-user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 50%;
+  margin-top: 15%;
+}
+
+.title-create {
+  font-size: 35px;
+  color: var(--text-color);
+  font-family: var(--general-font);
+  text-align: center;
+}
+
+.content-info-form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-create-user {
+  width: 75%;
+}
+
+.input-together-create {
+  width: 100%;
+  height: auto;
+  margin: 15px 0% 0% 0%;
+  border-radius: 15px;
+  border: none;
+  font-size: 100%;
+  display: flex;
+}
+
+.input-text-create-user {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  flex: 1;
+  padding: 2% 0% 2% 2%;
+  font-size: 100%;
+  margin-right: 1%;
+  outline: none;
+  border: var(--color-grey);
+  font-family: var(--general-font);
+  color: var(--text-color);
+  background: var(--tool-item-background);
+}
+
+.input-alone-create {
+  width: 99%;
+  height: auto;
+  border-radius: 1cqh;
+  margin: 15px 0% 0% 0%;
+  border: none;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-text-alone {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 2% 0% 2% 2%;
+  font-size: 100%;
+  outline: none;
+  border: var(--color-grey);
+  font-family: var(--general-font);
+  color: var(--text-color);
+  background: var(--tool-item-background);
+}
+
+.content-btn-create-user {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.btn-create-user {
+  width: 10vh;
+  height: 7vh;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: var(--general-font);
+  background-color: var(--tool-background);
+  color: var(--text-color-light);
+  cursor: pointer;
+}
+
+.btn-create-user:hover {
+  background-color: var(--tool-background-hover);
+}
+
+.btn-cancel-create-user {
+  width: 10vh;
+  height: 7vh;
+  border: none;
+  border-radius: 25px;
+  margin: 0% 5% 0% 5%;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: var(--general-font);
+  background-color: var(--color-red);
+  color: var(--text-color-light);
+  cursor: pointer;
+}
+
+.createUser{
+  margin-top: 5%
+}

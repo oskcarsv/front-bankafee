@@ -1,0 +1,32 @@
+.section-category-product {
+  width: auto;
+  height: 100%;
+  display: flex;
+}
+
+.content-category {
+  display: flex;
+  width: auto;
+  height: 100%;
+  margin-top: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 2%;
+}
+
+.title-category {
+  font-size: large;
+  color: var(--text-color);
+  font-family: var(--general-font);
+  text-decoration: none;
+}
+
+.img-category {
+  border-radius: 15px;
+}
+
+.link-category {
+  width: auto;
+  text-decoration: none;
+  margin: 0 4% 3% 0; 
+}

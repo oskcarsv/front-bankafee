@@ -1,0 +1,58 @@
+.main-service-container {
+  font-family: var(--general-font);
+}
+
+.title-service {
+  font-size: 230%;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: left;
+  margin: 0 0 5% 5%;
+}
+
+.services-container {
+  display: flex;
+  margin: 0 5% 5% 5%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.service-container {
+  width: 30%;
+  margin: 0 5% 5% 12%;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.img-service {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.service-description {
+  font-size: 140%;
+  color: var(--text-color);
+  text-align: left;
+  margin: 5% 0 0 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main-service-container {
+    background-color: white;
+    margin-top: -1%;
+  }
+
+  .title-service {
+    font-size: 115%;
+    text-align: center;
+  }
+
+  .service-description {
+    font-size: 80%;
+  }
+
+  .img-service {
+    border-radius: 5px;
+  }
+}

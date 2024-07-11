@@ -1,0 +1,248 @@
+.sidebar {
+  width: 15%;
+  height: 100%;
+  background-color: var(--nav-background);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+}
+
+.hamburger-icon-user {
+  display: none;
+}
+
+.profile-container-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  margin-top: 10%;
+}
+
+.content-img-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.img-sidebar-bankafee {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.header-homepage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-light);
+  font-size: 80%;
+  font-weight: var(--logo-font-weight);
+  font-family: var(--general-font);
+}
+
+.text-logo {
+  color: var(--text-color-light);
+  font-size: 150%;
+  font-weight: var(--logo-font-weight);
+  font-family: var(--general-font);
+}
+
+.content-info-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.img-perfil-sidebar {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.name-profile {
+  color: var(--text-color-light);
+  font-size: 80%;
+  margin: 0 0 0 15%;
+}
+
+.name-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+/* Estilos de los iconos de los botones*/
+.icon-create-account {
+  margin-left: 10%;
+}
+
+.name-container a {
+  width: auto;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.icon-history {
+  margin-left: 15%;
+}
+
+.icon-edit-user {
+  width: 25px;
+}
+
+.email-profile {
+  color: var(--text-color-light);
+  font-size: 80%;
+  margin: 2% 0 2% 0;
+}
+
+.img-sidebar {
+  margin-top: 10%;
+  height: 15%;
+  width: 38%;
+}
+
+/* ---------- */
+
+.content-sidebar-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25%;
+  width: 100%;
+  height: auto;
+  padding: 25% 0%;
+}
+
+.btn-home-sidebar {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  background-color: var(--tool-item-background);
+  font-size: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 65%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 20px;
+  padding: 5% 3%;
+}
+
+.content-logout-sidebar-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.content-logout-sidebar-btn a {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  text-decoration: none;
+  margin: 10% 10%;
+}
+
+.sidebar-menu-button-logout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--text-color);
+  background-color: var(--tool-item-background);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+  border: none;
+  padding: 30% 40%;
+}
+
+.sidebar-menu-button:hover {
+  background-color: var(--white-background);
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 1px;
+  }
+
+  .profile-container-all {
+    display: none;
+  }
+
+  .content-logout-sidebar-btn {
+    display: none;
+  }
+
+  .hamburger-icon-user {
+    display: block;
+  }
+
+  .content-img-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .header-homepage {
+    display: flex;
+    width: 87%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header-homepage .text-logo {
+    display: none;
+  }
+
+  .title-mobile {
+    text-align: center;
+    font-size: 25px;
+    width: 50%;
+  }
+
+  .img-sidebar-bankafee {
+    width: 24%;
+    height: auto;
+    margin: 0 0 0 0;
+  }
+
+  .hamburger-menu-container {
+    width: auto;
+    height: 100%;
+  }
+}

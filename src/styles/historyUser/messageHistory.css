@@ -1,0 +1,10 @@
+.message-history {
+  flex-direction: column;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.message-title-history {
+  font-size: 35px;
+  margin-left: 5%;
+}
