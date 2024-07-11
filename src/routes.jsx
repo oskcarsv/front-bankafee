@@ -18,7 +18,7 @@ import { ServiceCategory } from "./pages/serviceCategory/serviceCategory.jsx";
 import { FavoritesPage } from "./pages/favoritesUser/favoritesPage.jsx";
 import { HistoryTransfer } from "./pages/historyTransfer/historyTransfer.jsx";
 import { DepositHistory } from "./pages/historyDeposit/depositHistory.jsx";
-import { HistoryCredit} from "./pages/historyCredit/historyCredit.jsx";
+import { HistoryCredit } from "./pages/historyCredit/historyCredit.jsx";
 import { CreditRequest } from "./pages/creditRequest/creditRequest.jsx";
 import { HomePageAdmin } from "./pages/homePageAdmin/homePageAdmin.jsx";
 import { ListUser } from "./pages/listUser/listUser.jsx";
@@ -41,15 +41,16 @@ const routes = [
   { path: "/createUser", element: <CreateUser /> },
   { path: "/productHomePage", element: <ProductHomePage /> },
   { path: "/productCategory", element: <ProductCategory /> },
+  { path: "/productCategory/:id", element: <ProductCategory /> },
   { path: "/purchaseForm", element: <PurchaseForm /> },
   { path: "/serviceHomePage", element: <ServiceHomePage /> },
   { path: "/serviceCategory", element: <ServiceCategory /> },
   { path: "/favorites", element: <FavoritesPage /> },
   { path: "/historyTransfer", element: <HistoryTransfer /> },
   { path: "/historyDeposit", element: <DepositHistory /> },
-  { path: "/historyCredit", element: <HistoryCredit />},
-  { path: "/homeAdmin", element: <HomePageAdmin />},
-  { path: "/creditRequest", element: <CreditRequest />},
+  { path: "/historyCredit", element: <HistoryCredit /> },
+  { path: "/homeAdmin", element: <HomePageAdmin /> },
+  { path: "/creditRequest", element: <CreditRequest /> },
   { path: "/listUser", element: <ListUser /> },
   { path: "/listAccount", element: <ListAccount /> },
   { path: "/listCredit", element: <ListCredit /> },
