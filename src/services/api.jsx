@@ -95,3 +95,25 @@ export const postTransfer = async (data) => {
     };
   }
 }
+
+export const getClientPetitions = async () => {
+  try {
+    return await apiClient.get("/user/admin/clientPetition");
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+}
+
+export const postUser = async (data) => {
+  try {
+    return await apiClient.post("/user/", data);
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+}

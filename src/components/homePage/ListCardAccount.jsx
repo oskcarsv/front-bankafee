@@ -111,7 +111,7 @@ export const ListCardAccount = () => {
                           <img src={myAccount} alt="icon" className="icon-myAccount" />
                         </div>
                         <div className="content-title">
-                          <p className="card-account-info-number">{account.noAccount} </p>
+                          <p className="card-account-info-number">{account.noAccount.slice(11)} </p>
                           <img src={editMyAccount}  alt="icon" className="icon-myAccount" />
                         </div>
                         <h1 className="card-account-info-amount">Q.{account.amount}</h1>
