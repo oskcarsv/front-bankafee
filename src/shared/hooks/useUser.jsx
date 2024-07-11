@@ -2,9 +2,11 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { postUser as postUserRequest } from "../../services/api";
+import { ownUser as OwnUserRequest } from "../../services/";
 
 export const useUser = () => {
   const [loading, setLoading] = useState(false);
+  const [user, setUser] = useState([]);
   const navigate = useNavigate();
 
   const postUser = async (clientNo_Petition) => {
@@ -29,8 +31,29 @@ export const useUser = () => {
     return toast.success("Se ha aprobado el usuario correctamente");
   };
 
+  const getOwnUser = async () => {
+    setLoading(true);
+
+    try {
+      const response = await OwnUserRequest();
+
+      setUser(response.data.user[0]);
+
+      console.log(user);
+    } catch (error) {
+      console.log(response.error);
+      console.log(response.e);
+      console.log(response.e?.response);
+      console.log(response.e?.response?.data);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return {
     postUser,
+    getOwnUser,
     loading,
+    user,
   };
 };
