@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  // baseURL: "http://127.0.0.1:3004/bankafee/v1",
   baseURL: " https://back-bankafee-phi.vercel.app/bankafee/v1",
   timeout: 5000,
 });
@@ -10,7 +9,7 @@ apiClient.interceptors.request.use(
   (config) => {
     const getToken = localStorage.getItem("token");
     if (getToken) {
-      const token = JSON.parse(getToken);
+      const token = JSON.parse(getToken).token 
       config.headers.Authorization = `${token}`;
     }
     return config;
@@ -63,3 +62,22 @@ export const getProductForCategory = async (id) => {
     };
   }
 };
+
+export const getOwnAccount = async () => {
+
+  try{
+
+    return await apiClient.get("/account/user");
+
+  }catch(e){
+
+    return{
+
+      error: true,
+      e
+
+    }
+
+  }
+
+}
