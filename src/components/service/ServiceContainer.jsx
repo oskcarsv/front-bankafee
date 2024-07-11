@@ -1,6 +1,6 @@
 import "../../styles/serviceCss/serviceContent.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const ServiceContainer = ({
   description,
@@ -8,6 +8,15 @@ export const ServiceContainer = ({
   discountCode
 }) => {
   const [copied, setCopied] = useState(false);
+  const [existToken, setExistToken] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (token) {
+      setExistToken(true);
+    }
+  }, []);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(discountCode);
@@ -23,14 +32,20 @@ export const ServiceContainer = ({
             {enterprise}
           </h1>
         </p>
-        <p className="service-description">
-          {discountCode}
-        </p>
-        <div className="button-container">
-          <button className="service-button" onClick={handleCopy}>
-            {copied ? "Copiado!" : "Copiar"}
-          </button>
-        </div>
+
+        {existToken && (
+          <>
+            <p className="service-description">
+              {discountCode}
+            </p>
+            <div className="button-container">
+              <button className="service-button" onClick={handleCopy}>
+                {copied ? "Copiado!" : "Copiar"}
+              </button>
+            </div>
+          </>
+        )}
+
       </div>
     </>
   );

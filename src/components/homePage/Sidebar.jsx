@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { useAuth } from "../../shared/hooks/useAuth";
 
 import logo from "../../assets/iconLanding/logo.svg";
 import perfil from "../../assets/iconSidebar/perfil.svg";
 import editUser from "../../assets/iconSidebar/editUser.svg";
 import createAccount from "../../assets/iconSidebar/createAccount.svg";
 import history from "../../assets/iconSidebar/history.svg";
-import logout from "../../assets/iconSidebar/logout.svg";
+import logoutIcon from "../../assets/iconSidebar/logout.svg";
 import home from "../../assets/iconSidebar/home.svg";
 import { HamburgerMenuUser } from "../Hamburger-Menu-User";
 
@@ -15,6 +16,7 @@ import "../../styles/homePageCss/sidebar.css";
 export const Sidebar = () => {
   const currentPath = window.location.pathname;
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+  const { logout } = useAuth();
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,7 +40,7 @@ export const Sidebar = () => {
         </div>
       </section>
 
-           <section className="profile-container-all">
+      <section className="profile-container-all">
         <div className="content-info-profile">
           <img src={perfil} alt="img" className="img-perfil-sidebar" />
           <div className="name-container">
@@ -79,8 +81,8 @@ export const Sidebar = () => {
       </section>
       <div className="content-logout-sidebar-btn">
         <Link to="/">
-          <button className="sidebar-menu-button-logout">
-            <img src={logout} alt="img" className="img-sidebar-logout" />
+          <button className="sidebar-menu-button-logout" onClick={logout}>
+            <img src={logoutIcon} alt="img" className="img-sidebar-logout" />
           </button>
         </Link>
       </div>

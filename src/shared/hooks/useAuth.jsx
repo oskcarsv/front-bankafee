@@ -18,14 +18,19 @@ export const useAuth = () => {
             );
         }
         const { user, token } = response.data;
-        localStorage.setItem("token", JSON.stringify({token:token, DPI: user.DPI, no_Account: user.no_Account, role:user.role}));
+        localStorage.setItem("token", JSON.stringify({ token: token, DPI: user.DPI, no_Account: user.no_Account, role: user.role }));
         setIsLoading(false);
-        if(user.role ==="ADMIN_ROLE"){
+        if (user.role === "ADMIN_ROLE") {
             navigate('/homeAdmin');
-        }else{
+        } else {
             navigate('/home');
         }
         return toast.success(`${response.data.msg}`);
     }
-    return { isLoading, login };
+
+    const logout = () => {
+        localStorage.removeItem("token");
+        // navigate("/home");
+    };
+    return { isLoading, login, logout };
 }

@@ -10,7 +10,7 @@ export const ServiceContent = () => {
   useEffect(() => {
     getServices();
   }, []);
-  
+
   return (
     <main className="main-service-container">
       <section className="title-container">
