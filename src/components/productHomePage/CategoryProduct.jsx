@@ -17,7 +17,7 @@ export const CategoryProduct = () => {
       <div className="content-category">
         {Array.isArray(categoryProduct) ?
           (<div className="content-category">{categoryProduct.map((category) => (
-            <ContentCategoryProduct key={category._id} category={category} name={category.name} />
+            <ContentCategoryProduct key={category._id} idCategory={category._id} name={category.name} />
           ))}</div>) :
           (<div>no es</div>)}
       </div>

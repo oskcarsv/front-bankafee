@@ -2,6 +2,7 @@ import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { getCategoryProduct as categoryProductRequest } from '../../services/api';
+import { getProductForCategory as categoryForProductRequest } from '../../services/api';
 
 export const useCategoryProduct = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -22,10 +23,21 @@ export const useCategoryProduct = () => {
         setIsLoading(false);
     };
 
+    const getProductForCategory = async (id) => {
+        setIsLoading(true);
+        const response = await categoryForProductRequest({ id });
+        if (response.error) {
+            setIsLoading(false);
+            return toast.error('Error al obtener las categorias');
+        }
+        setCategory(response.data.products);
+        setIsLoading(false);
+    }
+
     return {
         isLoading,
         getCategoryProduct,
-        categoryProduct: category
+        categoryProduct: category,
+        getProductForCategory
     }
 };
-

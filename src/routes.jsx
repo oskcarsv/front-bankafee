@@ -41,6 +41,7 @@ const routes = [
   { path: "/createUser", element: <CreateUser /> },
   { path: "/productHomePage", element: <ProductHomePage /> },
   { path: "/productCategory", element: <ProductCategory /> },
+  { path: "/productCategory/:id", element: <ProductCategory /> },
   { path: "/purchaseForm", element: <PurchaseForm /> },
   { path: "/serviceHomePage", element: <ServiceHomePage /> },
   { path: "/serviceCategory", element: <ServiceCategory /> },
