@@ -94,4 +94,4 @@ export const postTransfer = async (data) => {
       e,
     };
   }
-}
+};
