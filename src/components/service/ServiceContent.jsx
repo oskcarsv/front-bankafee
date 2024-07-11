@@ -4,7 +4,6 @@ import { ServiceContainer } from "./ServiceContainer.jsx";
 import { useGetServices } from "../../shared/hooks/services/useServices";
 
 export const ServiceContent = () => {
-
   const { isLoading, services, getServices } = useGetServices();
 
   useEffect(() => {
@@ -18,14 +17,15 @@ export const ServiceContent = () => {
       </section>
       <section className="services-container">
         {isLoading && <p>Cargando...</p>}
-        {!isLoading && services.map((service) => (
-          <ServiceContainer
-            key={service.id}
-            description={service.description}
-            enterprise={service.enterprise}
-            discountCode={service.discountCode}
-          />
-        ))}
+        {!isLoading &&
+          services.map((service) => (
+            <ServiceContainer
+              key={service.id}
+              description={service.description}
+              enterprise={service.enterprise}
+              discountCode={service.discountCode}
+            />
+          ))}
       </section>
     </main>
   );

@@ -2,11 +2,7 @@ import "../../styles/serviceCss/serviceContent.css";
 
 import { useState, useEffect } from "react";
 
-export const ServiceContainer = ({
-  description,
-  enterprise,
-  discountCode
-}) => {
+export const ServiceContainer = ({ description, enterprise, discountCode }) => {
   const [copied, setCopied] = useState(false);
   const [existToken, setExistToken] = useState(false);
 
@@ -28,16 +24,12 @@ export const ServiceContainer = ({
       <div className="service-container sContainer">
         <p className="service-description">
           {description}
-          <h1>
-            {enterprise}
-          </h1>
+          <h1>{enterprise}</h1>
         </p>
 
         {existToken && (
           <>
-            <p className="service-description">
-              {discountCode}
-            </p>
+            <p className="service-description">{discountCode}</p>
             <div className="button-container">
               <button className="service-button" onClick={handleCopy}>
                 {copied ? "Copiado!" : "Copiar"}
@@ -45,7 +37,6 @@ export const ServiceContainer = ({
             </div>
           </>
         )}
-
       </div>
     </>
   );

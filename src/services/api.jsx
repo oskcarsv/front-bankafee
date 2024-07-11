@@ -80,7 +80,7 @@ export const getServices = async () => {
   } catch (e) {
     return {
       error: true,
-      e
-    }
+      e,
+    };
   }
 };
