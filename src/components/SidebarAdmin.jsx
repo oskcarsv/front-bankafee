@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
-
+import { useAuth } from "../shared/hooks/useAuth";
 import logo from "../assets/iconLanding/logo.svg";
-import logout from "../assets/iconSidebar/logout.svg";
+import logoutIcon from "../assets/iconSidebar/logout.svg";
+
 
 import "../styles/sidebarAdmin.css";
 
 export const SidebarAdmin = () => {
+  const { logout } = useAuth();
+
   return (
     <div className="sidebar-admin">
       <section className="section-img-logo-admin">
@@ -23,8 +26,8 @@ export const SidebarAdmin = () => {
       </section>
       <div className="content-logout-admin">
         <Link to="/">
-          <button className="btn-logout-for-admin">
-            <img src={logout} alt="img" />
+          <button className="btn-logout-for-admin" onClick={logout}>
+            <img src={logoutIcon} alt="img" />
           </button>
         </Link>
       </div>
