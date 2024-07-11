@@ -11,19 +11,19 @@ import {useEffect, useState} from "react";
 
 import {toast} from "react-hot-toast";
 
-let length = 0
+let length = 0;
 
 const settings = {
   dots: true,
-  infinite: true,
+  infinite: false,
   speed: 300,
-  slidesToShow:length,
+  slidesToShow:3,
   slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: length,
+        slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
         dots: true,
@@ -32,14 +32,14 @@ const settings = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: length,
+        slidesToShow: 2,
         slidesToScroll: 2,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: length,
+        slidesToShow: 1,
         slidesToScroll: 1,
         unslick: true,
       },
@@ -63,14 +63,14 @@ export const ListCardAccount = () => {
 
       setAccount(response.data.account);
       
-      length = response.data.account.length;
+      length = account;
       
     }catch(error){
 
-      /*console.log(response.error);
+      console.log(response.error);
       console.log(response.e);
       console.log(response.e?.response);
-      console.log(response.e?.response?.data);*/
+      console.log(response.e?.response?.data);
 
       return toast.error(account.error?.response?.data || "Can't List Accounts")
 
@@ -99,7 +99,7 @@ export const ListCardAccount = () => {
               )
               :(
                 <div className="card-account-info">
-                {Array.isArray(account) ? (
+                {Array.isArray(account) && account.length > 0 ? (
 
                     account.map((account) => (
 
@@ -108,13 +108,13 @@ export const ListCardAccount = () => {
                           <p className="card-account-info-title">
                             {account.type} - {account.alias}
                           </p>
-                          <img alt="icon" className="icon-myAccount" />
+                          <img src={myAccount} alt="icon" className="icon-myAccount" />
                         </div>
                         <div className="content-title">
-                          <p className="card-account-info-number">1234567890 </p>
-                          <img alt="icon" className="icon-myAccount" />
+                          <p className="card-account-info-number">{account.noAccount} </p>
+                          <img src={editMyAccount}  alt="icon" className="icon-myAccount" />
                         </div>
-                        <h1 className="card-account-info-amount">GTQ 400.00</h1>
+                        <h1 className="card-account-info-amount">Q.{account.amount}</h1>
                       </div>
 
                     ))
