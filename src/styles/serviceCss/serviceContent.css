@@ -1,0 +1,86 @@
+.main-service-container {
+  font-family: var(--general-font);
+}
+
+.title-service {
+  font-size: 230%;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: left;
+  margin: 0 0 5% 5%;
+}
+
+.services-container {
+  display: flex;
+  margin: 0 5% 5% 5%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.sContainer {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(1, 0, 0, 0.2);
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.service-button {
+  background-color: var(--nav-background);
+  color: var(--text-color-light);
+  font-size: 100%;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  flex-direction: column;
+}
+
+.service-container {
+  width: 30%;
+  margin: 0 5% 5% 10%;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.img-service {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.service-description {
+  font-size: 140%;
+  color: var(--text-color);
+  text-align: left;
+  margin: 5% 0 0 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main-service-container {
+    background-color: white;
+    margin-top: -1%;
+  }
+
+  .title-service {
+    font-size: 115%;
+    text-align: center;
+  }
+
+  .service-description {
+    font-size: 80%;
+  }
+
+  .img-service {
+    border-radius: 5px;
+  }
+}
