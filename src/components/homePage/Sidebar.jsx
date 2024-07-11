@@ -10,6 +10,7 @@ import history from "../../assets/iconSidebar/history.svg";
 import logoutIcon from "../../assets/iconSidebar/logout.svg";
 import home from "../../assets/iconSidebar/home.svg";
 import { HamburgerMenuUser } from "../Hamburger-Menu-User";
+import { useUser } from "../../shared/hooks";
 
 import "../../styles/homePageCss/sidebar.css";
 
@@ -17,6 +18,12 @@ export const Sidebar = () => {
   const currentPath = window.location.pathname;
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
   const { logout } = useAuth();
+
+  const { getOwnUser, user, loading } = useUser();
+
+  useEffect(() => {
+    getOwnUser();
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -44,12 +51,12 @@ export const Sidebar = () => {
         <div className="content-info-profile">
           <img src={perfil} alt="img" className="img-perfil-sidebar" />
           <div className="name-container">
-            <h1 className="name-profile">Angel Mendez</h1>
+            <h1 className="name-profile">{user.name}</h1>
             <Link to="/editUser">
               <img src={editUser} alt="icon" className="icon-edit-user" />
             </Link>
           </div>
-          <h2 className="email-profile">amendez@gmail.com</h2>
+          <h2 className="email-profile">{user.email}</h2>
         </div>
         <div className="content-sidebar-menu-btn">
           <Link to="/cAccountByUser" className="btn-home-sidebar">
