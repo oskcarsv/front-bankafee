@@ -79,28 +79,31 @@ export const Form = () => {
           <div className="h1-sign">
             <h1>Sing In</h1>
           </div>
-          <Input
-            field="username"
-            type="text"
-            value={form.username.value}
-            placeholderText="Username"
-            classNameInput="input-login"
-            onChangeHandler={handleInputValueChange}
-            onBlurHandler={handleInputValidationOnBlur}
-            showErrorMessage={form.username.showError}
-            validationMessage="The username is required."
-          />
-          <Input
-            field="password"
-            type="password"
-            value={form.password.value}
-            placeholderText="Password"
-            classNameInput="input-login"
-            onChangeHandler={handleInputValueChange}
-            onBlurHandler={handleInputValidationOnBlur}
-            showErrorMessage={form.password.showError}
-            validationMessage="The password is required."
-          />
+          <div className="sign-in-input-container">
+            <Input
+              field="username"
+              type="text"
+              value={form.username.value}
+              placeholderText="Username"
+              classNameInput="input-login username"
+              onChangeHandler={handleInputValueChange}
+              onBlurHandler={handleInputValidationOnBlur}
+              showErrorMessage={form.username.showError}
+              validationMessage="The username is required."
+            />
+            <Input
+              field="password"
+              type="password"
+              value={form.password.value}
+              placeholderText="Password"
+              classNameInput="input-login"
+              onChangeHandler={handleInputValueChange}
+              onBlurHandler={handleInputValidationOnBlur}
+              showErrorMessage={form.password.showError}
+              validationMessage="The password is required."
+            />
+
+          </div>
           <div className="btn-container">
             <button
               type="submit"
