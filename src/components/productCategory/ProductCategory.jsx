@@ -27,7 +27,7 @@ export const ProductCategoryAll = () => {
                     <ContentProductCategory key={category._id} category={category} description={category.description} price={category.price} />
                   ))
                 }
-              </div>) : (<div>no es</div>)
+              </div>) : null
               }</div>
           )
         }
