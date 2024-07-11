@@ -9,7 +9,7 @@ apiClient.interceptors.request.use(
   (config) => {
     const getToken = localStorage.getItem("token");
     if (getToken) {
-      const token = JSON.parse(getToken).token 
+      const token = JSON.parse(getToken).token;
       config.headers.Authorization = `${token}`;
     }
     return config;
@@ -64,20 +64,12 @@ export const getProductForCategory = async (id) => {
 };
 
 export const getOwnAccount = async () => {
-
-  try{
-
+  try {
     return await apiClient.get("/account/user");
-
-  }catch(e){
-
-    return{
-
+  } catch (e) {
+    return {
       error: true,
-      e
-
-    }
-
+      e,
+    };
   }
-
-}
+};
