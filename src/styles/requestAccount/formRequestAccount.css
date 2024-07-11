@@ -129,25 +129,25 @@
   cursor: pointer;
 }
 
-.input-container{
+.input-container {
   display: flex;
   justify-content: center;
   width: 100%;
   flex-direction: column;
 }
 
-.span-style{
+.span-style {
   font-size: 70%;
   color: var(--color-red);
   width: 80%;
   margin-left: 2%;
 }
 
-.double-input{
+.double-input {
   padding: 4% 0 4% 4%;
   width: 93%;
-} 
+}
 
-.phone-number{
+.phone-number {
   margin-left: 5%;
 }

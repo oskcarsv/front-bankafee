@@ -30,7 +30,9 @@ export const Input = ({
           placeholder={placeholderText}
           {...restProps}
         />
-        <span className="span-style phone-number-span">{showErrorMessage && validationMessage}</span>
+        <span className="span-style phone-number-span">
+          {showErrorMessage && validationMessage}
+        </span>
       </div>
     </>
   );
