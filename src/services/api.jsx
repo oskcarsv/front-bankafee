@@ -73,3 +73,14 @@ export const getOwnAccount = async () => {
     };
   }
 };
+
+export const getServices = async () => {
+  try {
+    return await apiClient.get("/service/getServices");
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};
