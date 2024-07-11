@@ -15,9 +15,11 @@ export const CategoryProduct = () => {
   return (
     <section className="section-category-product">
       <div className="content-category">
-        {categoryProduct.map((category) => (
-          <ContentCategoryProduct key={category.id} category={category} />
-        ))}
+        {Array.isArray(categoryProduct) ?
+          (<div className="content-category">{categoryProduct.map((category) => (
+            <ContentCategoryProduct key={category._id} category={category} name={category.name} />
+          ))}</div>) :
+          (<div>no es</div>)}
       </div>
     </section>
   );

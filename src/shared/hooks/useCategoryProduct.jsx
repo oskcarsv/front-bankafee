@@ -5,7 +5,7 @@ import { getCategoryProduct as categoryProductRequest } from '../../services/api
 
 export const useCategoryProduct = () => {
     const [isLoading, setIsLoading] = useState(false);
-    const [category, setCategory] = useState(false);
+    const [category, setCategory] = useState();
     const navigate = useNavigate();
 
     const getCategoryProduct = async () => {
@@ -17,6 +17,7 @@ export const useCategoryProduct = () => {
                 'An error occurred, please try again later.'
             );
         }
+        console.log(response.data);
         setCategory(response.data.categoryProducts);
         setIsLoading(false);
     };
