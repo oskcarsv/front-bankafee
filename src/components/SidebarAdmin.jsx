@@ -3,7 +3,6 @@ import { useAuth } from "../shared/hooks/useAuth";
 import logo from "../assets/iconLanding/logo.svg";
 import logoutIcon from "../assets/iconSidebar/logout.svg";
 
-
 import "../styles/sidebarAdmin.css";
 
 export const SidebarAdmin = () => {
