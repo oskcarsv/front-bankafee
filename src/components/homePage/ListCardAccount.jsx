@@ -11,17 +11,19 @@ import {useEffect, useState} from "react";
 
 import {toast} from "react-hot-toast";
 
+let length = 0
+
 const settings = {
   dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 3,
+  slidesToShow:length,
   slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: length,
         slidesToScroll: 1,
         infinite: true,
         dots: true,
@@ -30,14 +32,14 @@ const settings = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: length,
         slidesToScroll: 2,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: length,
         slidesToScroll: 1,
         unslick: true,
       },
@@ -47,7 +49,7 @@ const settings = {
 
 export const ListCardAccount = () => {
 
-  const [account, setAccount] = useState([]);
+  const [account, setAccount] = useState();
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -59,18 +61,16 @@ export const ListCardAccount = () => {
 
       const response = await getOwnAccountRequest();
 
-      setAccount(response.data);
-
-      console.log(account);
-
-
-
+      setAccount(response.data.account);
+      
+      length = response.data.account.length;
+      
     }catch(error){
 
-      console.log(response.error);
+      /*console.log(response.error);
       console.log(response.e);
       console.log(response.e?.response);
-      console.log(response.e?.response?.data);
+      console.log(response.e?.response?.data);*/
 
       return toast.error(account.error?.response?.data || "Can't List Accounts")
 
