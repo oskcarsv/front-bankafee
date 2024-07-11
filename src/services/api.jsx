@@ -94,7 +94,7 @@ export const postTransfer = async (data) => {
       e,
     };
   }
-}
+};
 
 export const getClientPetitions = async () => {
   try {
@@ -105,7 +105,7 @@ export const getClientPetitions = async () => {
       e,
     };
   }
-}
+};
 
 export const postUser = async (data) => {
   try {
@@ -116,4 +116,4 @@ export const postUser = async (data) => {
       e,
     };
   }
-}
+};
