@@ -8,7 +8,7 @@ import {useAccountPetition, useAccount} from "../../shared/hooks";
 
 export const ListApprovalAccount = () => {
 
-    const { getAccountPetition, accountPetitions, isLoading } = useAccountPetition();
+    const { getAccountPetition, accountPetition, isLoading } = useAccountPetition();
 
     const { aceptPetition, loading} = useAccount();
 
@@ -16,7 +16,10 @@ export const ListApprovalAccount = () => {
 
         getAccountPetition();
 
+        console.log(accountPetition);
+
     }, [loading]);
+    
 
     const handleApprove = (event) => {
 
@@ -46,21 +49,21 @@ export const ListApprovalAccount = () => {
                     <td>Loading...</td>
                 </tr>
                 ) : (
-                Array.isArray(accountPetitions) &&
-                accountPetitions.map((accountPetitions) => (
+                Array.isArray(accountPetition) &&
+                accountPetition.map((accountPetition) => (
                     <tr
                     className="approve-container-info"
-                    key={accountPetitions.noPetition}
+                    key={accountPetition.noPetition}
                     >
-                    <td className="info-user-approve">{accountPetitions.noPetition}</td>
-                    <td className="info-user-approve">{accountPetitions.DPI_Owner}</td>
+                    <td className="info-user-approve">{accountPetition.noPetition}</td>
+                    <td className="info-user-approve">{accountPetition.DPI_Owner}</td>
                     <td className="info-user-approve">Waiting for approval</td>
                     <td className="info-user-approve">
                         <button className="btn-approve">
                         <img
                             src={accept}
                             alt=""
-                            id={accountPetitions.noPetition}
+                            id={accountPetition.noPetition}
                             onClick={handleApprove}
                         />
                         </button>
