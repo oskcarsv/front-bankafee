@@ -155,3 +155,7 @@
 .container input:checked ~ svg {
   fill: #ffeb49;
 }
+
+.destination-account {
+  padding: 7% 2%;
+}

@@ -166,7 +166,7 @@ export const FormTransferUser = () => {
             onBlurHandler={handleInputValidationOnBlur}
             showErrorMessage={form.noDestinationAccount.showError}
             validationMessage={validateAccountMessage}
-            classNameInput="input-text-transfer-user"
+            classNameInput="input-text-transfer-user destination-account"
           />
           <label className="container">
             <input type="checkbox" />
@@ -230,13 +230,20 @@ export const FormTransferUser = () => {
       </form>
       <section className="container-btn-transfer">
         <div className="btn-content-transfer">
-          <div className="link-btn-transfer-user">
-            <button className="btn-transfer cancel">Cancel</button>
+          <div
+            className="link-btn-transfer-user"
+            onClick={() => {
+              window.location.href = "/home";
+            }}
+          >
+            <button className="btn-transfer cancel">Cancelar</button>
           </div>
           <div className="link-btn-transfer-user">
             <button
               className="btn-transfer"
-              onClick={handleTransfer}
+              onClick={() => {
+                window.location.href = "/home";
+              }}
               disabled={buttonDisabled}
             >
               Transfer
