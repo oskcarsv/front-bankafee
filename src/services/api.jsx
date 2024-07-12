@@ -128,3 +128,20 @@ export const ownUser = async () => {
     };
   }
 };
+
+export const accountPetition = async (data) => {
+
+  try {
+
+    return await apiClient.post("/accountPetition", data);
+
+  }catch(e){
+
+    return {
+      error: true,
+      e,
+    };
+
+  }
+
+}
