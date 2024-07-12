@@ -102,7 +102,6 @@ export const Form = () => {
               showErrorMessage={form.password.showError}
               validationMessage="The password is required."
             />
-
           </div>
           <div className="btn-container">
             <button

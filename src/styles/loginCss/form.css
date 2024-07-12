@@ -116,7 +116,7 @@
   justify-content: right;
 }
 
-.sign-in-input-container{
+.sign-in-input-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +124,7 @@
   width: 100%;
 }
 
-.username{
+.username {
   display: flex;
   justify-content: center;
   align-items: center;

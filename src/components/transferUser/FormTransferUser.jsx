@@ -230,7 +230,8 @@ export const FormTransferUser = () => {
       </form>
       <section className="container-btn-transfer">
         <div className="btn-content-transfer">
-          <div className="link-btn-transfer-user"
+          <div
+            className="link-btn-transfer-user"
             onClick={() => {
               window.location.href = "/home";
             }}
