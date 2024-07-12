@@ -2,7 +2,13 @@ import { useState } from "react"
 
 import { useNavigate } from "react-router-dom"
 
-import { accountPetition as accountPetitionRequest } from "../../services/api"
+import { 
+  
+  accountPetition as accountPetitionRequest ,
+
+  getAccountPetition as getAccountPetitionRequest
+
+} from "../../services/api"
 
 import { toast } from "react-hot-toast"
 
@@ -79,13 +85,41 @@ export const useAccountPetition = () => {
 
     }
 
-    return {
+    const getAccountPetition = async () => {
 
-        isLoading,
+        setIsLoading(true);
+
+        const response = await getAccountPetitionRequest();
+
+        setIsLoading(false);
+
+        if (response.error) {
+          console.log(response.error);
+          console.log(response.e);
+          console.log(response.e?.response);
+          console.log(response.e?.response?.data);
+    
+          return toast.error(
+            response.e?.response?.data ||
+              "A ocurrido un error, por favor intente más tarde.",
+          );
+        }
+
+        setAccountPetition(response.data.accountPetition);
+
+        setIsLoading(false);
+
+    }
+
+    return {
 
         postAccountPetition,
 
-        accountPetition
+        getAccountPetition,
+
+        accountPetition,
+        
+        isLoading
 
     };
 

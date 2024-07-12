@@ -145,3 +145,38 @@ export const accountPetition = async (data) => {
   }
 
 }
+
+export const getAccountPetition = async () => {
+
+  try {
+
+    return await apiClient.get("/accountPetition");
+
+  }catch(e){
+
+    return {
+      error: true,
+      e,
+    };
+
+  }
+
+}
+
+export const aceptPetition = async (data) => {
+
+  try {
+
+    return await apiClient.post("/account/admin", data);
+
+  }catch(e){
+
+    return {
+      error: true,
+      e,
+
+    };
+
+  }
+
+}

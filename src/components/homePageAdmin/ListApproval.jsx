@@ -22,7 +22,7 @@ export const ListApproval = () => {
   return (
     <section className="section-list-approve">
       <div className="container-approve-message">
-        <h1 className="message-approve">Approval List</h1>
+        <h1 className="message-approve">Approval User List</h1>
       </div>
       <div className="container-table-approve">
         <table className="table-approve-user">
