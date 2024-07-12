@@ -17,3 +17,7 @@ export * from "./validateMonthyIncome";
 export * from "./validateMaxTransfer";
 
 export * from "./validateDescriptionTransfer";
+
+export * from "./validateAlias";
+
+export * from "./validateAmount";

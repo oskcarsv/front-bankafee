@@ -128,3 +128,36 @@ export const ownUser = async () => {
     };
   }
 };
+
+export const accountPetition = async (data) => {
+  try {
+    return await apiClient.post("/accountPetition", data);
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};
+
+export const getAccountPetition = async () => {
+  try {
+    return await apiClient.get("/accountPetition");
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};
+
+export const aceptPetition = async (data) => {
+  try {
+    return await apiClient.post("/account/admin", data);
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};

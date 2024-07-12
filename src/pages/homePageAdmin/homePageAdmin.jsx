@@ -2,6 +2,7 @@ import { SidebarAdmin } from "../../components/SidebarAdmin";
 import { MessageAdmin } from "../../components/homePageAdmin/MessageAdmin";
 import { ActionsAdmin } from "../../components/homePageAdmin/ActionAdmin";
 import { ListApproval } from "../../components/homePageAdmin/ListApproval";
+import { ListApprovalAccount } from "../../components/homePageAdmin/ListApprovalAccount";
 
 import "../../pages/homePageAdmin/homePageAdmin.css";
 
@@ -16,6 +17,7 @@ export const HomePageAdmin = () => {
           <MessageAdmin />
           <ActionsAdmin />
           <ListApproval />
+          <ListApprovalAccount />
         </article>
       </main>
     </>
