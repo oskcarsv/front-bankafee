@@ -10,13 +10,11 @@ export const ListApprovalAccount = () => {
 
     const { getAccountPetition, accountPetition, isLoading } = useAccountPetition();
 
-    const { aceptPetition, loading} = useAccount();
+    const { denyPetition, aceptPetition, loading} = useAccount();
 
     useEffect(() => {
 
         getAccountPetition();
-
-        console.log(accountPetition);
 
     }, [loading]);
     
@@ -26,6 +24,14 @@ export const ListApprovalAccount = () => {
         event.preventDefault();
 
         aceptPetition({ noPetition: event.target.id });
+
+    }
+
+    const handleDeny = (event) => {
+
+        event.preventDefault();
+
+        denyPetition({ noPetition: parseInt(event.target.id) });
 
     }
 
@@ -57,7 +63,7 @@ export const ListApprovalAccount = () => {
                     >
                     <td className="info-user-approve">{accountPetition.noPetition}</td>
                     <td className="info-user-approve">{accountPetition.DPI_Owner}</td>
-                    <td className="info-user-approve">Waiting for approval</td>
+                    <td className="info-user-approve">Espeando a Aprobar</td>
                     <td className="info-user-approve">
                         <button className="btn-approve">
                         <img
@@ -70,7 +76,12 @@ export const ListApprovalAccount = () => {
                     </td>
                     <td className="info-user-approve">
                         <button className="btn-approve">
-                        <img src={deleteUser} alt="" />
+                        <img 
+                            src={deleteUser} 
+                            alt="" 
+                            id={accountPetition.noPetition}
+                            onClick={handleDeny}
+                        />
                         </button>
                     </td>
                     </tr>

@@ -161,3 +161,14 @@ export const aceptPetition = async (data) => {
     };
   }
 };
+
+export const denyPetition = async (data) => {
+  try {
+    return await apiClient.delete("/account/denied", data);
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};
