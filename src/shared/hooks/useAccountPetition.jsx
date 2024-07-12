@@ -1,126 +1,104 @@
-import { useState } from "react"
+import { useState } from "react";
 
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
-import { 
-  
-  accountPetition as accountPetitionRequest ,
+import {
+  accountPetition as accountPetitionRequest,
+  getAccountPetition as getAccountPetitionRequest,
+} from "../../services/api";
 
-  getAccountPetition as getAccountPetitionRequest
-
-} from "../../services/api"
-
-import { toast } from "react-hot-toast"
+import { toast } from "react-hot-toast";
 
 export const useAccountPetition = () => {
-    
-    const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-    const [accountPetition, setAccountPetition] = useState();
+  const [accountPetition, setAccountPetition] = useState();
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const postAccountPetition = async (
+  const postAccountPetition = async (type, DPI_Owner, alias, amount) => {
+    setIsLoading(true);
 
-        type,
-        DPI_Owner,
-        alias,
-        amount
+    const response = await accountPetitionRequest({
+      type,
+      DPI_Owner,
+      alias,
+      amount,
+    });
 
-    ) => {
+    setIsLoading(false);
 
-        setIsLoading(true);
+    if (response.error) {
+      console.log(response.error);
 
-        const response = await accountPetitionRequest({
+      console.log(response.e);
 
-            type,
-            DPI_Owner,
-            alias,
-            amount
+      console.log(response.e?.response);
 
-        });
+      console.log(response.e?.response?.data);
 
-        setIsLoading(false);
-
-        if (response.error) {
-
-            console.log(response.error);
-
-            console.log(response.e);
-
-            console.log(response.e?.response);
-
-            console.log(response.e?.response?.data);
-
-            return toast.error(
-                response.e?.response?.data ||
-                  "An error occurred, please try again later.",
-              );
-
-        }
-
-        toast.success(
-            (t) => (
-              <span>
-                {response.data.msg} <br />
-                <button
-                  onClick={() => toast.dismiss(t.id)}
-                  style={{
-                    background: "transparent",
-                    border: "none",
-                    position: "absolute",
-                    top: "0",
-                    right: "0",
-                    margin: "5px",
-                  }}
-                >
-                  X
-                </button>
-              </span>
-            ),
-            { duration: Infinity },
-        );
-
-        navigate("/home")
-
+      return toast.error(
+        response.e?.response?.data ||
+          "An error occurred, please try again later.",
+      );
     }
 
-    const getAccountPetition = async () => {
+    toast.success(
+      (t) => (
+        <span>
+          {response.data.msg} <br />
+          <button
+            onClick={() => toast.dismiss(t.id)}
+            style={{
+              background: "transparent",
+              border: "none",
+              position: "absolute",
+              top: "0",
+              right: "0",
+              margin: "5px",
+            }}
+          >
+            X
+          </button>
+        </span>
+      ),
+      { duration: Infinity },
+    );
 
-        setIsLoading(true);
+    navigate("/home");
+  };
 
-        const response = await getAccountPetitionRequest();
+  const getAccountPetition = async () => {
+    setIsLoading(true);
 
-        setIsLoading(false);
+    const response = await getAccountPetitionRequest();
 
-        if (response.error) {
-          console.log(response.error);
-          console.log(response.e);
-          console.log(response.e?.response);
-          console.log(response.e?.response?.data);
-    
-          return toast.error(
-            response.e?.response?.data ||
-              "A ocurrido un error, por favor intente más tarde.",
-          );
-        }
+    setIsLoading(false);
 
-        setAccountPetition(response.data.accountPetition);
+    if (response.error) {
+      console.log(response.error);
+      console.log(response.e);
+      console.log(response.e?.response);
+      console.log(response.e?.response?.data);
 
-        setIsLoading(false);
-
+      return toast.error(
+        response.e?.response?.data ||
+          "A ocurrido un error, por favor intente más tarde.",
+      );
     }
 
-    return {
+    setAccountPetition(response.data.accountPetition);
 
-        postAccountPetition,
+    setIsLoading(false);
+  };
 
-        getAccountPetition,
+  return {
+    postAccountPetition,
 
-        accountPetition,
-        
-        isLoading
+    getAccountPetition,
 
-    };
+    accountPetition,
 
-}
+    isLoading,
+  };
+};

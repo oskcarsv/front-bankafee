@@ -4,27 +4,23 @@ import deleteUser from "../../assets/iconHistoryList/deleteUser.svg";
 
 import "../../styles/homePageAdmin/ListApproval.css";
 
-import {useAccountPetition, useAccount} from "../../shared/hooks";
+import { useAccountPetition, useAccount } from "../../shared/hooks";
 
 export const ListApprovalAccount = () => {
+  const { getAccountPetition, accountPetitions, isLoading } =
+    useAccountPetition();
 
-    const { getAccountPetition, accountPetitions, isLoading } = useAccountPetition();
+  const { aceptPetition, loading } = useAccount();
 
-    const { aceptPetition, loading} = useAccount();
+  useEffect(() => {
+    getAccountPetition();
+  }, [loading]);
 
-    useEffect(() => {
+  const handleApprove = (event) => {
+    event.preventDefault();
 
-        getAccountPetition();
-
-    }, [loading]);
-
-    const handleApprove = (event) => {
-
-        event.preventDefault();
-
-        aceptPetition({ noPetition: event.target.id });
-
-    }
+    aceptPetition({ noPetition: event.target.id });
+  };
 
   return (
     <section className="section-list-approve">
@@ -42,37 +38,41 @@ export const ListApprovalAccount = () => {
           </thead>
           <tbody>
             {isLoading ? (
-                <tr>
-                    <td>Loading...</td>
+              <tr>
+                <td>Loading...</td>
+              </tr>
+            ) : (
+              Array.isArray(accountPetitions) &&
+              accountPetitions.map((accountPetitions) => (
+                <tr
+                  className="approve-container-info"
+                  key={accountPetitions.noPetition}
+                >
+                  <td className="info-user-approve">
+                    {accountPetitions.noPetition}
+                  </td>
+                  <td className="info-user-approve">
+                    {accountPetitions.DPI_Owner}
+                  </td>
+                  <td className="info-user-approve">Waiting for approval</td>
+                  <td className="info-user-approve">
+                    <button className="btn-approve">
+                      <img
+                        src={accept}
+                        alt=""
+                        id={accountPetitions.noPetition}
+                        onClick={handleApprove}
+                      />
+                    </button>
+                  </td>
+                  <td className="info-user-approve">
+                    <button className="btn-approve">
+                      <img src={deleteUser} alt="" />
+                    </button>
+                  </td>
                 </tr>
-                ) : (
-                Array.isArray(accountPetitions) &&
-                accountPetitions.map((accountPetitions) => (
-                    <tr
-                    className="approve-container-info"
-                    key={accountPetitions.noPetition}
-                    >
-                    <td className="info-user-approve">{accountPetitions.noPetition}</td>
-                    <td className="info-user-approve">{accountPetitions.DPI_Owner}</td>
-                    <td className="info-user-approve">Waiting for approval</td>
-                    <td className="info-user-approve">
-                        <button className="btn-approve">
-                        <img
-                            src={accept}
-                            alt=""
-                            id={accountPetitions.noPetition}
-                            onClick={handleApprove}
-                        />
-                        </button>
-                    </td>
-                    <td className="info-user-approve">
-                        <button className="btn-approve">
-                        <img src={deleteUser} alt="" />
-                        </button>
-                    </td>
-                    </tr>
-                ))
-                )}
+              ))
+            )}
           </tbody>
         </table>
       </div>
