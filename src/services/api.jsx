@@ -64,6 +64,17 @@ export const getProductForCategory = async (id) => {
   }
 };
 
+export const getProduct = async (id) => {
+  try {
+    return await apiClient.get(`/searchProduct/${id}`);
+  } catch (e) {
+    return {
+      error: true,
+      e,
+    };
+  }
+};
+
 export const getOwnAccount = async () => {
   try {
     return await apiClient.get("/account/user");

@@ -1,31 +1,31 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useCategoryProduct } from "../../shared/hooks/useCategoryProduct";
 
 import compraComputadora from "../../assets/iconsProduct/compraComputadora.svg";
 
 import "../../styles/formPurchase/formPurchase.css";
 
-export const FormPurchase = () => {
+export const FormPurchase = ({ name, description, img, price }) => {
   return (
     <section className="section-form-buy-product">
       <div className="content-name-product">
-        <h1 className="name-product">Computer</h1>
+        <h1 className="name-product">{name}</h1>
       </div>
       <hr />
       <div className="content-product-info">
         <div className="content-buy-product">
-          <img src={compraComputadora} alt="img" className="img-product" />
+          <img src={img} alt="img" className="img-product" />
         </div>
         <div className="content-info-product">
           <div className="content-price-product">
-            <h3 className="price-product">$ 1,000.00</h3>
+            <h3 className="price-product">{price}</h3>
           </div>
           <div className="content-title-description">
             <h3 className="description-product">Description</h3>
           </div>
           <div className="content-description">
-            <p className="description">
-              Laptop Huawei Core i5, 13", 16GB RAM, 512GB SSD
-            </p>
+            <p className="description">{description}</p>
           </div>
           <form className="form-buy">
             <div className="content-input-buy">

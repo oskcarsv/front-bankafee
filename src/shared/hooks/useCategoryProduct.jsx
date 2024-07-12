@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import {
   getCategoryProduct as categoryProductRequest,
   getProductForCategory as categoryForProductRequest,
+  getProduct as productRequest,
 } from "../../services/api";
 
 export const useCategoryProduct = () => {
@@ -37,12 +38,23 @@ export const useCategoryProduct = () => {
     setIsLoading(false);
   };
 
+  const getProduct = async (id) => {
+    setIsLoading(true);
+    const response = await productRequest(id);
 
+    if (response.error) {
+      setIsLoading(false);
+      return toast.error("An error occurred, please try again later.");
+    }
+    setCategory(response.data.products);
+    setIsLoading(false);
+  }
 
   return {
     isLoading,
     getCategoryProduct,
     getProductForCategory,
     categoryProduct: category,
+    getProduct
   };
 };
