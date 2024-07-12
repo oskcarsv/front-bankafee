@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import {
   getCategoryProduct as categoryProductRequest,
   getProductForCategory as categoryForProductRequest,
+  getProduct as productRequest,
 } from "../../services/api";
 
 export const useCategoryProduct = () => {
@@ -20,14 +21,28 @@ export const useCategoryProduct = () => {
     }
     setCategory(response.data.categoryProducts);
     setIsLoading(false);
+    console.log(response);
   };
 
   const getProductForCategory = async (id) => {
     setIsLoading(true);
     const response = await categoryForProductRequest(id);
+
     if (response.error) {
       setIsLoading(false);
       return toast.error("Error al obtener las categorias");
+    }
+    setCategory(response.data.products);
+    setIsLoading(false);
+  };
+
+  const getProduct = async (id) => {
+    setIsLoading(true);
+    const response = await productRequest(id);
+
+    if (response.error) {
+      setIsLoading(false);
+      return toast.error("An error occurred, please try again later.");
     }
     setCategory(response.data.products);
     setIsLoading(false);
@@ -38,5 +53,6 @@ export const useCategoryProduct = () => {
     getCategoryProduct,
     getProductForCategory,
     categoryProduct: category,
+    getProduct,
   };
 };

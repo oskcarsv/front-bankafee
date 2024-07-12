@@ -15,7 +15,7 @@ export const TitleProductHome = () => {
           {currentPath === "/productHomePage" ? (
             <h1 className="title-product-home">Product </h1>
           ) : (
-            <h1 className="title-product-home">Category Home Page</h1>
+            <h1 className="title-product-home">Product Category</h1>
           )}
         </div>
         <div className="content-btn">
