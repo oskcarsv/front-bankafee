@@ -4,36 +4,29 @@ import deleteUser from "../../assets/iconHistoryList/deleteUser.svg";
 
 import "../../styles/homePageAdmin/ListApproval.css";
 
-import {useAccountPetition, useAccount} from "../../shared/hooks";
+import { useAccountPetition, useAccount } from "../../shared/hooks";
 
 export const ListApprovalAccount = () => {
+  const { getAccountPetition, accountPetition, isLoading } =
+    useAccountPetition();
 
-    const { getAccountPetition, accountPetition, isLoading } = useAccountPetition();
+  const { denyPetition, aceptPetition, loading } = useAccount();
 
-    const { denyPetition, aceptPetition, loading} = useAccount();
+  useEffect(() => {
+    getAccountPetition();
+  }, [loading]);
 
-    useEffect(() => {
+  const handleApprove = (event) => {
+    event.preventDefault();
 
-        getAccountPetition();
+    aceptPetition({ noPetition: event.target.id });
+  };
 
-    }, [loading]);
-    
+  const handleDeny = (event) => {
+    event.preventDefault();
 
-    const handleApprove = (event) => {
-
-        event.preventDefault();
-
-        aceptPetition({ noPetition: event.target.id });
-
-    }
-
-    const handleDeny = (event) => {
-
-        event.preventDefault();
-
-        denyPetition({ noPetition: parseInt(event.target.id) });
-
-    }
+    denyPetition({ noPetition: parseInt(event.target.id) });
+  };
 
   return (
     <section className="section-list-approve">
@@ -51,42 +44,46 @@ export const ListApprovalAccount = () => {
           </thead>
           <tbody>
             {isLoading ? (
-                <tr>
-                    <td>Loading...</td>
+              <tr>
+                <td>Loading...</td>
+              </tr>
+            ) : (
+              Array.isArray(accountPetition) &&
+              accountPetition.map((accountPetition) => (
+                <tr
+                  className="approve-container-info"
+                  key={accountPetition.noPetition}
+                >
+                  <td className="info-user-approve">
+                    {accountPetition.noPetition}
+                  </td>
+                  <td className="info-user-approve">
+                    {accountPetition.DPI_Owner}
+                  </td>
+                  <td className="info-user-approve">Espeando a Aprobar</td>
+                  <td className="info-user-approve">
+                    <button className="btn-approve">
+                      <img
+                        src={accept}
+                        alt=""
+                        id={accountPetition.noPetition}
+                        onClick={handleApprove}
+                      />
+                    </button>
+                  </td>
+                  <td className="info-user-approve">
+                    <button className="btn-approve">
+                      <img
+                        src={deleteUser}
+                        alt=""
+                        id={accountPetition.noPetition}
+                        onClick={handleDeny}
+                      />
+                    </button>
+                  </td>
                 </tr>
-                ) : (
-                Array.isArray(accountPetition) &&
-                accountPetition.map((accountPetition) => (
-                    <tr
-                    className="approve-container-info"
-                    key={accountPetition.noPetition}
-                    >
-                    <td className="info-user-approve">{accountPetition.noPetition}</td>
-                    <td className="info-user-approve">{accountPetition.DPI_Owner}</td>
-                    <td className="info-user-approve">Espeando a Aprobar</td>
-                    <td className="info-user-approve">
-                        <button className="btn-approve">
-                        <img
-                            src={accept}
-                            alt=""
-                            id={accountPetition.noPetition}
-                            onClick={handleApprove}
-                        />
-                        </button>
-                    </td>
-                    <td className="info-user-approve">
-                        <button className="btn-approve">
-                        <img 
-                            src={deleteUser} 
-                            alt="" 
-                            id={accountPetition.noPetition}
-                            onClick={handleDeny}
-                        />
-                        </button>
-                    </td>
-                    </tr>
-                ))
-                )}
+              ))
+            )}
           </tbody>
         </table>
       </div>

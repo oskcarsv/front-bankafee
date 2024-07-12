@@ -4,7 +4,10 @@ import toast from "react-hot-toast";
 
 import { useNavigate } from "react-router-dom";
 
-import { aceptPetition as aceptPetitionRequest, denyPetition as denyPetitionRequest } from "../../services/api";
+import {
+  aceptPetition as aceptPetitionRequest,
+  denyPetition as denyPetitionRequest,
+} from "../../services/api";
 
 export const useAccount = () => {
   const [loading, setIsLoading] = useState(false);
