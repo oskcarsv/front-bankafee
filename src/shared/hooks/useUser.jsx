@@ -28,7 +28,7 @@ export const useUser = () => {
     }
 
     setLoading(false);
-    
+
     toast.success(
       (t) => (
         <span>
@@ -50,7 +50,6 @@ export const useUser = () => {
       ),
       { duration: Infinity },
     );
-
   };
 
   const getOwnUser = async () => {
