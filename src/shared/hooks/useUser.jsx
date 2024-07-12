@@ -28,7 +28,29 @@ export const useUser = () => {
     }
 
     setLoading(false);
-    return toast.success("Se ha aprobado el usuario correctamente");
+    
+    toast.success(
+      (t) => (
+        <span>
+          {response.data.msg} <br />
+          <button
+            onClick={() => toast.dismiss(t.id)}
+            style={{
+              background: "transparent",
+              border: "none",
+              position: "absolute",
+              top: "0",
+              right: "0",
+              margin: "5px",
+            }}
+          >
+            X
+          </button>
+        </span>
+      ),
+      { duration: Infinity },
+    );
+
   };
 
   const getOwnUser = async () => {
